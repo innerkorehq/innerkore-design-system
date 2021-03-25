@@ -5,6 +5,10 @@ type MultipleSelectMenuTypes = {
    * Boolean value to define the button style
    */
   outlined?: boolean;
+  /**
+   * appending className to allow user to add extra css
+   */
+  className: string;
 };
 
 const BASE_Input =
@@ -12,11 +16,14 @@ const BASE_Input =
 const CONTAINED_INPUT = `${BASE_Input} border text-on-secondary`;
 const OUTLINED_INPUT = `${BASE_Input} border text-on-secondary`;
 
-export const MultipleSelectMenu: FC<MultipleSelectMenuTypes> = ({ outlined}) => {
+export const MultipleSelectMenu: FC<MultipleSelectMenuTypes> = ({
+  outlined,
+  className,
+}) => {
   return (
     <div>
       <select
-        className={outlined ? OUTLINED_INPUT : CONTAINED_INPUT}
+        className={`${outlined ? OUTLINED_INPUT : CONTAINED_INPUT}${className}`}
         multiple
         aria-label="Default select example"
       >

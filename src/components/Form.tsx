@@ -2,41 +2,58 @@ import React, { FC } from "react";
 import { InputField } from "./InputField";
 import { CheckBox } from "./CheckBox";
 import { SaveButton } from "./SaveButton";
+import { Label } from "./Label";
 
 type FormTypes = {
-//   outlined?: boolean;
-//   label: string;
+  //   outlined?: boolean;
+  //   label: string;
   onClick(): void;
 };
 
-
-const emailhelp = 'mt-2 text-back_ground text-sm';
-const Passwordlabel ='mt-5';
-const passwordMessage ='mt-2 text-back_ground text-sm';
-const checkdiv ='mt-4';
-const Buttondiv= 'mt-5'
-
+const emailhelp = "mt-2 text-back_ground text-sm";
+const Passwordlabel = "mt-5";
+const passwordMessage = "mt-2 text-back_ground text-sm";
+const checkdiv = "mt-4";
+const Buttondiv = "mt-5";
 
 export const Form: FC<FormTypes> = ({ onClick }) => {
   return (
     <div>
       <div>
-        <label>Email Address</label>
-        <InputField placeholder="" outlined={false} />
-        <div id="emailHelp" className={emailhelp}>We'll never share your email with anyone else.</div>
+        <Label className="" text="Email Address" />
+        <InputField
+          className=""
+          type="email"
+          placeholder="info@example.com"
+          outlined={false}
+        />
+        <div id="emailHelp" className={emailhelp}>
+          We'll never share your email with anyone else.
+        </div>
       </div>
       <div className={Passwordlabel}>
-        <label>Password</label>
-        <InputField placeholder="" outlined={false} />
+        <Label text="Password" className="" />
+        <InputField
+          className=""
+          type="password"
+          placeholder=""
+          outlined={false}
+        />
         <div className={passwordMessage}>
-           Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji. 
-        </div> 
+          Your password must be 8-20 characters long, contain letters and
+          numbers, and must not contain spaces, special characters, or emoji.
+        </div>
       </div>
       <div className={checkdiv}>
-        <CheckBox label="Check me out" />
+        <CheckBox className="" label="Check me out" />
       </div>
       <div className={Buttondiv}>
-      <SaveButton label="Submit" outlined={false} onClick={onClick} />
+        <SaveButton
+          className=""
+          label="Submit"
+          outlined={false}
+          onClick={onClick}
+        />
       </div>
     </div>
   );

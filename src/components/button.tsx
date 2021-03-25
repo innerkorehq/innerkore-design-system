@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 
-type SaveButtonTypes = {
+type ButtonTypes = {
   /**
    * Label of the button
    */
@@ -20,13 +20,13 @@ type SaveButtonTypes = {
 };
 
 const BASE_BUTTON =
-  "inline-flex justify-center py-2 px-4 border border-surface shadow-sm text-sm font-medium rounded-md text-surface bg-primary hover:bg-primary-variant focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-secondary";
-const CONTAINED_BUTTON = `${BASE_BUTTON} bg-teal-400 border border-teal-400 text-white`;
-const OUTLINED_BUTTON = `${BASE_BUTTON} border border-teal-400 text-teal-400`;
+  "rounded outline-none shadow py-3 px-12 font-normal uppercase xl:tracking-wider text-lg bg-primary text-surface ";
+const CONTAINED_BUTTON = `${BASE_BUTTON}  border border-secondary`;
+const OUTLINED_BUTTON = `${BASE_BUTTON} border border-on-secondary`;
 
-export const SaveButton: FC<SaveButtonTypes> = ({
+export const Button: FC<ButtonTypes> = ({
   onClick,
-  label = "Save",
+  label = "Some label",
   outlined,
   className,
 }) => {

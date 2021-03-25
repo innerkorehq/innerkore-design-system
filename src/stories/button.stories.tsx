@@ -1,18 +1,18 @@
 import React from "react";
-import { SaveButton } from "../components/SaveButton";
+import { Button } from "../components/button";
 import { action } from "@storybook/addon-actions";
 import { withKnobs, text, boolean } from "@storybook/addon-knobs";
 
 export default {
-  title: "SaveButton",
+  title: "Button",
   decorators: [withKnobs],
 };
 
 export const primary = () => {
-  const label = text("Label", "Submit");
+  const label = text("Label", "See now");
   const outlined = boolean("Oultined", false);
   return (
-    <SaveButton
+    <Button
       className=""
       onClick={action("clicked")}
       outlined={outlined}

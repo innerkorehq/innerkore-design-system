@@ -1,15 +1,13 @@
 import React from "react";
-import {Checks} from "../components/Checks";
+import { Checks } from "../components/Checks";
 import { withKnobs, boolean } from "@storybook/addon-knobs";
 
 export default {
-  title: "CheckBox",
-  decorators: [withKnobs]
+  title: "Checks",
+  decorators: [withKnobs],
 };
 
 export const primary = () => {
   const outlined = boolean("Oultined", false);
-  return (
-    <Checks value="" outlined={outlined} />
-  )
+  return <Checks className="" outlined={outlined} />;
 };

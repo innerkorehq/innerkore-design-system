@@ -6,22 +6,45 @@ type StepsRangeTypes = {
    * Boolean value to define the button style
    */
   outlined?: boolean;
+  /**
+   * appending className to allow user to add extra css
+   */
+  className: string;
+  /**
+   * passing the minimum range of a inoutslider
+   */
+  minrange: string;
+  /**
+   * passing the maximum range of the inoutslider
+   */
+  maxrange: string;
+  /**
+   * passing the steps in the inputslider
+   */
+  steps: string;
 };
 
-const BASE_Input = "focus:outline-none w-full p-2 border border-on-secondary rounded mt-1";
+const BASE_Input =
+  "focus:outline-none w-full p-2 border border-on-secondary rounded mt-1";
 const CONTAINED_INPUT = `${BASE_Input} border text-on-secondary`;
 const OUTLINED_INPUT = `${BASE_Input} border text-on-secondary`;
 
-export const StepsRange: FC<StepsRangeTypes> = ({ outlined}) => {
+export const StepsRange: FC<StepsRangeTypes> = ({
+  outlined,
+  className,
+  minrange,
+  maxrange,
+  steps,
+}) => {
   return (
     <div>
-        <Label text="Select Range"/>
+      <Label className="" text="Select Range" />
       <input
         type="range"
-        min="0"
-        max="5"
-        step="0.5"
-        className={outlined ? OUTLINED_INPUT : CONTAINED_INPUT}
+        min={minrange}
+        max={maxrange}
+        step={steps}
+        className={`${outlined ? OUTLINED_INPUT : CONTAINED_INPUT}${className}`}
       />
     </div>
   );

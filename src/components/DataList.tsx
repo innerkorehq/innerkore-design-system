@@ -1,34 +1,50 @@
 import React, { FC } from "react";
-import {Label} from './Label';
+import { Label } from "./Label";
 
 type DataListTypes = {
   /**
    * Boolean value to define the button style
    */
   outlined?: boolean;
-  placeholder:string
+  /**
+   * placeholder is the text you want to show indide the inputfield
+   */
+  placeholder: string;
+  /**
+   * appending className to allow user to add extra css
+   */
+  className: string;
+  /**
+   * passing the array data to the datalist
+   */
+  value: [];
 };
 
-const BASE_Input = "focus:outline-none focus:shadow-outline w-full p-2 border border-on-secondary rounded mt-1";
-const CONTAINED_INPUT = `${BASE_Input} border text-on-secondary`;
-const OUTLINED_INPUT = `${BASE_Input} border text-on-secondary`;
+const BASE_DATALIST =
+  "focus:outline-none focus:shadow-outline w-full p-2 border border-on-secondary rounded mt-1";
+const CONTAINED_DATALIST = `${BASE_DATALIST} border text-on-secondary`;
+const OUTLINED_DATALIST = `${BASE_DATALIST} border text-on-secondary`;
 
-export const DataList: FC<DataListTypes> = ({ outlined,placeholder }) => {
+export const DataList: FC<DataListTypes> = ({
+  outlined,
+  placeholder,
+  className,
+  value,
+}) => {
   return (
     <div>
-      <Label text="DataList"/>
+      <Label className="" text="DataList" />
       <input
-        // type="email"
         list="datalistOptions"
         placeholder={placeholder}
-        className={outlined ? OUTLINED_INPUT : CONTAINED_INPUT}
+        className={`${
+          outlined ? OUTLINED_DATALIST : CONTAINED_DATALIST
+        }${className}`}
       />
       <datalist id="datalistOptions">
-        <option value="Mumbai"/>
-        <option value="Jaipur"/>
-        <option value="Delhi"/>
-        <option value="Kolkata"/>
-        <option value="Bangalore"/>
+        {value.map((item, index) => {
+          return <option value={item} />;
+        })}
       </datalist>
     </div>
   );
