@@ -1,17 +1,20 @@
 import React from "react";
 import { Button } from '../components/button';
 import { action } from '@storybook/addon-actions';
-import { withKnobs, text, boolean } from "@storybook/addon-knobs";
 
 export default {
   title: "Button",
-  decorators: [withKnobs]
+  component: Button,
+  argTypes: {
+    label: { control: 'text' },
+    outlined: { control: 'boolean' },
+  },
 };
 
-export const primary = () => {
-  const label = text("Label", "See now");
-  const outlined = boolean("Oultined", false);
+export const primary = (args) => {
+  const label = "See now";
+  const outlined = false;
   return (
-    <Button onClick={action('clicked')} outlined={outlined} label={label} />
+    <Button onClick={action('clicked')} {...args} />
   )
 };
