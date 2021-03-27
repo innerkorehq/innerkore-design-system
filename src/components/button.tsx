@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 
-type ButtonTypes = {
+export type ButtonTypes = {
   /**
    * Label of the button
    */
@@ -35,6 +35,5 @@ export const Button: FC<ButtonTypes> = ({ onClick, label = 'Some label', outline
     </button>
   );
 };
-export ButtonTypes;
 
 export default Button;
