@@ -1,9 +1,9 @@
-import React from "react";
-import { Button } from '../components/button';
+import React from 'react';
 import { action } from '@storybook/addon-actions';
+import { Button } from '../components/button';
 
 export default {
-  title: "Button",
+  title: 'Button',
   component: Button,
   argTypes: {
     label: { control: 'text' },
@@ -11,10 +11,7 @@ export default {
   },
 };
 
-export const primary = (args) => {
-  const label = "See now";
-  const outlined = false;
-  return (
-    <Button onClick={action('clicked')} {...args} />
-  )
+export const primary = (args: any) => {
+  return <Button onClick={action('clicked')} {...args} />;
 };
+primary.args = { label: 'See now', outlined: false };
