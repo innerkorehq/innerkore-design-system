@@ -38,7 +38,7 @@ export const ButtonWithIcon: FC<ButtonTypes> = ({
       type={type ? 'button' : 'submit'}
       className={outlined ? OUTLINED_BUTTON : CONTAINED_BUTTON}
     >
-      <img className='inline mr-2 h-6' src={outlined ? OutlinedIcon : ContainedIcon} alt=''/>
+      <img className="inline mr-2 h-6" src={outlined ? OutlinedIcon : ContainedIcon} alt="" />
       {label}
     </button>
   );
