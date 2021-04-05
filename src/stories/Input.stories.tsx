@@ -12,7 +12,7 @@ export const Small = (args: InputTypes) => {
 };
   
 Small.args = {
-    size: 'h-6',
+    size: 'h-8 text-sm',
     placeholder: 'Small size'
 };
 
@@ -21,7 +21,7 @@ export const Medium = (args: InputTypes) => {
 };
   
 Medium.args = {
-    size: 'h-8',
+    size: 'h-10 text-base',
     placeholder: 'Medium size'
 };
 
@@ -30,6 +30,6 @@ export const Large = (args: InputTypes) => {
 };
   
 Large.args = {
-    size: 'h-12',
+    size: 'h-12 text-xl',
     placeholder: 'Large size'
 };
