@@ -1,5 +1,4 @@
 import React from 'react';
-import { action } from '@storybook/addon-actions';
 import { ButtonWithIcon, ButtonTypes } from '../components/ButtonWithIcon';
 
 export default {
@@ -8,7 +7,7 @@ export default {
   argTypes: {
     label: { control: 'text' },
     outlined: { control: 'boolean' },
-    onClick: { action: 'clicked' }
+    onClick: { action: 'clicked' },
   },
 };
 
