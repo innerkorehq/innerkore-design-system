@@ -8,7 +8,7 @@ export default {
   argTypes: {
     label: { control: 'text' },
     outlined: { control: 'boolean' },
-    onClick: { action: 'clicked' },
+    onClick: { action: 'clicked' }
   },
 };
 
@@ -20,6 +20,5 @@ export const primary = (args: ButtonTypes) => {
 primary.args = {
   label: 'Button with icon',
   outlined: false,
-  //   onClick: () => action('clicked'),
 };
 /* eslint-enable @typescript-eslint/explicit-module-boundary-types */
