@@ -5,11 +5,12 @@ export type ButtonTypes = {
   label: string;
 
   /* Button type */
-  type: string;
+  type: 'button' | 'submit';
 
   /* Button click action */
   onClick(): void;
 
+  /* type of variables */
   fontSize: string;
   color: string;
   bgColor: string;
@@ -20,7 +21,7 @@ export type ButtonTypes = {
 export const Button: FC<ButtonTypes> = ({
   onClick,
   label = 'Button',
-  type,
+  type = 'button',
   fontSize = 'text-xs',
   color = 'text-white',
   bgColor = 'bg-purple-600',
@@ -30,7 +31,7 @@ export const Button: FC<ButtonTypes> = ({
   return (
     <button
       onClick={onClick}
-      type={type ? 'button' : 'submit'}
+      type={type}
       className={`font-bold ${fontSize} ${color} ${bgColor} ${padding} ${borderRadius}`}
     >
       {label}

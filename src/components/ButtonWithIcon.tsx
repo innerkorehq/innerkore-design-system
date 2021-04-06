@@ -1,23 +1,18 @@
 import React, { FC } from 'react';
-import ContainedIcon from './click.svg';
-import OutlinedIcon from './click-outlined.svg';
+import ContainedIcon from '../../public/img/click.svg';
+import OutlinedIcon from '../../public/img/click-outlined.svg';
 
 export type ButtonTypes = {
-  /**
-   * Label of the button
-   */
+  /* Label of the button */
   label: string;
-  /**
-   * Boolean value to define the button style
-   */
+
+  /* Boolean value to define the button style */
   outlined?: boolean;
-  /**
-   * Button type
-   */
+
+  /* Button type */
   type: string;
-  /**
-   * Button click action
-   */
+
+  /* Button click action */
   onClick(): void;
 };
 
