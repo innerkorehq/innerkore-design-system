@@ -10,14 +10,14 @@ export default {
 };
 
 /* eslint-disable @typescript-eslint/explicit-module-boundary-types */
-export const Default = (args: ButtonTypes) => {
+export const Outlined = (args: ButtonTypes) => {
   return <Button {...args} />;
 };
 
-Default.args = {
+Outlined.args = {
   label: 'Default',
-  padding: 'py-1 px-3',
-  borderRadius: 'rounded-sm',
+  type: 'outlined',
+  size: 'large'
 };
 /* eslint-enable @typescript-eslint/explicit-module-boundary-types */
 
