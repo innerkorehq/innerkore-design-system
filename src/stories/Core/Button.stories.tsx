@@ -17,7 +17,7 @@ export const MediumNormal = (args: ButtonTypes) => {
 MediumNormal.args = {
   label: 'MediumNormal',
   type: 'normal',
-  size: 'medium'
+  size: 'medium',
 };
 /* eslint-enable @typescript-eslint/explicit-module-boundary-types */
 
@@ -29,7 +29,7 @@ export const SmallNormal = (args: ButtonTypes) => {
 SmallNormal.args = {
   label: 'SmallNormal',
   type: 'normal',
-  size: 'small'
+  size: 'small',
 };
 /* eslint-enable @typescript-eslint/explicit-module-boundary-types */
 
@@ -41,6 +41,6 @@ export const LargeNormal = (args: ButtonTypes) => {
 LargeNormal.args = {
   label: 'LargeNormal',
   type: 'normal',
-  size: 'large'
+  size: 'large',
 };
 /* eslint-enable @typescript-eslint/explicit-module-boundary-types */

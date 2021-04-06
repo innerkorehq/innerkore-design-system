@@ -10,8 +10,7 @@ export type ButtonTypes = {
   /* Button click action */
   onClick(): void;
 
-  /* type of variables */
-  fontSize: string;
+  /* Button size type*/
   size: 'small' | 'medium' | 'large';
 };
 
@@ -29,21 +28,21 @@ export const Button: FC<ButtonTypes> = ({
   size = 'medium',
 }) => {
   let fontSize = mediumClasses;
-  if (size == 'small') {
+  if (size === 'small') {
     fontSize = smallClasses;
-  } else if (size == 'large') {
+  } else if (size === 'large') {
     fontSize = largeClasses;
-  } 
+  }
 
   let StyleType = normalClassses;
-  if (type == 'text') {
+  if (type === 'text') {
     StyleType = textClasses;
-  } else if (type == 'outlined') {
+  } else if (type === 'outlined') {
     StyleType = outlinedClasses;
-  } 
+  }
 
   return (
-    <button onClick={onClick} className={`${fontSize} ${StyleType}`}>
+    <button type='button' onClick={onClick} className={`${fontSize} ${StyleType}`}>
       {label}
     </button>
   );
