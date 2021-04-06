@@ -1,9 +1,9 @@
+const path = require('path');
+
 module.exports = {
   stories: ['../src/stories/**/*.stories.tsx'],
   addons: [
-    '@storybook/addon-actions/register',
-    '@storybook/addon-knobs/register',
-    '@storybook/addon-notes/register',
+    '@storybook/addon-essentials',
   ],
   webpackFinal: async config => {
     config.module.rules = [
@@ -21,6 +21,11 @@ module.exports = {
         ]
       }
     ],
+    config.module.rules.push({
+      test: /\.scss$/,
+      use: ['style-loader', 'css-loader', 'sass-loader'],
+      include: path.resolve(__dirname, '../'),
+    });
     config.resolve.extensions.push('.ts', '.tsx');
     return config;
   },

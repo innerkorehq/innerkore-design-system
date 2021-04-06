@@ -25,9 +25,11 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "build:tailwind": "postcss src/scss/base.scss -o src/scss/tailwind.scss",
+    "build:tailwind": "postcss src/scss/index.scss -o src/scss/tailwind.scss",
     "storybook": "start-storybook -p 5000",
-    "build:storybook": "build-storybook"
+    "build:storybook": "build-storybook",
+    "format": "prettier --write src/**/*.ts{,x}",
+    "lint": "tsc --noEmit && eslint src/**/*.ts{,x}"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -45,14 +47,32 @@
     ]
   },
   "devDependencies": {
-    "@storybook/addon-actions": "^6.1.21",
-    "@storybook/addon-info": "^5.3.18",
-    "@storybook/addon-knobs": "^6.1.21",
-    "@storybook/addon-notes": "^4.1.18",
-    "@storybook/addons": "^5.3.18",
+    "@storybook/addon-essentials": "^6.1.21",
+    "@storybook/addon-info": "^5.3.21",
+    "@storybook/addon-notes": "^5.3.21",
     "@storybook/preset-create-react-app": "^2.1.1",
-    "@storybook/react": "^6.1.21",
-    "babel-loader": "^8.1.0",
+    "@storybook/react": ">=5.3.18",
+    "@typescript-eslint/eslint-plugin": "^4.19.0",
+    "@typescript-eslint/parser": "^4.19.0",
+    "babel-loader": "8.1.0",
+    "eslint": "^7.2.0",
+    "eslint-config-airbnb": "18.2.1",
+    "eslint-config-airbnb-typescript": "^12.3.1",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jest": "^24.3.2",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-react": "^7.21.5",
+    "eslint-plugin-react-hooks": "^1.7.0",
+    "husky": "4",
+    "prettier": "^2.2.1",
     "react-docgen-typescript-loader": "^3.7.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn format && yarn lint",
+      "pre-push": "yarn format && yarn lint"
+    }
   }
 }
