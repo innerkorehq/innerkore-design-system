@@ -1,8 +1,8 @@
 import React from 'react';
-import { Button, ButtonTypes } from '../components/Button';
+import { Button, ButtonTypes } from '../../components/Core/Button';
 
 export default {
-  title: 'Button/Small',
+  title: 'Core/Button/Large',
   component: Button,
   argTypes: {
     label: { control: 'text' },
@@ -16,8 +16,8 @@ export const Default = (args: ButtonTypes) => {
 
 Default.args = {
   label: 'Default',
-  padding: 'py-1 px-3',
-  borderRadius: 'rounded-sm',
+  padding: 'py-4 px-16',
+  fontSize: 'text-xl',
 };
 /* eslint-enable @typescript-eslint/explicit-module-boundary-types */
 

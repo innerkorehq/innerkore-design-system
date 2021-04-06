@@ -1,8 +1,8 @@
 import React from 'react';
-import { ButtonWithIcon, ButtonTypes } from '../components/ButtonWithIcon';
+import { ButtonWithIcon, ButtonTypes } from '../../components/Examples/ButtonWithIcon';
 
 export default {
-  title: 'ButtonWithIcon',
+  title: 'Examples/ButtonWithIcon',
   component: ButtonWithIcon,
   argTypes: {
     label: { control: 'text' },

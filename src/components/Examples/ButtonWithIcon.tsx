@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
-import ContainedIcon from '../../public/img/click.svg';
-import OutlinedIcon from '../../public/img/click-outlined.svg';
+import ContainedIcon from '../../../public/img/click.svg';
+import OutlinedIcon from '../../../public/img/click-outlined.svg';
 
 export type ButtonTypes = {
   /* Label of the button */

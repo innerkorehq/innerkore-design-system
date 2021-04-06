@@ -1,9 +1,8 @@
 import React from 'react';
-import { Input, InputTypes } from '../components/Input';
+import { Input, InputTypes } from '../../components/Examples/Input';
 
 export default {
-  title: 'Form/Input',
-  component: Input,
+  title: 'Examples/Input',
 };
 
 export const Small = (args: InputTypes) => {
