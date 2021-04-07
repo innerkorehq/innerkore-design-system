@@ -10,11 +10,14 @@ export type ButtonTypes = {
   /* Button click action */
   onClick(): void;
 
-  /* Button size type*/
+  /* Button size type */
   size: 'small' | 'medium' | 'large';
+
+  /* Type for variable to add custom classes */
+  className: string;
 };
 
-const textClasses = 'rounded outline-none font-normal tracking-wider font-bold';
+const textClasses = 'rounded outline-none tracking-wider font-bold';
 const normalClassses = `${textClasses} bg-teal-400 text-white`;
 const outlinedClasses = `${textClasses} border border-teal-400 text-teal-400`;
 const smallClasses = 'text-xs px-3 py-1';
@@ -26,6 +29,7 @@ export const Button: FC<ButtonTypes> = ({
   label = 'Button',
   type = 'normal',
   size = 'medium',
+  className 
 }) => {
   let fontSize = mediumClasses;
   if (size === 'small') {
@@ -41,8 +45,9 @@ export const Button: FC<ButtonTypes> = ({
     StyleType = outlinedClasses;
   }
 
+  
   return (
-    <button type='button' onClick={onClick} className={`${fontSize} ${StyleType}`}>
+    <button type="button" onClick={onClick} className={`${fontSize} ${StyleType} ${className}`}>
       {label}
     </button>
   );
