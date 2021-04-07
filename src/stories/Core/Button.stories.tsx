@@ -18,7 +18,10 @@ MediumNormal.args = {
   label: 'MediumNormal',
   type: 'normal',
   size: 'medium',
-  href: 'https://google.com'
+  onClick: function(){
+    alert('sdfefewf');
+  },
+  target_blank : true
 };
 /* eslint-enable @typescript-eslint/explicit-module-boundary-types */
 
@@ -31,7 +34,7 @@ SmallNormal.args = {
   label: 'SmallNormal',
   type: 'normal',
   size: 'small',
-  href: 'https://google.com'
+  href: 'https://google.com',
 };
 /* eslint-enable @typescript-eslint/explicit-module-boundary-types */
 
@@ -44,6 +47,6 @@ LargeNormal.args = {
   label: 'LargeNormal',
   type: 'normal',
   size: 'large',
-  href: 'https://google.com'
+  href: 'https://google.com',
 };
 /* eslint-enable @typescript-eslint/explicit-module-boundary-types */

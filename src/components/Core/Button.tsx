@@ -16,7 +16,12 @@ export type ButtonTypes = {
   /** Add classes to component */
   className?: string;
 
+  /** Add href to anchor tag */
   href?: string;
+
+  /** Open link in new tab */
+  target_blank?: boolean;
+
 };
 
 const textClasses = 'rounded outline-none tracking-wider font-bold';
@@ -32,7 +37,8 @@ export const Button: FC<ButtonTypes> = ({
   type = 'normal',
   size = 'medium',
   className,
-  href
+  href,
+  target_blank
 }) => {
   let btnSize = mediumClasses;
   if (size === 'small') {
@@ -49,14 +55,18 @@ export const Button: FC<ButtonTypes> = ({
   }
 
   let btnVariables = `${btnSize} ${styleType} ${className}`;
-  if (href){
-    return <a href={href} onClick={onClick} className = {btnVariables}>
-      {label}
-    </a>
+  if (href) {
+    return (
+      <a href={href} onClick={onClick} className={btnVariables} target={target_blank ? '_blank' : null} >
+        {label}
+      </a>
+    );
   } else {
-    return <button type="button" onClick={onClick} className= {btnVariables}>
-      {label}
-    </button>
+    return (
+      <button type="button" onClick={onClick} className={btnVariables} target={target_blank ? '_blank' : null} >
+        {label}
+      </button>
+    );
   }
 };
 
