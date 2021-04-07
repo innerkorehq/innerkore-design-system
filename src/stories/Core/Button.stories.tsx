@@ -16,12 +16,12 @@ export const MediumNormal = (args: ButtonTypes) => {
 
 MediumNormal.args = {
   label: 'MediumNormal',
-  type: 'normal',
+  btnStyle: 'normal',
   size: 'medium',
-  onClick: function(){
+  onClick: function () {
     alert('sdfefewf');
   },
-  target_blank : true
+  target_blank: true,
 };
 /* eslint-enable @typescript-eslint/explicit-module-boundary-types */
 
@@ -32,7 +32,7 @@ export const SmallNormal = (args: ButtonTypes) => {
 
 SmallNormal.args = {
   label: 'SmallNormal',
-  type: 'normal',
+  btnStyle: 'normal',
   size: 'small',
   href: 'https://google.com',
 };
@@ -45,7 +45,7 @@ export const LargeNormal = (args: ButtonTypes) => {
 
 LargeNormal.args = {
   label: 'LargeNormal',
-  type: 'normal',
+  btnStyle: 'normal',
   size: 'large',
   href: 'https://google.com',
 };

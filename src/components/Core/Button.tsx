@@ -4,8 +4,11 @@ export type ButtonTypes = {
   /** Label of the button */
   label: string;
 
+  /** Type attribute of button*/
+  type?: string;
+
   /** Style of the Button */
-  type: 'normal' | 'outlined' | 'text';
+  btnStyle: 'normal' | 'outlined' | 'text';
 
   /** Button click action */
   onClick?: React.MouseEventHandler<HTMLButtonElement>;
@@ -21,7 +24,6 @@ export type ButtonTypes = {
 
   /** Open link in new tab */
   target_blank?: boolean;
-
 };
 
 const textClasses = 'rounded outline-none tracking-wider font-bold';
@@ -33,12 +35,13 @@ const largeClasses = 'text-xl px-16 py-4';
 
 export const Button: FC<ButtonTypes> = ({
   onClick,
+  type,
   label = 'Button',
-  type = 'normal',
+  btnStyle = 'normal',
   size = 'medium',
   className,
   href,
-  target_blank
+  target_blank,
 }) => {
   let btnSize = mediumClasses;
   if (size === 'small') {
@@ -48,22 +51,29 @@ export const Button: FC<ButtonTypes> = ({
   }
 
   let styleType = normalClassses;
-  if (type === 'text') {
+  if (btnStyle === 'text') {
     styleType = textClasses;
-  } else if (type === 'outlined') {
+  } else if (btnStyle === 'outlined') {
     styleType = outlinedClasses;
   }
 
   let btnVariables = `${btnSize} ${styleType} ${className}`;
   if (href) {
     return (
-      <a href={href} onClick={onClick} className={btnVariables} target={target_blank ? '_blank' : undefined}>
+      <a
+        href={href}
+        onClick={onClick}
+        className={btnVariables}
+        target={target_blank ? '_blank' : undefined}
+      >
         {label}
       </a>
     );
   } else {
     return (
-      <button type="button" onClick={onClick} className={btnVariables}>
+      <button       
+        type={type ? 'submit' : 'button'}
+        onClick={onClick} className={btnVariables}>
         {label}
       </button>
     );
