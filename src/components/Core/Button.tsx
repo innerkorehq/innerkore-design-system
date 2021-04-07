@@ -13,8 +13,10 @@ export type ButtonTypes = {
   /** Button size */
   size: 'small' | 'medium' | 'large';
 
-  /** Give classes to component */
+  /** Add classes to component */
   className?: string;
+
+  href?: string;
 };
 
 const textClasses = 'rounded outline-none tracking-wider font-bold';
@@ -30,6 +32,7 @@ export const Button: FC<ButtonTypes> = ({
   type = 'normal',
   size = 'medium',
   className,
+  href
 }) => {
   let btnSize = mediumClasses;
   if (size === 'small') {
@@ -45,11 +48,16 @@ export const Button: FC<ButtonTypes> = ({
     styleType = outlinedClasses;
   }
 
-  return (
-    <button type="button" onClick={onClick} className={`${btnSize} ${styleType} ${className}`}>
+  let btnVariables = `${btnSize} ${styleType} ${className}`;
+  if (href){
+    return <a href={href} onClick={onClick} className = {btnVariables}>
+      {label}
+    </a>
+  } else {
+    return <button type="button" onClick={onClick} className= {btnVariables}>
       {label}
     </button>
-  );
+  }
 };
 
 export default Button;
