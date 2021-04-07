@@ -5,7 +5,7 @@ export type ButtonTypes = {
   label: string;
 
   /** Type attribute of button*/
-  type?: string;
+  btnType?: 'button' | 'submit';
 
   /** Style of the Button */
   btnStyle: 'normal' | 'outlined' | 'text';
@@ -35,7 +35,7 @@ const largeClasses = 'text-xl px-16 py-4';
 
 export const Button: FC<ButtonTypes> = ({
   onClick,
-  type,
+  btnType,
   label = 'Button',
   btnStyle = 'normal',
   size = 'medium',
@@ -72,7 +72,7 @@ export const Button: FC<ButtonTypes> = ({
   } else {
     return (
       <button       
-        type={type ? 'submit' : 'button'}
+        type={btnType ? btnType : 'button'}
         onClick={onClick} className={btnVariables}>
         {label}
       </button>
