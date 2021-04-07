@@ -14,8 +14,7 @@ export type ButtonTypes = {
   size: 'small' | 'medium' | 'large';
 
   /** Give classes to component */
-  className: string;
-
+  className?: string;
 };
 
 const textClasses = 'rounded outline-none tracking-wider font-bold';
@@ -25,13 +24,12 @@ const smallClasses = 'text-xs px-3 py-1';
 const mediumClasses = 'text-md px-4 py-2';
 const largeClasses = 'text-xl px-16 py-4';
 
-
 export const Button: FC<ButtonTypes> = ({
   onClick,
   label = 'Button',
   type = 'normal',
   size = 'medium',
-  className, 
+  className,
 }) => {
   let btnSize = mediumClasses;
   if (size === 'small') {
@@ -46,7 +44,7 @@ export const Button: FC<ButtonTypes> = ({
   } else if (type === 'outlined') {
     styleType = outlinedClasses;
   }
-  
+
   return (
     <button type="button" onClick={onClick} className={`${btnSize} ${styleType} ${className}`}>
       {label}
