@@ -57,13 +57,13 @@ export const Button: FC<ButtonTypes> = ({
   let btnVariables = `${btnSize} ${styleType} ${className}`;
   if (href) {
     return (
-      <a href={href} onClick={onClick} className={btnVariables} target={target_blank ? '_blank' : null} >
+      <a href={href} onClick={onClick} className={btnVariables} target={target_blank ? '_blank' : undefined}>
         {label}
       </a>
     );
   } else {
     return (
-      <button type="button" onClick={onClick} className={btnVariables} target={target_blank ? '_blank' : null} >
+      <button type="button" onClick={onClick} className={btnVariables}>
         {label}
       </button>
     );
