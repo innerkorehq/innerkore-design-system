@@ -18,7 +18,6 @@ MediumNormal.args = {
   label: 'MediumNormal',
   type: 'normal',
   size: 'medium',
-  className: 'h-16'
 };
 /* eslint-enable @typescript-eslint/explicit-module-boundary-types */
 
