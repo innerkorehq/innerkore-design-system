@@ -35,6 +35,7 @@ SmallNormal.args = {
   btnStyle: 'normal',
   size: 'small',
   href: 'https://google.com',
+  className: 'inline-block'
 };
 /* eslint-enable @typescript-eslint/explicit-module-boundary-types */
 
@@ -48,5 +49,6 @@ LargeNormal.args = {
   btnStyle: 'normal',
   size: 'large',
   href: 'https://google.com',
+  className: 'inline-block'
 };
 /* eslint-enable @typescript-eslint/explicit-module-boundary-types */
