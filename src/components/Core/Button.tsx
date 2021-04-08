@@ -1,4 +1,5 @@
 import React, { FC } from 'react';
+// import Click from '../../../public/img/click-outlined.svg'
 
 export type ButtonTypes = {
   /** Label of the button */
@@ -24,6 +25,13 @@ export type ButtonTypes = {
 
   /** Open link in new tab */
   target: '_blank' | '_self' | '_parent' | '_top';
+
+  /** Add icon path to the button */
+  icon?: string;
+
+  /** Specify icon alignment */
+  align?: 'left' |'right';
+
 };
 
 const textClasses = 'rounded outline-none tracking-wider font-bold';
@@ -42,6 +50,8 @@ export const Button: FC<ButtonTypes> = ({
   className,
   href,
   target,
+  align = 'left',
+  icon
 }) => {
   let btnSize = mediumClasses;
   if (size === 'small') {
@@ -57,6 +67,13 @@ export const Button: FC<ButtonTypes> = ({
     styleType = outlinedClasses;
   }
 
+  let iconStyles = 'h-3'
+  if (size === 'medium') {
+    iconStyles = 'h-4';
+  } else if (size === 'large'){
+    iconStyles = 'h-8';
+  }
+
   let btnVariables = `${btnSize} ${styleType} ${className}`;
   if (href) {
     return (
@@ -66,7 +83,9 @@ export const Button: FC<ButtonTypes> = ({
         className={btnVariables}
         target={target}
       >
+        {icon && align === 'left'? <img src={icon} alt='' className={`inline ${iconStyles} mr-3`}/> : null }
         {label}
+        {icon && align === 'right'? <img src={icon} alt='' className={`inline ${iconStyles} ml-3`}/> : null }
       </a>
     );
   } else if (type == 'submit') {
@@ -85,7 +104,9 @@ export const Button: FC<ButtonTypes> = ({
         onClick={onClick} className={btnVariables}
         target={target}
       >
+        {icon && align === 'left'? <img src={icon} alt='' className={`inline ${iconStyles} mr-3`}/> : null }
         {label}
+        {icon && align === 'right'? <img src={icon} alt='' className={`inline ${iconStyles} ml-3`}/> : null }
       </button>
     );
   }

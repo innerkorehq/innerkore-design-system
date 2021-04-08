@@ -1,5 +1,9 @@
 import React from 'react';
 import { Button, ButtonTypes } from '../../components/Core/Button';
+import Arrow from '../../../public/img/arrow.svg';
+import Dropdown from '../../../public/img/dropdown.svg';
+
+
 
 export default {
   title: 'Core/Button',
@@ -9,7 +13,6 @@ export default {
   },
 };
 
-/* eslint-disable @typescript-eslint/explicit-module-boundary-types */
 export const MediumNormal = (args: ButtonTypes) => {
   return <Button {...args} />;
 };
@@ -21,11 +24,10 @@ MediumNormal.args = {
   onClick: function () {
     alert('Button clicked');
   },
-  type: 'submit'
+  icon: Arrow,
+  // href: 'https//google.com'
 };
-/* eslint-enable @typescript-eslint/explicit-module-boundary-types */
 
-/* eslint-disable @typescript-eslint/explicit-module-boundary-types */
 export const SmallNormal = (args: ButtonTypes) => {
   return <Button {...args} />;
 };
@@ -35,11 +37,10 @@ SmallNormal.args = {
   style: 'normal',
   size: 'small',
   href: 'https://google.com',
-  className: 'inline-block'
+  className: 'inline-block',
+  icon: Dropdown
 };
-/* eslint-enable @typescript-eslint/explicit-module-boundary-types */
 
-/* eslint-disable @typescript-eslint/explicit-module-boundary-types */
 export const LargeNormal = (args: ButtonTypes) => {
   return <Button {...args} />;
 };
@@ -49,6 +50,7 @@ LargeNormal.args = {
   style: 'normal',
   size: 'large',
   href: 'https://google.com',
-  className: 'inline-block'
+  className: 'inline-block',
+  icon: Arrow,
+  align:'left'
 };
-/* eslint-enable @typescript-eslint/explicit-module-boundary-types */
