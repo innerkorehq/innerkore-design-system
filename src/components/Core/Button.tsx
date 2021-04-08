@@ -34,12 +34,12 @@ export type ButtonTypes = {
 
 };
 
-const textClasses = 'rounded outline-none tracking-wider font-bold';
-const normalClassses = `${textClasses} bg-teal-400 text-white`;
-const outlinedClasses = `${textClasses} border border-teal-400 text-teal-400`;
-const smallClasses = 'text-xs px-3 py-1';
-const mediumClasses = 'text-md px-4 py-2';
-const largeClasses = 'text-xl px-16 py-4';
+const textStyles = 'rounded outline-none tracking-wider font-bold';
+const normalStyles = `${textStyles} bg-teal-400 text-white`;
+const outlinedStyles = `${textStyles} border border-teal-400 text-teal-400`;
+const smallStyles = 'text-xs px-3 py-1';
+const mediumStyles = 'text-md px-4 py-2';
+const largeStyles = 'text-xl px-16 py-4';
 
 export const Button: FC<ButtonTypes> = ({
   onClick,
@@ -53,18 +53,18 @@ export const Button: FC<ButtonTypes> = ({
   align = 'left',
   icon
 }) => {
-  let btnSize = mediumClasses;
+  let btnSize = mediumStyles;
   if (size === 'small') {
-    btnSize = smallClasses;
+    btnSize = smallStyles;
   } else if (size === 'large') {
-    btnSize = largeClasses;
+    btnSize = largeStyles;
   }
 
-  let styleType = normalClassses;
+  let styleType = normalStyles;
   if (style === 'text') {
-    styleType = textClasses;
+    styleType = textStyles;
   } else if (style === 'outlined') {
-    styleType = outlinedClasses;
+    styleType = outlinedStyles;
   }
 
   let iconStyles = 'h-3'
@@ -74,13 +74,13 @@ export const Button: FC<ButtonTypes> = ({
     iconStyles = 'h-8';
   }
 
-  let btnVariables = `${btnSize} ${styleType} ${className}`;
+  let btnStyles = `${btnSize} ${styleType} ${className}`;
   if (href) {
     return (
       <a
         href={href}
         onClick={onClick}
-        className={btnVariables}
+        className={btnStyles}
         target={target}
       >
         {icon && align === 'left'? <img src={icon} alt='' className={`inline ${iconStyles} mr-3`}/> : null }
@@ -92,7 +92,7 @@ export const Button: FC<ButtonTypes> = ({
     return (
       <input 
         type= 'submit' value={label}
-        onClick={onClick} className={btnVariables}>
+        onClick={onClick} className={btnStyles}>
       </input>
     );
   }   
@@ -101,7 +101,7 @@ export const Button: FC<ButtonTypes> = ({
     return (
       <button       
         type={type ? type : 'button'}
-        onClick={onClick} className={btnVariables}
+        onClick={onClick} className={btnStyles}
         target={target}
       >
         {icon && align === 'left'? <img src={icon} alt='' className={`inline ${iconStyles} mr-3`}/> : null }
