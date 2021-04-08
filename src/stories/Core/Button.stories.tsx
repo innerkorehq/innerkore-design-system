@@ -21,7 +21,6 @@ MediumNormal.args = {
   onClick: function () {
     alert('Button clicked');
   },
-  target_blank: true,
   type: 'submit'
 };
 /* eslint-enable @typescript-eslint/explicit-module-boundary-types */

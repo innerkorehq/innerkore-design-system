@@ -23,7 +23,7 @@ export type ButtonTypes = {
   href?: string;
 
   /** Open link in new tab */
-  target_blank?: boolean;
+  target: '_blank' | '_self' | '_parent' | '_top';
 };
 
 const textClasses = 'rounded outline-none tracking-wider font-bold';
@@ -41,7 +41,7 @@ export const Button: FC<ButtonTypes> = ({
   size = 'medium',
   className,
   href,
-  target_blank,
+  target,
 }) => {
   let btnSize = mediumClasses;
   if (size === 'small') {
@@ -64,7 +64,7 @@ export const Button: FC<ButtonTypes> = ({
         href={href}
         onClick={onClick}
         className={btnVariables}
-        target={target_blank ? '_blank' : undefined}
+        target={target}
       >
         {label}
       </a>
@@ -82,7 +82,9 @@ export const Button: FC<ButtonTypes> = ({
     return (
       <button       
         type={type ? type : 'button'}
-        onClick={onClick} className={btnVariables}>
+        onClick={onClick} className={btnVariables}
+        target={target}
+      >
         {label}
       </button>
     );
