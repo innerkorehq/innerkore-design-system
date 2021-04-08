@@ -30,8 +30,7 @@ export type ButtonTypes = {
   icon?: string;
 
   /** Specify icon alignment */
-  align?: 'left' |'right';
-
+  align?: 'left' | 'right';
 };
 
 const textStyles = 'rounded outline-none tracking-wider font-bold';
@@ -51,7 +50,7 @@ export const Button: FC<ButtonTypes> = ({
   href,
   target,
   align = 'left',
-  icon
+  icon,
 }) => {
   let btnSize = mediumStyles;
   if (size === 'small') {
@@ -67,38 +66,36 @@ export const Button: FC<ButtonTypes> = ({
     styleType = outlinedStyles;
   }
 
-  let iconStyles = 'h-3'
+  let iconStyles = 'h-3';
   if (size === 'medium') {
     iconStyles = 'h-4';
-  } else if (size === 'large'){
+  } else if (size === 'large') {
     iconStyles = 'h-8';
   }
 
   let btnStyles = `${btnSize} ${styleType} ${className}`;
   if (href) {
     return (
-      <a
-        href={href}
-        onClick={onClick}
-        className={btnStyles}
-        target={target}
-      >
-        {icon && align === 'left'? <img src={icon} alt='' className={`inline ${iconStyles} mr-3`}/> : null }
+      <a href={href} onClick={onClick} className={btnStyles} target={target}>
+        {icon && align === 'left' ? (
+          <img src={icon} alt="" className={`inline ${iconStyles} mr-3`} />
+        ) : null}
         {label}
-        {icon && align === 'right'? <img src={icon} alt='' className={`inline ${iconStyles} ml-3`}/> : null }
+        {icon && align === 'right' ? (
+          <img src={icon} alt="" className={`inline ${iconStyles} ml-3`} />
+        ) : null}
       </a>
     );
-  }
-  else {
+  } else {
     return (
-      <button       
-        type={type ? type : 'button'}
-        onClick={onClick} className={btnStyles}
-        target={target}
-      >
-        {icon && align === 'left'? <img src={icon} alt='' className={`inline ${iconStyles} mr-3`}/> : null }
+      <button type={type ? type : 'button'} onClick={onClick} className={btnStyles} target={target}>
+        {icon && align === 'left' ? (
+          <img src={icon} alt="" className={`inline ${iconStyles} mr-3`} />
+        ) : null}
         {label}
-        {icon && align === 'right'? <img src={icon} alt='' className={`inline ${iconStyles} ml-3`}/> : null }
+        {icon && align === 'right' ? (
+          <img src={icon} alt="" className={`inline ${iconStyles} ml-3`} />
+        ) : null}
       </button>
     );
   }

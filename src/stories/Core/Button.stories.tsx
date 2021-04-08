@@ -37,7 +37,7 @@ SmallNormal.args = {
   size: 'small',
   href: 'https://google.com',
   className: 'inline-block',
-  icon: Dropdown
+  icon: Dropdown,
 };
 
 export const LargeNormal = (args: ButtonTypes) => {
@@ -51,5 +51,5 @@ LargeNormal.args = {
   href: 'https://google.com',
   className: 'inline-block',
   icon: Arrow,
-  align:'left'
+  align: 'left',
 };
