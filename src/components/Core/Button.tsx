@@ -69,7 +69,16 @@ export const Button: FC<ButtonTypes> = ({
         {label}
       </a>
     );
-  } else {
+  } else if (type == 'submit') {
+    return (
+      <input 
+        type= 'submit' value={label}
+        onClick={onClick} className={btnVariables}>
+      </input>
+    );
+  }   
+  
+  else {
     return (
       <button       
         type={type ? type : 'button'}
