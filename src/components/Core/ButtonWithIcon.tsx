@@ -1,14 +1,16 @@
 import React, { FC } from 'react';
+import normalIcon from '../../../public/img/click.svg';
+import outlinedIcon from '../../../public/img/click-outlined.svg';
 
 export type ButtonTypes = {
   /** Label of the button */
   label: string;
 
   /** Type attribute of button*/
-  type?: 'button' | 'submit';
+  btnType?: 'button' | 'submit';
 
   /** Style of the Button */
-  style: 'normal' | 'outlined' | 'text';
+  btnStyle: 'normal' | 'outlined' | 'text';
 
   /** Button click action */
   onClick?: React.MouseEventHandler<HTMLButtonElement>;
@@ -24,7 +26,15 @@ export type ButtonTypes = {
 
   /** Open link in new tab */
   target_blank?: boolean;
+
+  /** Icon to right side of the button text */
+  iconRight?: string;
+
+  /** Icon to left side of the button text */
+  iconLeft?: string;
+
 };
+
 
 const textClasses = 'rounded outline-none tracking-wider font-bold';
 const normalClassses = `${textClasses} bg-teal-400 text-white`;
@@ -33,15 +43,17 @@ const smallClasses = 'text-xs px-3 py-1';
 const mediumClasses = 'text-md px-4 py-2';
 const largeClasses = 'text-xl px-16 py-4';
 
-export const Button: FC<ButtonTypes> = ({
+export const ButtonWithIcon: FC<ButtonTypes> = ({
   onClick,
-  type,
+  btnType,
   label = 'Button',
-  style = 'normal',
+  btnStyle = 'normal',
   size = 'medium',
   className,
   href,
   target_blank,
+  iconLeft = normalIcon,
+  iconRight
 }) => {
   let btnSize = mediumClasses;
   if (size === 'small') {
@@ -51,9 +63,9 @@ export const Button: FC<ButtonTypes> = ({
   }
 
   let styleType = normalClassses;
-  if (style === 'text') {
+  if (btnStyle === 'text') {
     styleType = textClasses;
-  } else if (style === 'outlined') {
+  } else if (btnStyle === 'outlined') {
     styleType = outlinedClasses;
   }
 
@@ -66,18 +78,18 @@ export const Button: FC<ButtonTypes> = ({
         className={btnVariables}
         target={target_blank ? '_blank' : undefined}
       >
-        {label}
+        <img src={iconLeft} className='inline h-6 mr-3' alt=''/>{label}<img src={iconRight} className='inline h-6' alt=''/>
       </a>
     );
   } else {
     return (
       <button       
-        type={type ? type : 'button'}
+        type={btnType ? btnType : 'button'}
         onClick={onClick} className={btnVariables}>
-        {label}
+        <img src={iconLeft} className='inline h-8' alt=''/>{label}<img src={iconRight} className='inline h-8' alt=''/>
       </button>
     );
   }
 };
 
-export default Button;
+export default ButtonWithIcon;

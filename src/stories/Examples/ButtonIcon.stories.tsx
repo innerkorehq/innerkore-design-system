@@ -1,9 +1,9 @@
 import React from 'react';
-import { ButtonWithIcon, ButtonTypes } from '../../components/Examples/ButtonWithIcon';
+import { ButtonIcon, ButtonTypes } from '../../components/Examples/ButtonIcon';
 
 export default {
-  title: 'Examples/ButtonWithIcon',
-  component: ButtonWithIcon,
+  title: 'Examples/ButtonIcon',
+  component: ButtonIcon,
   argTypes: {
     label: { control: 'text' },
     outlined: { control: 'boolean' },
@@ -13,7 +13,7 @@ export default {
 
 /* eslint-disable @typescript-eslint/explicit-module-boundary-types */
 export const primary = (args: ButtonTypes) => {
-  return <ButtonWithIcon {...args} />;
+  return <ButtonIcon {...args} />;
 };
 
 primary.args = {
