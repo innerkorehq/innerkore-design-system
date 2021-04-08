@@ -2,6 +2,7 @@ import React from 'react';
 import { Button, ButtonTypes } from '../../components/Core/Button';
 import Arrow from '../../../public/img/arrow.svg';
 import Dropdown from '../../../public/img/dropdown.svg';
+import Click from '../../../public/img/click.svg';
 
 export default {
   title: 'Core/Button',
@@ -22,7 +23,7 @@ MediumNormal.args = {
   onClick: function () {
     alert('Button clicked');
   },
-  icon: Arrow,
+  icon: Click,
   // href: 'https//google.com'
 };
 
