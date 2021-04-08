@@ -88,15 +88,7 @@ export const Button: FC<ButtonTypes> = ({
         {icon && align === 'right'? <img src={icon} alt='' className={`inline ${iconStyles} ml-3`}/> : null }
       </a>
     );
-  } else if (type == 'submit') {
-    return (
-      <input 
-        type= 'submit' value={label}
-        onClick={onClick} className={btnStyles}>
-      </input>
-    );
-  }   
-  
+  }
   else {
     return (
       <button       

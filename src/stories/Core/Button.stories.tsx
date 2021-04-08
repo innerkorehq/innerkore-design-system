@@ -3,8 +3,6 @@ import { Button, ButtonTypes } from '../../components/Core/Button';
 import Arrow from '../../../public/img/arrow.svg';
 import Dropdown from '../../../public/img/dropdown.svg';
 
-
-
 export default {
   title: 'Core/Button',
   component: Button,
