@@ -5,7 +5,7 @@ export type ButtonTypes = {
   label: string;
 
   /** Type attribute of button*/
-  type?: 'button' | 'submit';
+  type: 'button' | 'submit' | 'reset';
 
   /** Style of the Button */
   style: 'normal' | 'outlined' | 'text';
