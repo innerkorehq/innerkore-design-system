@@ -1,9 +1,9 @@
 import React from 'react';
 import { action } from '@storybook/addon-actions';
-import { Button, ButtonTypes } from '../components/button';
+import { Button, ButtonTypes } from '../../components/Buttons/button';
 
 export default {
-  title: 'Button',
+  title: 'Buttons/Button',
   component: Button,
   argTypes: {
     label: { control: 'text' },
