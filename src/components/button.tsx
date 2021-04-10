@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import React, { FC } from 'react';
 
 export type ButtonTypes = {
   /**
@@ -17,10 +17,6 @@ export type ButtonTypes = {
    * Button click action
    */
   onClick(): void;
-  /**
-   * appending className to allow user to add extra css
-   */
-  className: string;
 };
 
 const BASE_BUTTON =
@@ -28,12 +24,12 @@ const BASE_BUTTON =
 const CONTAINED_BUTTON = `${BASE_BUTTON} bg-teal-400 border border-teal-400 text-white`;
 const OUTLINED_BUTTON = `${BASE_BUTTON} border border-teal-400 text-teal-400`;
 
-export const Button: FC<ButtonTypes> = ({ onClick, label = 'Some label', outlined, type, className }) => {
+export const Button: FC<ButtonTypes> = ({ onClick, label = 'Some label', outlined, type }) => {
   return (
     <button
       onClick={onClick}
       type={type ? 'button' : 'submit'}
-      className={`${outlined ? OUTLINED_BUTTON : CONTAINED_BUTTON} ${className}`}
+      className={outlined ? OUTLINED_BUTTON : CONTAINED_BUTTON}
     >
       <span>{label}</span>
     </button>
