@@ -1,5 +1,6 @@
 import React from 'react';
 import '../src/scss/tailwind.scss';
+import 'antd/dist/antd.css';
 
 const Layout = ({ children }) => {
   return (
