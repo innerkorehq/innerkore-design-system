@@ -1,6 +1,6 @@
 import React from 'react';
 import '../src/scss/tailwind.scss';
-import 'antd/dist/antd.css';
+import 'antd/dist/antd.less';
 
 const Layout = ({ children }) => {
   return (
