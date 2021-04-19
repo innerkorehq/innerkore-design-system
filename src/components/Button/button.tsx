@@ -29,9 +29,9 @@ import { Button } from 'antd';
 
 export const AppButton = () => {
   return (
-      <Button type="primary" className="bg-green-500 border-0">
-        Primary Button
-      </Button>
+    <Button type="primary" className="bg-green-500 border-0">
+      Primary Button
+    </Button>
   );
 };
 
