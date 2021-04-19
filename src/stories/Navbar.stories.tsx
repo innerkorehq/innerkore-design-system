@@ -13,12 +13,13 @@ export default {
 
 /* eslint-disable @typescript-eslint/explicit-module-boundary-types */
 export const primary = (args: NavbarTypes) => {
-    return <Navbar {...args}/>;
+  return <Navbar {...args} />;
 };
 
 primary.args = {
   label: 'See now sds',
-  logo: 'https://assets.market-storefront.envato.com/storefront/packs/media/images/logos/envato-market-f6121fbbfec25dbc851a3e5aea13c8ad.svg'
-//   onClick: () => action('clicked'),
+  logo:
+    'https://assets.market-storefront.envato.com/storefront/packs/media/images/logos/envato-market-f6121fbbfec25dbc851a3e5aea13c8ad.svg',
+  //   onClick: () => action('clicked'),
 };
 /* eslint-enable @typescript-eslint/explicit-module-boundary-types */
