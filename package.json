@@ -68,6 +68,8 @@
     "eslint-plugin-react": "^7.21.5",
     "eslint-plugin-react-hooks": "^1.7.0",
     "husky": "4",
+    "less": "^4.1.1",
+    "less-loader": "^7.3.0",
     "prettier": "^2.2.1",
     "react-docgen-typescript-loader": "^3.7.2",
     "sass-loader": "^10.1.1"

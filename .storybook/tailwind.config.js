@@ -1,8 +1,8 @@
 module.exports = {
+  important: '#app',
   theme: {
     extend: {},
   },
-  important: "#app",
   variants: {},
   plugins: [],
 }
