@@ -26,5 +26,5 @@ primary.args = {
     { optionTxt: 'Digital Assets Subscription', href: '#' },
     { optionTxt: 'Hire a freelancer', href: '#' },
   ],
-  menuTxt3: 'Sign In',
+  menuIconTxt: 'Sign In',
 };

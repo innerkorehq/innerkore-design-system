@@ -23,13 +23,13 @@ type MenuItemsType = {
 
 export type TopMenuTypes = {
   logo: string;
-  menuTxt3: string;
+  menuIconTxt: string;
   Options: OptionsType[];
   MenuItems: MenuItemsType[];
   dropDownTxt?: string;
 };
 
-export const TopMenu: FC<TopMenuTypes> = ({ logo, menuTxt3, dropDownTxt, Options, MenuItems }) => {
+export const TopMenu: FC<TopMenuTypes> = ({ logo, menuIconTxt, dropDownTxt, Options, MenuItems }) => {
   return (
     <div className="flex justify-between items-center bg-gray-900 py-2 px-5 md:px-20 xl:px-30">
       <div>
@@ -60,9 +60,9 @@ export const TopMenu: FC<TopMenuTypes> = ({ logo, menuTxt3, dropDownTxt, Options
           })}
         </SubMenu>
 
-        <Menu.Item className="border-0 hover:text-white">
+        <Menu.Item className="border-0 hover:text-white bg-gray-800 px-3 rounded">
           <IconFont type="icon-shoppingcart" />
-          {menuTxt3}
+          {menuIconTxt}
         </Menu.Item>
       </Menu>
     </div>
