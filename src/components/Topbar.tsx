@@ -22,7 +22,7 @@ type MenuItemsType = {
 
 export type TopbarTypes = {
   logo: string;
-  menuIconTxt: string;
+  menuIconTxt?: string;
   Options: OptionsType[];
   MenuItems: MenuItemsType[];
   dropDownTxt?: string;
