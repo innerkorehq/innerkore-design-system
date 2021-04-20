@@ -5,9 +5,9 @@
 @import "./theme/components.scss";
 
     .selectedMenuItem {
-        @apply border-b-2 !important;
-        @apply border-white !important;
-        @apply text-white !important;
+        @apply border-b-2;
+        @apply border-white;
+        @apply text-white;
     }
 
 @import "tailwindcss/utilities";

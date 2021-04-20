@@ -21,7 +21,6 @@ export default {
 //       ]
 // }
 
-
 export const PrimaryNavbar = (args: NavbarTypes) => {
   return <Navbar {...args} />;
 };

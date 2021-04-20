@@ -610,13 +610,13 @@ video {
 @import "./theme/components.scss";
 
 .selectedMenuItem {
-  border-bottom-width: 2px !important;
-  --border-opacity: 1 !important;
-  border-color: #fff !important;
-  border-color: rgba(255, 255, 255, var(--border-opacity)) !important;
-  --text-opacity: 1 !important;
-  color: #fff !important;
-  color: rgba(255, 255, 255, var(--text-opacity)) !important;
+  border-bottom-width: 2px;
+  --border-opacity: 1;
+  border-color: #fff;
+  border-color: rgba(255, 255, 255, var(--border-opacity));
+  --text-opacity: 1;
+  color: #fff;
+  color: rgba(255, 255, 255, var(--text-opacity));
 }
 
 #app .space-y-0 > :not(template) ~ :not(template){

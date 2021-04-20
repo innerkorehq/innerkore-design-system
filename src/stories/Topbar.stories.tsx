@@ -25,7 +25,6 @@ export default {
 //   menuIconTxt: 'Sign In',
 // }
 
-
 export const PrimaryTopbar = (args: TopbarTypes) => {
   return <Topbar {...args} />;
 };
