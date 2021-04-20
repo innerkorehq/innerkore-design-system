@@ -1,16 +1,13 @@
 import React from 'react';
-// import { action } from '@storybook/addon-actions';
-import { TopMenu, TopMenuTypes } from '../components/Menu';
-import Icon from '../../public/img/menu.svg';
-import btnIcon from '../../public/img/cart.svg';
+import { Topbar, TopbarTypes } from '../components/Topbar';
 
 export default {
-  title: 'TopMenu',
-  component: TopMenu,
+  title: 'Topbar',
+  component: Topbar,
 };
 
-export const primary = (args: TopMenuTypes) => {
-  return <TopMenu {...args} />;
+export const primary = (args: TopbarTypes) => {
+  return <Topbar {...args} />;
 };
 
 primary.args = {

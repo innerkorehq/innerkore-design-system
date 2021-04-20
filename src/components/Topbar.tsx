@@ -1,7 +1,6 @@
 import React, { FC } from 'react';
 import { Menu } from 'antd';
 import { AppstoreOutlined, createFromIconfontCN } from '@ant-design/icons';
-import Logo from '../../public/img/envato-market-white.png';
 
 const IconFont = createFromIconfontCN({
   scriptUrl: [
@@ -21,7 +20,7 @@ type MenuItemsType = {
   href: string;
 };
 
-export type TopMenuTypes = {
+export type TopbarTypes = {
   logo: string;
   menuIconTxt: string;
   Options: OptionsType[];
@@ -29,7 +28,7 @@ export type TopMenuTypes = {
   dropDownTxt?: string;
 };
 
-export const TopMenu: FC<TopMenuTypes> = ({ logo, menuIconTxt, dropDownTxt, Options, MenuItems }) => {
+export const Topbar: FC<TopbarTypes> = ({ logo, menuIconTxt, dropDownTxt, Options, MenuItems }) => {
   return (
     <div className="flex justify-between items-center bg-gray-900 py-2 px-5 md:px-20 xl:px-30">
       <div>
@@ -69,4 +68,4 @@ export const TopMenu: FC<TopMenuTypes> = ({ logo, menuIconTxt, dropDownTxt, Opti
   );
 };
 
-export default TopMenu;
+export default Topbar;

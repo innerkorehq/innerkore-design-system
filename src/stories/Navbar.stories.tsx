@@ -1,8 +1,5 @@
 import React from 'react';
-// import { action } from '@storybook/addon-actions';
 import { Navbar, NavbarTypes } from '../components/Navbar';
-import Icon from '../../public/img/menu.svg';
-import BtnIcon from '../../public/img/cart.svg';
 
 export default {
   title: 'Navbar',
@@ -14,14 +11,13 @@ export const primary = (args: NavbarTypes) => {
 };
 
 primary.args = {
-  NavItems: [
-    { navTxt: 'Forums', href: '#' },
-    { navTxt: 'Start Selling', href: '#' },
+  MenuItems: [
+    { menuTxt: 'Web Themes and Templates', href: '#' },
+    { menuTxt: 'Code', href: '#' },
+    { menuTxt: 'Video', href: '#' },
+    { menuTxt: 'Audio', href: '#' },
+    { menuTxt: 'Graphics', href: '#' },
+    { menuTxt: 'Photos', href: '#' },
+    { menuTxt: '3D Files', href: '#' },
   ],
-  logo:
-    'https://assets.market-storefront.envato.com/storefront/packs/media/images/logos/envato-market-f6121fbbfec25dbc851a3e5aea13c8ad.svg',
-  dropDownIcon: Icon,
-  btnIcon: BtnIcon,
-  dropDownTxt: 'Our Products',
-  btnTxt: 'Sign In',
 };
