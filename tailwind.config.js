@@ -3,6 +3,10 @@ module.exports = {
     extend: {},
   },
   important: "#app",
-  variants: {},
+  variants: {
+    extend: {
+      fill: ['hover', 'focus'],
+    }
+  },
   plugins: [],
 }
