@@ -22,8 +22,12 @@ type MenuItemsType = {
 };
 
 export type TopMenuTypes = {
-  logo: string;
-  dropDownIcon?: string;
+    logo: string;
+    menuTxt1: string;
+  menuTxt2?: string;
+  menuTxt3: string;
+  option1Txt: string;
+  option2Txt: string;
   NavItems: NavItemsType[];
   MenuItems: MenuItemsType[];
   btnIcon?: string;
@@ -32,36 +36,31 @@ export type TopMenuTypes = {
 };
 
 export const TopMenu: FC<TopMenuTypes> = ({
-  NavItems,
-  logo,
-  dropDownIcon,
-  btnIcon,
+    logo,
+    menuTxt1,
+    menuTxt2,
+    menuTxt3,
   dropDownTxt,
-  btnTxt,
+  option1Txt,
+  option2Txt
 }) => {
   return (
-    <div className='flex justify-between items-center bg-gray-900'>
+    <div className="flex justify-between items-center bg-gray-900 py-2 px-5 md:px-20 xl:px-30">
         <div>
-            <img src={Logo} alt="" className="h-5" />
+            <img src={logo} alt="" className="h-5" />
         </div>
-        <div>
-            <Menu mode="horizontal" className="bg-gray-900 text-gray-300">
-                <Menu.Item key="11">Option 11</Menu.Item>
-                <Menu.Item key="12">Option 12</Menu.Item>
-                <SubMenu key="sub2" icon={<AppstoreOutlined />} title="Navigation Two">
-                    <Menu.Item key="5">Option 5</Menu.Item>
-                    <Menu.Item key="6">Option 6</Menu.Item>
-                    <SubMenu key="sub3" title="Submenu">
-                        <Menu.Item key="7">Option 7</Menu.Item>
-                        <Menu.Item key="8">Option 8</Menu.Item>
-                    </SubMenu>
-                </SubMenu>
-                <Menu.Item key="11">
-                    <IconFont type="icon-shoppingcart" />
-                    Option 11
-                </Menu.Item>
-            </Menu>
-        </div>
+        <Menu mode="horizontal" className="bg-gray-900 text-gray-300 border-0">
+          <Menu.Item className='border-0 hover:text-white'>{menuTxt1}</Menu.Item>
+          <Menu.Item className='border-0 hover:text-white'>{menuTxt2}</Menu.Item>
+          <SubMenu icon={<AppstoreOutlined />} title={dropDownTxt} className='border-0 hover:text-white'>
+            <Menu.Item>{option1Txt}</Menu.Item>
+            <Menu.Item>{option2Txt}</Menu.Item>
+          </SubMenu>
+          <Menu.Item className='border-0 hover:text-white'>
+            <IconFont type="icon-shoppingcart" />
+            {menuTxt3}
+          </Menu.Item>
+        </Menu>
     </div>
   );
 };

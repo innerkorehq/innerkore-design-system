@@ -13,15 +13,18 @@ export const primary = (args: TopMenuTypes) => {
   return <TopMenu {...args} />;
 };
 
-// primary.args = {
+primary.args = {
 //   navItems: [
 //     { navTxt: 'Forums', href: '#' },
 //     { navTxt: 'Start Selling', href: '#' },
 //   ],
-//   logo:
-//     'https://assets.market-storefront.envato.com/storefront/packs/media/images/logos/envato-market-f6121fbbfec25dbc851a3e5aea13c8ad.svg',
-//   dropDownIcon: Icon,
-//   btnIcon: btnIcon,
-//   dropDownTxt: 'Our Products',
-//   btnTxt: 'Sign In',
-// };
+  logo:
+    'https://assets.market-storefront.envato.com/storefront/packs/media/images/logos/envato-market-f6121fbbfec25dbc851a3e5aea13c8ad.svg',
+    menuTxt1: 'Forums',
+    menuTxt2: 'Start Selling',
+    dropDownTxt: 'Our Products',
+    menuTxt3: 'Sign In',
+    option1Txt: 'Digital Assets Subscription',
+    option2Txt: 'Hire a freelancer',
+
+};
