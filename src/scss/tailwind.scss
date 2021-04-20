@@ -609,6 +609,16 @@ video {
 
 @import "./theme/components.scss";
 
+.selectedMenuItem {
+  border-bottom-width: 2px !important;
+  --border-opacity: 1 !important;
+  border-color: #fff !important;
+  border-color: rgba(255, 255, 255, var(--border-opacity)) !important;
+  --text-opacity: 1 !important;
+  color: #fff !important;
+  color: rgba(255, 255, 255, var(--text-opacity)) !important;
+}
+
 #app .space-y-0 > :not(template) ~ :not(template){
   --space-y-reverse: 0;
   margin-top: calc(0px * calc(1 - var(--space-y-reverse)));
@@ -93581,3 +93591,5 @@ video {
     animation: bounce 1s infinite;
   }
 }
+
+

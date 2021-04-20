@@ -4,5 +4,13 @@
 @import "tailwindcss/components";
 @import "./theme/components.scss";
 
+    .selectedMenuItem {
+        @apply border-b-2 !important;
+        @apply border-white !important;
+        @apply text-white !important;
+    }
+
 @import "tailwindcss/utilities";
 @import "./theme/utilities.scss";
+
+

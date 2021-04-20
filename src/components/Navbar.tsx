@@ -22,11 +22,11 @@ export const Navbar: FC<NavbarTypes> = ({ MenuItems }) => {
         {MenuItems.map(({ menuTxt, href }, index) => {
           return (
             <Menu.Item
-              key={'key' + index}
-              className={`border-0 ${index + 'key' === current ? 'selectedMenuItem' : 'key'}`}
+              key={'' + index}
+              className='border-0'
               onClick={() => setCurrent('' + index)}
             >
-              <a href={href} className="text-gray-400 hover:text-white text-lg">
+              <a href={href} className={`text-gray-400 hover:text-white text-lg py-4 ${index + '' === current ? 'selectedMenuItem' : ''}`}>
                 {menuTxt}
               </a>
             </Menu.Item>
