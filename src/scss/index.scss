@@ -16,15 +16,20 @@
                 @apply text-white;
             }
         }
-        .ant-menu-item {
-            .option-link {
-                @apply text-gray-700;
-                
-                &:hover {
-                    @apply text-black;
+        .ant-menu-submenu {
+            .ant-menu-item {
+                @apply h-auto !important;
+                @apply w-auto !important;
+                .option-link {
+                    @apply text-gray-700;
+                    
+                    &:hover {
+                        @apply text-black;
+                    }
                 }
             }
         }
+        
     }
 
 

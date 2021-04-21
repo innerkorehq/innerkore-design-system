@@ -3,7 +3,7 @@ import { PrimaryTopbar } from './Topbar.stories';
 import { PrimaryNavbar } from './Navbar.stories';
 
 export default {
-  title: 'Form/Subscription',
+  title: 'Header',
 };
 export const Header = () => (
   <>
@@ -19,14 +19,8 @@ export const Header = () => (
         },
       ]}
       Options={[
-        {
-          href: '#',
-          optionTxt: 'Digital Assets Subscription',
-        },
-        {
-          href: '#',
-          optionTxt: 'Hire a freelancer',
-        },
+        { optionTxt: 'Digital Assets Subscription', href: '#', logoInOption: 'https://assets.market-storefront.envato.com/storefront/packs/media/images/logos/envato-elements-4de52b67c96ca63c1b764d39b573a7af.svg'},
+        { optionTxt: 'Hire a freelancer', href: '#', logoInOption: 'https://assets.market-storefront.envato.com/storefront/packs/media/images/logos/envato-studio-df1d5447eb8bd2d54ef22aa4b03d160a.svg'},
       ]}
       dropDownTxt="Our Products"
       logo="https://assets.market-storefront.envato.com/storefront/packs/media/images/logos/envato-market-f6121fbbfec25dbc851a3e5aea13c8ad.svg"

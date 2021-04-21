@@ -13,6 +13,7 @@ const { SubMenu } = Menu;
 type OptionsType = {
   optionTxt: string;
   href: string;
+  logoInOption: string;
 };
 
 type MenuItemsType = {
@@ -46,10 +47,11 @@ export const Topbar: FC<TopbarTypes> = ({ logo, menuIconTxt, dropDownTxt, Option
         })}
 
         <SubMenu icon={<AppstoreOutlined />} title={dropDownTxt} className="border-0">
-          {Options.map(({ optionTxt, href }, index) => {
+          {Options.map(({ optionTxt, href, logoInOption }, index) => {
             return (
-              <Menu.Item>
-                <a href={href} className="option-link">
+              <Menu.Item className=''>
+                <img src={logoInOption} alt="" className='block h-3'/>
+                <a href={href} className="option-link block px-10 py-10">
                   {optionTxt}
                 </a>
               </Menu.Item>

@@ -626,15 +626,19 @@ body {
       color: rgba(255, 255, 255, var(--text-opacity));
     }
   }
-  .ant-menu-item {
-    .option-link {
-      --text-opacity: 1;
-      color: #4a5568;
-      color: rgba(74, 85, 104, var(--text-opacity));
-      &:hover {
+  .ant-menu-submenu {
+    .ant-menu-item {
+      height: auto !important;
+      width: auto !important;
+      .option-link {
         --text-opacity: 1;
-        color: #000;
-        color: rgba(0, 0, 0, var(--text-opacity));
+        color: #4a5568;
+        color: rgba(74, 85, 104, var(--text-opacity));
+        &:hover {
+          --text-opacity: 1;
+          color: #000;
+          color: rgba(0, 0, 0, var(--text-opacity));
+        }
       }
     }
   }
