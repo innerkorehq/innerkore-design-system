@@ -1,7 +1,14 @@
 import React, { FC, useState } from 'react';
 import { Drawer, Button } from 'antd';
 
-export const DrawerBar: React.FC = () => {   
+export type DrawerBarTypes = {
+    imgSrcIconLeft: string;
+    imgSrcIconRight: string;
+
+  };
+
+
+export const DrawerBar: FC<DrawerBarTypes> = ({ imgSrcIconLeft, imgSrcIconRight }) => {
     const [visible1, setVisible1] = useState(false);
     const [visible2, setVisible2] = useState(false);
 
@@ -19,9 +26,9 @@ export const DrawerBar: React.FC = () => {
     };
 
   return (
-    <div className='flex justify-between bg-gray-800 py-2'>
+    <div className='flex justify-between bg-gray-800 py-2 block lg:hidden'>
       <Button type="primary" onClick={showDrawer1} className='ml-4 bg-gray-700 border-0'>
-        Open
+        <img src={imgSrcIconLeft} alt="" className='block h-5'/>
       </Button>
       <Drawer
         title="Basic Drawer"
@@ -36,7 +43,7 @@ export const DrawerBar: React.FC = () => {
       </Drawer>
 
       <Button type="primary" onClick={showDrawer2} className='mr-4 bg-gray-700 border-0'>
-        Open
+        <img src={imgSrcIconRight} alt="" className='block h-5'/>
       </Button>
       <Drawer
         title="Basic Drawer"
