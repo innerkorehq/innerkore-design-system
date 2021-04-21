@@ -6,32 +6,35 @@ const { Option } = Select;
 export type DrawerLeftTypes = {
     imgSrcIconLeft: string;
     imgSrcIconRight: string;
-    MenuItems: MenuItemsType[];
+    SelectOptions: SelectOptionsType[];
 };
 
-type MenuItemsType = {
-    menuTxt: string;
-    href: string;
-    iconImgSrc: string;
+type SelectOptionsType = {
+    optionTxt: string;
 };
 
-export const DrawerLeft: FC<DrawerLeftTypes> = ({ imgSrcIconLeft }) => {
+export const DrawerLeft: FC<DrawerLeftTypes> = ({ imgSrcIconLeft, SelectOptions }) => {
     const [visible, setVisible] = useState(false);
 
     const showDrawer = () => {
         setVisible(true);
     };
+   
     const onClose = () => {
         setVisible(false);
     };
+
+    const [current, setCurrent] = useState('0');
     
     let title = 
     <>
         <div style={{margin: '1rem 3rem'}}><img src='https://assets.market-storefront.envato.com/storefront/packs/media/images/logos/envato-market-f6121fbbfec25dbc851a3e5aea13c8ad.svg' alt='' style={{height: 15}}></img></div>     
-        <Select defaultValue="lucy" style={{ width: '100%'}}>
-            <Option value="jack">Jack</Option>
-            <Option value="Yiminghe">yiminghe</Option>
-            <Option value="Yiming">yiminghe</Option>
+        <Select defaultValue={[current]} onClick={() => setCurrent('' + index)} style={{ width: '100%'}}>
+            {SelectOptions.map(({ optionTxt}, index) => {
+                return (
+                    <Option value={'' + index}>{optionTxt}</Option>
+                );
+                })}
         </Select>
     </>
     return (

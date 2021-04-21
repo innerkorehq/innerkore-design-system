@@ -13,7 +13,7 @@ type MenuItemsType = {
     iconImgSrc: string;
 };
 
-export const DrawerRight: FC<DrawerRightTypes> = ({ imgSrcIconLeft, imgSrcIconRight, MenuItems }) => {
+export const DrawerRight: FC<DrawerRightTypes> = ({ imgSrcIconRight, MenuItems }) => {
     const [visible, setVisible] = useState(false);
 
     const showDrawer = () => {
