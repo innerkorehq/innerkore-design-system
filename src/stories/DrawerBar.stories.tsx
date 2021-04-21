@@ -1,6 +1,10 @@
 import React from 'react';
 import { DrawerBar, DrawerBarTypes } from '../components/DrawerBar';
 import User from '../../public/img/user.svg';
+import Menu from '../../public/img/drawer-menu.svg';
+import Cart from "../../public/img/cart.svg";
+import Envato from "../../public/img/envato.svg";
+import Signin from "../../public/img/sign-in.svg";
 
 export default {
   title: 'DrawerBar',
@@ -12,12 +16,11 @@ export const PrimaryDrawerBar = (args: DrawerBarTypes) => {
   };
   
   PrimaryDrawerBar.args = {
-    imgSrcIconLeft: User,
-    imgSrcIconRight: User
-    // MenuItems: [
-    //   { TabName: 'Web Themes and Templates', TabContent: 'Content of tab 1' },
-    //   { TabName: 'Code', TabContent: 'Content of tab 2' },
-    //   { TabName: 'Video', TabContent: 'Content of tab 3' },
-    //   { TabName: 'Audio', TabContent: 'Content of tab 4' },
-    // ],
+    imgSrcIconLeft: Menu,
+    imgSrcIconRight: User,
+    MenuItems: [
+      { menuTxt: 'Guest Cart', href: '#', iconImgSrc: Cart },
+      { menuTxt: 'Create an Envato Account', href: '#', iconImgSrc: Envato },
+      { menuTxt: 'Sign In', href: '#', iconImgSrc: Signin },
+    ],
   };
