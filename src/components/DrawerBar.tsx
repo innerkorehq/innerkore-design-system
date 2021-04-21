@@ -36,11 +36,16 @@ export const DrawerBar: FC<DrawerBarTypes> = ({ imgSrcIconLeft, imgSrcIconRight,
         <img src={imgSrcIconLeft} alt="" className='block h-4'/>
       </Button>
       <Drawer
-        title="Basic Drawer"
+        title=
+            {<img src='https://assets.market-storefront.envato.com/storefront/packs/media/images/logos/envato-market-f6121fbbfec25dbc851a3e5aea13c8ad.svg' alt='' style={{height: 15}}></img>      
+        }
         placement="left"
         closable={true}
         onClose={onClose}
         visible={visible1}
+        mask={true}
+        drawerStyle={{backgroundColor: '#2d3748'}}
+        headerStyle={{backgroundColor: '#2d3748', borderBottom: 0}}
       >
         {/* {MenuItems.map(({ menuTxt, href, iconImgSrc }, index) => {
           return (
