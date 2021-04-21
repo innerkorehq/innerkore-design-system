@@ -4,11 +4,29 @@
 @import "tailwindcss/components";
 @import "./theme/components.scss";
 
-    .selectedMenuItem {
-        @apply border-b-2;
-        @apply border-white;
-        @apply text-white;
+    body {
+        #story-root {
+            .ant-menu-submenu-title:hover {
+                @apply text-white;
+            }
+
+            .selectedMenuItem {
+                @apply border-b-2;
+                @apply border-white;
+                @apply text-white;
+            }
+        }
+        .ant-menu-item {
+            .option-link {
+                @apply text-gray-700;
+                
+                &:hover {
+                    @apply text-black;
+                }
+            }
+        }
     }
+
 
 @import "tailwindcss/utilities";
 @import "./theme/utilities.scss";

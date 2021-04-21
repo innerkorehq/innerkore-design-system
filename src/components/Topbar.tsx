@@ -45,15 +45,13 @@ export const Topbar: FC<TopbarTypes> = ({ logo, menuIconTxt, dropDownTxt, Option
           );
         })}
 
-        <SubMenu
-          icon={<AppstoreOutlined />}
-          title={dropDownTxt}
-          className="border-0 hover:text-white"
-        >
+        <SubMenu icon={<AppstoreOutlined />} title={dropDownTxt} className="border-0">
           {Options.map(({ optionTxt, href }, index) => {
             return (
               <Menu.Item>
-                <a href={href}>{optionTxt}</a>
+                <a href={href} className="option-link">
+                  {optionTxt}
+                </a>
               </Menu.Item>
             );
           })}

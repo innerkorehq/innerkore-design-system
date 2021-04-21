@@ -1,6 +1,6 @@
 import React from 'react';
-import { PrimaryTopbar } from '../stories/Topbar.stories';
-import { PrimaryNavbar } from '../stories/Navbar.stories';
+import { PrimaryTopbar } from './Topbar.stories';
+import { PrimaryNavbar } from './Navbar.stories';
 
 export default {
   title: 'Form/Subscription',

@@ -21,12 +21,13 @@ export const Navbar: FC<NavbarTypes> = ({ MenuItems }) => {
       >
         {MenuItems.map(({ menuTxt, href }, index) => {
           return (
-            <Menu.Item
-              key={'' + index}
-              className='border-0'
-              onClick={() => setCurrent('' + index)}
-            >
-              <a href={href} className={`text-gray-400 hover:text-white text-lg py-4 ${index + '' === current ? 'selectedMenuItem' : ''}`}>
+            <Menu.Item key={'' + index} className="border-0" onClick={() => setCurrent('' + index)}>
+              <a
+                href={href}
+                className={`text-gray-400 hover:text-white text-lg py-4 ${
+                  index + '' === current ? 'selectedMenuItem' : ''
+                }`}
+              >
                 {menuTxt}
               </a>
             </Menu.Item>
