@@ -1,10 +1,14 @@
 .ant-menu-submenu-title:hover {  
     color: white !important;
 }
+.ant-menu-submenu-popup > .ant-menu{
+    padding: 1.5rem;
+}
 
 .ant-menu-submenu .ant-menu-item {
     height: auto !important;
     width: auto;
+    /* padding: 40px; */
 }
 
 .option-link {
