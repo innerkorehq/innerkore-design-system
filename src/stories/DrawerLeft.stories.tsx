@@ -13,10 +13,12 @@ export const PrimaryDrawerLeft = (args: DrawerLeftTypes) => {
   
   PrimaryDrawerLeft.args = {
     imgSrcIconLeft: Menu,
-    SelectOptions: [{optionTxt: 'Web Themes & Template'}, {optionTxt: 'Code'}, {optionTxt: 'Video'}, {optionTxt: 'Audio'}, {optionTxt: 'Photos'}, {optionTxt: '3D Files'}]
-    // MenuItems: [
-    //   { menuTxt: 'Guest Cart', href: '#', iconImgSrc: Cart },
-    //   { menuTxt: 'Create an Envato Account', href: '#', iconImgSrc: Envato },
-    //   { menuTxt: 'Sign In', href: '#', iconImgSrc: Signin },
-    // ],
+    SelectOptions: [{optionTxt: 'Web Themes & Template', href: '#'}, {optionTxt: 'Code', href: '#'}, {optionTxt: 'Video', href: '#'}, {optionTxt: 'Audio', href: '#'}, {optionTxt: 'Photos', href: '#'}, {optionTxt: '3D Files', href: '#'}],
+    // PanelHeaders: ['Header 1', 'Header 2', 'Header 3'],
+    // PanelItems: [
+    //   { panelTxt: 'Guest Cart', href: '#' },
+    //   { panelTxt: 'Create an Envato Account', href: '#' },
+    //   { panelTxt: 'Sign In', href: '#'}
+    // ]
+    PanelHeaders: [{'Header 1': {panelTxt: 'Guest Cart', href: '#'},},]
   };

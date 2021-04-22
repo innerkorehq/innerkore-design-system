@@ -4,35 +4,6 @@
 @import "tailwindcss/components";
 @import "./theme/components.scss";
 
-    body {
-        #story-root {
-            .ant-menu-submenu-title:hover {  //For Topbar.tsx
-                @apply text-white;
-            }
-
-            .selectedMenuItem {    //For Navbar.tsx
-                @apply border-b-2;
-                @apply border-white;
-                @apply text-white;
-            }
-        }
-        .ant-menu-submenu {   //For Topbar.tsx
-            .ant-menu-item {
-                @apply h-auto !important;
-                @apply w-auto !important;
-                .option-link {
-                    @apply text-gray-700;
-                    
-                    &:hover {
-                        @apply text-black;
-                    }
-                }
-            }
-        }
-        
-    }
-
-
 @import "tailwindcss/utilities";
 @import "./theme/utilities.scss";
 

@@ -1,0 +1,16 @@
+.ant-menu-submenu-title:hover {  
+    color: white !important;
+}
+
+.ant-menu-submenu .ant-menu-item {
+    height: auto !important;
+    width: auto;
+}
+
+.option-link {
+    color: rgb(92, 91, 91) !important;
+}
+        
+.option-link:hover {
+   color: black !important;
+}

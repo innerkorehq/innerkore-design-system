@@ -1,5 +1,5 @@
 import React from 'react';
-import { Navbar, NavbarTypes } from '../components/Navbar';
+import { Navbar, NavbarTypes } from '../components/Navbar/Navbar';
 
 export default {
   title: 'Navbar',

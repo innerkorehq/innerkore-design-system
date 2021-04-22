@@ -609,41 +609,6 @@ video {
 
 @import "./theme/components.scss";
 
-body {
-  #story-root {
-    .ant-menu-submenu-title:hover {
-      --text-opacity: 1;
-      color: #fff;
-      color: rgba(255, 255, 255, var(--text-opacity));
-    }
-    .selectedMenuItem {
-      border-bottom-width: 2px;
-      --border-opacity: 1;
-      border-color: #fff;
-      border-color: rgba(255, 255, 255, var(--border-opacity));
-      --text-opacity: 1;
-      color: #fff;
-      color: rgba(255, 255, 255, var(--text-opacity));
-    }
-  }
-  .ant-menu-submenu {
-    .ant-menu-item {
-      height: auto !important;
-      width: auto !important;
-      .option-link {
-        --text-opacity: 1;
-        color: #4a5568;
-        color: rgba(74, 85, 104, var(--text-opacity));
-        &:hover {
-          --text-opacity: 1;
-          color: #000;
-          color: rgba(0, 0, 0, var(--text-opacity));
-        }
-      }
-    }
-  }
-}
-
 #app .space-y-0 > :not(template) ~ :not(template){
   --space-y-reverse: 0;
   margin-top: calc(0px * calc(1 - var(--space-y-reverse)));

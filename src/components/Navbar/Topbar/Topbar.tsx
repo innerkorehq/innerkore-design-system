@@ -1,6 +1,7 @@
 import React, { FC } from 'react';
 import { Menu } from 'antd';
 import { AppstoreOutlined, createFromIconfontCN } from '@ant-design/icons';
+import './Topbar.css';
 
 const IconFont = createFromIconfontCN({
   scriptUrl: [
