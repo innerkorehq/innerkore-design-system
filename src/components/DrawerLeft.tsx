@@ -1,10 +1,11 @@
 import React, { FC, useState } from 'react';
 import { Drawer, Button } from 'antd';
 import { Select } from 'antd';
-// import { Input } from 'antd';
+import { Input, Space } from 'antd';
+import './DrawerLeft.css';
 
 const { Option } = Select;
-// const { Search } = Input;
+const { Search } = Input;
 
 export type DrawerLeftTypes = {
     imgSrcIconLeft: string;
@@ -35,7 +36,8 @@ export const DrawerLeft: FC<DrawerLeftTypes> = ({ imgSrcIconLeft, SelectOptions 
         onClick={() => setCurrent('' + index)}
         dropdownStyle={{padding: 0}}
         listHeight={400}
-        style={{ width: '100%'}}
+        style={{ width: '100%' }}
+        size={'large'}
         >
             {SelectOptions.map(({ optionTxt}, index) => {
                 return (
@@ -47,7 +49,9 @@ export const DrawerLeft: FC<DrawerLeftTypes> = ({ imgSrcIconLeft, SelectOptions 
                 );
                 })}
         </Select>
-        {/* <Search placeholder="input search text" style={{ width: 200 }} /> */}
+        <Space direction="vertical" style={{padding: '20px 0', margin: '0 14px'}}>
+            <Search placeholder="Search" style={{ width: 230 }}/>
+        </Space>
     </>
     return (
         <>
