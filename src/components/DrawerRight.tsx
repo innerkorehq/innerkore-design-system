@@ -2,7 +2,6 @@ import React, { FC, useState } from 'react';
 import { Drawer, Button } from 'antd';
 
 export type DrawerRightTypes = {
-    imgSrcIconLeft: string;
     imgSrcIconRight: string;
     MenuItems: MenuItemsType[];
 };

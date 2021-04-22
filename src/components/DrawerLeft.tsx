@@ -1,11 +1,13 @@
 import React, { FC, useState } from 'react';
 import { Drawer, Button } from 'antd';
 import { Select } from 'antd';
+// import { Input } from 'antd';
+
 const { Option } = Select;
+// const { Search } = Input;
 
 export type DrawerLeftTypes = {
     imgSrcIconLeft: string;
-    imgSrcIconRight: string;
     SelectOptions: SelectOptionsType[];
 };
 
@@ -29,13 +31,23 @@ export const DrawerLeft: FC<DrawerLeftTypes> = ({ imgSrcIconLeft, SelectOptions 
     let title = 
     <>
         <div style={{margin: '1rem 3rem'}}><img src='https://assets.market-storefront.envato.com/storefront/packs/media/images/logos/envato-market-f6121fbbfec25dbc851a3e5aea13c8ad.svg' alt='' style={{height: 15}}></img></div>     
-        <Select defaultValue={[current]} onClick={() => setCurrent('' + index)} style={{ width: '100%'}}>
+        <Select defaultValue={[current]}
+        onClick={() => setCurrent('' + index)}
+        dropdownStyle={{padding: 0}}
+        listHeight={400}
+        style={{ width: '100%'}}
+        >
             {SelectOptions.map(({ optionTxt}, index) => {
                 return (
-                    <Option value={'' + index}>{optionTxt}</Option>
+                    <Option value={'' + index} 
+                    style={{backgroundColor: '#2d3748', color:'white', padding: '1rem', margin: 0, fontSize: '1rem'}}
+                    >
+                    {optionTxt}
+                    </Option>
                 );
                 })}
         </Select>
+        {/* <Search placeholder="input search text" style={{ width: 200 }} /> */}
     </>
     return (
         <>

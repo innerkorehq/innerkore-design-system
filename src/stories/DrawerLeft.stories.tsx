@@ -13,7 +13,7 @@ export const PrimaryDrawerLeft = (args: DrawerLeftTypes) => {
   
   PrimaryDrawerLeft.args = {
     imgSrcIconLeft: Menu,
-    SelectOptions: [{optionTxt: 'any'}, {optionTxt: 'any2'}]
+    SelectOptions: [{optionTxt: 'Web Themes & Template'}, {optionTxt: 'Code'}, {optionTxt: 'Video'}, {optionTxt: 'Audio'}, {optionTxt: 'Photos'}, {optionTxt: '3D Files'}]
     // MenuItems: [
     //   { menuTxt: 'Guest Cart', href: '#', iconImgSrc: Cart },
     //   { menuTxt: 'Create an Envato Account', href: '#', iconImgSrc: Envato },

@@ -1,7 +1,6 @@
 import React from 'react';
 import { DrawerRight, DrawerRightTypes } from '../components/DrawerRight';
 import User from '../../public/img/user.svg';
-import Menu from '../../public/img/drawer-menu.svg';
 import Cart from "../../public/img/cart.svg";
 import Envato from "../../public/img/envato.svg";
 import Signin from "../../public/img/sign-in.svg";
@@ -16,7 +15,6 @@ export const PrimaryDrawerRight = (args: DrawerRightTypes) => {
   };
   
   PrimaryDrawerRight.args = {
-    imgSrcIconLeft: Menu,
     imgSrcIconRight: User,
     MenuItems: [
       { menuTxt: 'Guest Cart', href: '#', iconImgSrc: Cart },
