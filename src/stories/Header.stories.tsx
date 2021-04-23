@@ -3,7 +3,7 @@ import { PrimaryTopbar } from './Topbar.stories';
 import { PrimaryNavbar } from './Navbar.stories';
 
 export default {
-  title: 'Header',
+  title: 'Desktop/Header',
 };
 export const Header = () => (
   <>

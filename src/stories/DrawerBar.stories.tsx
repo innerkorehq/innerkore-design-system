@@ -7,7 +7,7 @@ import Envato from "../../public/img/envato.svg";
 import Signin from "../../public/img/sign-in.svg";
 
 export default {
-  title: 'DrawerBar',
+  title: 'Mobile/DrawerBar',
   component: DrawerBar,
 };
 

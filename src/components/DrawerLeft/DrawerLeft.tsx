@@ -13,8 +13,8 @@ const { Panel } = Collapse;
 export type DrawerLeftTypes = {
     imgSrcIconLeft: string;
     SelectOptions: SelectOptionsType[];
-    PanelHeaders: PanelHeadersType[];
-    PanelItems: PanelItemsType[];
+    PanelChildren: PanelChildrenType[];
+    Panels: PanelsType[];
 };
 
 type SelectOptionsType = {
@@ -22,16 +22,27 @@ type SelectOptionsType = {
     href: string;
 };
 
-type PanelHeadersType = {
+type PanelsType = {
+    // item: itemType;
     panelHeader: string;
+    PanelChildren: PanelChildrenType[];
 }
+// type itemType = {
+//     panelHeader: string;
+//     subItem: subItemType;
+// }
+// type subItemType = {
+//     panelLink: string; 
+//     href: string;
+// }
 
-type PanelItemsType = {
-    panelTxt: string;
+type PanelChildrenType = {
+    panelLink: string;
     href: string;
 }
 
-export const DrawerLeft: FC<DrawerLeftTypes> = ({ imgSrcIconLeft, SelectOptions, PanelHeaders, PanelItems }) => {
+export const DrawerLeft: FC<DrawerLeftTypes> = ({ imgSrcIconLeft, SelectOptions, Panels, PanelChildren }) => {
+
     const [visible, setVisible] = useState(false);
 
     const showDrawer = () => {
@@ -43,12 +54,6 @@ export const DrawerLeft: FC<DrawerLeftTypes> = ({ imgSrcIconLeft, SelectOptions,
     };
 
     const [current, setCurrent] = useState('0');
-
-    const text = `
-  A dog is a type of domesticated animal.
-  Known for its loyalty and faithfulness,
-  it can be found as a welcome guest in many households across the world.
-`;
     
     let title = 
     <>
@@ -74,6 +79,7 @@ export const DrawerLeft: FC<DrawerLeftTypes> = ({ imgSrcIconLeft, SelectOptions,
             <Search placeholder="Search" style={{ width: 230 }}/>
         </Space>
     </>
+
     return (
         <>
           <Button type="primary" onClick={showDrawer} className='ml-3 bg-gray-700 border-0'>
@@ -92,15 +98,15 @@ export const DrawerLeft: FC<DrawerLeftTypes> = ({ imgSrcIconLeft, SelectOptions,
         >
              <Collapse
                 bordered={false}
-                defaultActiveKey={['0']}
                 expandIcon={({ isActive }) => <CaretRightOutlined rotate={isActive ? 90 : 0} />}
                 className="site-collapse-custom-collapse"
+                style={{background: '#3d4b62'}}
             >
-                {PanelHeaders.map((panelHeader) => {
+                {Panels.map(({panelHeader, PanelChildren}, index) => {
                     return (
-                        <Panel header={panelHeader} key="1" className="site-collapse-custom-panel">
-                            {PanelItems.map(({panelTxt, href}, index) => {
-                                <a href={href}>{panelTxt}</a>
+                        <Panel header={panelHeader} key={'' + index} className="site-collapse-custom-panel" style={{color: 'white'}}>
+                            {PanelChildren.map(({panelLink, href}, index) => {
+                                return <a href={href} style={{display: 'block', color: 'white'} }>{panelLink}</a>
                             })}
                         </Panel>
                     );

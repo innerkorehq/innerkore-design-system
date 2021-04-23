@@ -13,10 +13,6 @@
     border: none;
 }
 
-/* .ant-select-single .ant-select-selector .ant-select-selection-item {
-    line-height: 35px;
-} */
-
 .ant-select-arrow {
     color: white;
 }
@@ -37,4 +33,8 @@
 
 .ant-input-group-addon {
     border-radius: 20px;
+}
+
+.ant-collapse > .ant-collapse-item > .ant-collapse-header {
+    color: white;
 }
