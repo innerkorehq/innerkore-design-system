@@ -17,7 +17,7 @@ type OptionsType = {
   logoInOption: string;
 };
 
-type MenuItemsType = {
+type TopMenuItemsType = {
   menuTxt: string;
   href: string;
 };
@@ -26,18 +26,18 @@ export type TopbarTypes = {
   logo: string;
   menuIconTxt?: string;
   Options: OptionsType[];
-  MenuItems: MenuItemsType[];
+  TopMenuItems: TopMenuItemsType[];
   dropDownTxt?: string;
 };
 
-export const Topbar: FC<TopbarTypes> = ({ logo, menuIconTxt, dropDownTxt, Options, MenuItems }) => {
+export const Topbar: FC<TopbarTypes> = ({ logo, menuIconTxt, dropDownTxt, Options, TopMenuItems }) => {
   return (
-    <div className="flex justify-between items-center bg-gray-900 py-2 px-5 md:px-20 xl:px-30">
+    <div className="hidden lg:flex justify-between items-center bg-gray-900 py-2 px-5 md:px-20 xl:px-30">
       <div>
         <img src={logo} alt="" className="h-5" />
       </div>
       <Menu mode="horizontal" className="bg-gray-900 text-gray-400 border-0">
-        {MenuItems.map(({ menuTxt, href }, index) => {
+        {TopMenuItems.map(({ menuTxt, href }, index) => {
           return (
             <Menu.Item className="border-0">
               <a href={href} className="text-gray-400 hover:text-white">

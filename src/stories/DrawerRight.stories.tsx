@@ -16,7 +16,7 @@ export const PrimaryDrawerRight = (args: DrawerRightTypes) => {
   
   PrimaryDrawerRight.args = {
     imgSrcIconRight: User,
-    MenuItems: [
+    RightMenuItems: [
       { menuTxt: 'Guest Cart', href: '#', iconImgSrc: Cart },
       { menuTxt: 'Create an Envato Account', href: '#', iconImgSrc: Envato },
       { menuTxt: 'Sign In', href: '#', iconImgSrc: Signin },

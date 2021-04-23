@@ -5,11 +5,11 @@ import { DrawerLeft, DrawerLeftTypes } from '../components/DrawerLeft/DrawerLeft
 export type DrawerBarTypes = {
   imgSrcIconRight: string;
   imgSrcIconLeft: string;
-  MenuItems: MenuItemsType[];
+  RightMenuItems: RightMenuItemsType[];
   SelectOptions: SelectOptionsType[];
   Panels: PanelsType[];
 };
-type MenuItemsType = {
+type RightMenuItemsType = {
   menuTxt: string;
   href: string;
   iconImgSrc: string;
@@ -30,10 +30,10 @@ type PanelChildrenType = {
   href: string;
 }
 
-export const DrawerBar: FC<DrawerBarTypes> = ({ imgSrcIconLeft, SelectOptions, Panels, imgSrcIconRight, MenuItems }) => {
+export const DrawerBar: FC<DrawerBarTypes> = ({ imgSrcIconLeft, SelectOptions, Panels, imgSrcIconRight, RightMenuItems }) => {
     
   return (
-    <div className='flex justify-between bg-gray-800 py-2 block lg:hidden'>
+    <div className='flex lg:hidden justify-between bg-gray-800 py-2'>
       <DrawerLeft 
         imgSrcIconLeft={imgSrcIconLeft}
         SelectOptions={SelectOptions}
@@ -41,7 +41,7 @@ export const DrawerBar: FC<DrawerBarTypes> = ({ imgSrcIconLeft, SelectOptions, P
       />
       <DrawerRight 
         imgSrcIconRight={imgSrcIconRight}
-        MenuItems={MenuItems}
+        RightMenuItems={RightMenuItems}
       />
     </div>
   );

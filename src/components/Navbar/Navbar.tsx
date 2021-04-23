@@ -14,7 +14,7 @@ export type NavbarTypes = {
 export const Navbar: FC<NavbarTypes> = ({ MenuItems }) => {
   const [current, setCurrent] = useState('0');
   return (
-    <div className="flex justify-between items-center bg-gray-900 py-2 px-5 md:px-20 xl:px-30">
+    <div className="hidden lg:flex justify-between items-center bg-gray-900 py-2 px-5 md:px-20 xl:px-30">
       <Menu
         mode="horizontal"
         selectedKeys={[current]}

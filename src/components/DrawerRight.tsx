@@ -3,16 +3,16 @@ import { Drawer, Button } from 'antd';
 
 export type DrawerRightTypes = {
     imgSrcIconRight: string;
-    MenuItems: MenuItemsType[];
+    RightMenuItems: RightMenuItemsType[];
 };
 
-type MenuItemsType = {
+type RightMenuItemsType = {
     menuTxt: string;
     href: string;
     iconImgSrc: string;
 };
 
-export const DrawerRight: FC<DrawerRightTypes> = ({ imgSrcIconRight, MenuItems }) => {
+export const DrawerRight: FC<DrawerRightTypes> = ({ imgSrcIconRight, RightMenuItems }) => {
     const [visible, setVisible] = useState(false);
 
     const showDrawer = () => {
@@ -36,7 +36,7 @@ export const DrawerRight: FC<DrawerRightTypes> = ({ imgSrcIconRight, MenuItems }
             drawerStyle={{backgroundColor: '#2d3748'}}
             bodyStyle={{padding: 0 }}
           >
-           {MenuItems.map(({ menuTxt, href, iconImgSrc }, index) => {
+           {RightMenuItems.map(({ menuTxt, href, iconImgSrc }, index) => {
               return (
                   <a href={href} style={{display: 'block', padding: '1rem 0', paddingLeft: 15, 
                   borderBottom: '1px solid #cbd5e0', color:'#cbd5e0', backgroundColor: '#3d4654'}}>{menuTxt}
