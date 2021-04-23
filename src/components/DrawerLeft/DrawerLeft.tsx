@@ -13,7 +13,6 @@ const { Panel } = Collapse;
 export type DrawerLeftTypes = {
     imgSrcIconLeft: string;
     SelectOptions: SelectOptionsType[];
-    // PanelChildren: PanelChildrenType[];
     Panels: PanelsType[];
 };
 
