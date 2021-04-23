@@ -13,7 +13,7 @@ const { Panel } = Collapse;
 export type DrawerLeftTypes = {
     imgSrcIconLeft: string;
     SelectOptions: SelectOptionsType[];
-    PanelChildren: PanelChildrenType[];
+    // PanelChildren: PanelChildrenType[];
     Panels: PanelsType[];
 };
 
@@ -23,25 +23,16 @@ type SelectOptionsType = {
 };
 
 type PanelsType = {
-    // item: itemType;
     panelHeader: string;
     PanelChildren: PanelChildrenType[];
 }
-// type itemType = {
-//     panelHeader: string;
-//     subItem: subItemType;
-// }
-// type subItemType = {
-//     panelLink: string; 
-//     href: string;
-// }
 
 type PanelChildrenType = {
     panelLink: string;
     href: string;
 }
 
-export const DrawerLeft: FC<DrawerLeftTypes> = ({ imgSrcIconLeft, SelectOptions, Panels, PanelChildren }) => {
+export const DrawerLeft: FC<DrawerLeftTypes> = ({ imgSrcIconLeft, SelectOptions, Panels }) => {
 
     const [visible, setVisible] = useState(false);
 
@@ -76,13 +67,13 @@ export const DrawerLeft: FC<DrawerLeftTypes> = ({ imgSrcIconLeft, SelectOptions,
                 })}
         </Select>
         <Space direction="vertical" style={{padding: '20px 0', margin: '0 13px'}}>
-            <Search placeholder="Search" style={{ width: 230 }}/>
+            <Search placeholder="Search" style={{ width: 230 }} />
         </Space>
     </>
 
     return (
         <>
-          <Button type="primary" onClick={showDrawer} className='ml-3 bg-gray-700 border-0'>
+          <Button type="primary" onClick={showDrawer} className='ml-3 bg-gray-700 border-0 hover:bg-blue-400'>
             <img src={imgSrcIconLeft} alt="" className='block h-4'/>
         </Button>
         <Drawer

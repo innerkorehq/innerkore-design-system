@@ -15,12 +15,9 @@
     color: white;
     border: none;
 }
-
 .ant-select-arrow {
     color: white;
 }
-
-
 /* Search Input */
 .ant-input {
     border-radius: 10px;
@@ -29,15 +26,13 @@
     border-radius: 10px !important;
     border: none;
 }
-
-.anticon {
-    vertical-align: 'baseline' !important;
+.ant-btn-icon-only > * {
+    font-size: 18px;
+    vertical-align: top;
 }
-
 .ant-input-group-addon {
     border-radius: 20px;
 }
-
 .ant-collapse > .ant-collapse-item > .ant-collapse-header {
     color: white;
 }
