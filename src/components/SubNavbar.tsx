@@ -16,12 +16,12 @@ type dropDownItemsType = {
 
 export type SubNavbarTypes = {
   Options: OptionsType[];
-  dropDownItems?: dropDownItemsType[];
+  dropDownItems: dropDownItemsType[];
 };
 
 export const SubNavbar: FC<SubNavbarTypes> = ({ dropDownItems }) => {
     return (
-        <Menu mode="horizontal" className="">
+        <Menu mode="horizontal">
             {dropDownItems.map(({dropDownTitle, Options} ) => {
                 return (
                     <SubMenu title={dropDownTitle} className="submenu-title">

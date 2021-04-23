@@ -38,6 +38,9 @@
     margin: 0;
     line-height: 36px;
 }
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu {
+    margin: 0;
+}
 /* .ant-menu-vertical > .ant-menu-item {
 
 } */
