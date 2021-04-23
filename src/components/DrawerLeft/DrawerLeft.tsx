@@ -104,9 +104,9 @@ export const DrawerLeft: FC<DrawerLeftTypes> = ({ imgSrcIconLeft, SelectOptions,
             >
                 {Panels.map(({panelHeader, PanelChildren}, index) => {
                     return (
-                        <Panel header={panelHeader} key={'' + index} className="site-collapse-custom-panel" style={{color: 'white'}}>
+                        <Panel header={panelHeader} key={'' + index} className="site-collapse-custom-panel" style={{color: 'white', fontSize: '1rem'}}>
                             {PanelChildren.map(({panelLink, href}, index) => {
-                                return <a href={href} style={{display: 'block', color: 'white'} }>{panelLink}</a>
+                                return <a href={href} style={{display: 'block', color: 'white', fontSize: '1rem', padding: '1rem 0.5rem 1rem 1.5rem'} }>{panelLink}</a>
                             })}
                         </Panel>
                     );

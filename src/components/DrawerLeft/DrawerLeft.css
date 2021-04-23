@@ -5,6 +5,9 @@
 .ant-drawer-close svg {
     fill: white;
 }
+.ant-drawer-body {
+    padding: 0;
+}
 
 /* Select Input */
 .ant-select-single:not(.ant-select-customize-input) .ant-select-selector{
@@ -37,4 +40,9 @@
 
 .ant-collapse > .ant-collapse-item > .ant-collapse-header {
     color: white;
+}
+
+/* Select */
+.ant-collapse > .ant-collapse-item {
+    border: none;
 }
