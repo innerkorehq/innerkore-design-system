@@ -68,7 +68,7 @@ export const DrawerLeft: FC<DrawerLeftTypes> = ({ imgSrcIconLeft, SelectOptions,
             {SelectOptions.map(({ optionTxt, href}, index) => {
                 return (
                     <Option value={'' + index} 
-                    style={{backgroundColor: '#2d3748', color:'white', padding: '1rem', margin: 0, fontSize: '1rem'}}
+                    style={{backgroundColor: '#2c2e33', color:'white', padding: '1rem', margin: 0, fontSize: '1rem'}}
                     >
                     <a href={href} style={{color: 'white'}}>{optionTxt}</a> 
                     </Option>
@@ -93,15 +93,15 @@ export const DrawerLeft: FC<DrawerLeftTypes> = ({ imgSrcIconLeft, SelectOptions,
         onClose={onClose}
         visible={visible}
         mask={true}
-        drawerStyle={{backgroundColor: '#2d3748'}}
-        headerStyle={{backgroundColor: '#2d3748', borderBottom: 0, padding: 0}}
+        drawerStyle={{backgroundColor: '#2c2e33'}}
+        headerStyle={{backgroundColor: '#2c2e33', borderBottom: 0, padding: 0}}
         >
              <Collapse
                 bordered={false}
                 expandIcon={({ isActive }) => <CaretRightOutlined rotate={isActive ? 270 : 90} />}
                 expandIconPosition={'right'}
                 className="site-collapse-custom-collapse"
-                style={{background: '#3d4b62'}}
+                style={{background: '#333843'}}
             >
                 {Panels.map(({panelHeader, PanelChildren}, index) => {
                     return (

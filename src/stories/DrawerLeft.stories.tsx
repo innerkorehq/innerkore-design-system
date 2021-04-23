@@ -79,5 +79,135 @@ export const PrimaryDrawerLeft = (args: DrawerLeftTypes) => {
             { panelLink: "WordPress Themes on ThemeForest", href: "#" },
         ]
       },
+      { 
+        panelHeader: "eCommerce",
+        PanelChildren: [
+            { panelLink: "Show All eCommerce", href: "#" },
+            { panelLink: "Popular Items", href: "#" },
+            { panelLink: "Add-ons", href: "#" },
+            { panelLink: "Advertising", href: "#" },            
+            { panelLink: "Calandars", href: "#" },
+            { panelLink: "eCommerce", href: "#" },
+            { panelLink: "Elementor", href: "#" },
+            { panelLink: "Forms", href: "#" },
+        ]
+      },
+      { 
+        panelHeader: "Javascript",
+        PanelChildren: [
+            { panelLink: "Show All eCommerce", href: "#" },
+            { panelLink: "Popular Items", href: "#" },
+            { panelLink: "Add-ons", href: "#" },
+            { panelLink: "Advertising", href: "#" },            
+            { panelLink: "Calandars", href: "#" },
+            { panelLink: "eCommerce", href: "#" },
+            { panelLink: "Elementor", href: "#" },
+            { panelLink: "Forms", href: "#" },
+        ]
+      },
+      { 
+        panelHeader: "CSS",
+        PanelChildren: [
+            { panelLink: "Show All eCommerce", href: "#" },
+            { panelLink: "Popular Items", href: "#" },
+            { panelLink: "Add-ons", href: "#" },
+            { panelLink: "Advertising", href: "#" },            
+            { panelLink: "Calandars", href: "#" },
+            { panelLink: "eCommerce", href: "#" },
+            { panelLink: "Elementor", href: "#" },
+            { panelLink: "Forms", href: "#" },
+        ]
+      },
+      { 
+        panelHeader: "Mobile",
+        PanelChildren: [
+            { panelLink: "Show All eCommerce", href: "#" },
+            { panelLink: "Popular Items", href: "#" },
+            { panelLink: "Add-ons", href: "#" },
+            { panelLink: "Advertising", href: "#" },            
+            { panelLink: "Calandars", href: "#" },
+            { panelLink: "eCommerce", href: "#" },
+            { panelLink: "Elementor", href: "#" },
+            { panelLink: "Forms", href: "#" },
+        ]
+      },
+      { 
+        panelHeader: "HTML5",
+        PanelChildren: [
+            { panelLink: "Show All eCommerce", href: "#" },
+            { panelLink: "Popular Items", href: "#" },
+            { panelLink: "Add-ons", href: "#" },
+            { panelLink: "Advertising", href: "#" },            
+            { panelLink: "Calandars", href: "#" },
+            { panelLink: "eCommerce", href: "#" },
+            { panelLink: "Elementor", href: "#" },
+            { panelLink: "Forms", href: "#" },
+        ]
+      },
+      { 
+        panelHeader: "Skins",
+        PanelChildren: [
+            { panelLink: "Show All eCommerce", href: "#" },
+            { panelLink: "Popular Items", href: "#" },
+            { panelLink: "Add-ons", href: "#" },
+            { panelLink: "Advertising", href: "#" },            
+            { panelLink: "Calandars", href: "#" },
+            { panelLink: "eCommerce", href: "#" },
+            { panelLink: "Elementor", href: "#" },
+            { panelLink: "Forms", href: "#" },
+        ]
+      },
+      { 
+        panelHeader: "WP Themes",
+        PanelChildren: [
+            { panelLink: "Show All eCommerce", href: "#" },
+            { panelLink: "Popular Items", href: "#" },
+            { panelLink: "Add-ons", href: "#" },
+            { panelLink: "Advertising", href: "#" },            
+            { panelLink: "Calandars", href: "#" },
+            { panelLink: "eCommerce", href: "#" },
+            { panelLink: "Elementor", href: "#" },
+            { panelLink: "Forms", href: "#" },
+        ]
+      },
+      { 
+        panelHeader: "Plugins",
+        PanelChildren: [
+            { panelLink: "Show All eCommerce", href: "#" },
+            { panelLink: "Popular Items", href: "#" },
+            { panelLink: "Add-ons", href: "#" },
+            { panelLink: "Advertising", href: "#" },            
+            { panelLink: "Calandars", href: "#" },
+            { panelLink: "eCommerce", href: "#" },
+            { panelLink: "Elementor", href: "#" },
+            { panelLink: "Forms", href: "#" },
+        ]
+      },
+      { 
+        panelHeader: "Mockup Generator",
+        PanelChildren: [
+            { panelLink: "Show All eCommerce", href: "#" },
+            { panelLink: "Popular Items", href: "#" },
+            { panelLink: "Add-ons", href: "#" },
+            { panelLink: "Advertising", href: "#" },            
+            { panelLink: "Calandars", href: "#" },
+            { panelLink: "eCommerce", href: "#" },
+            { panelLink: "Elementor", href: "#" },
+            { panelLink: "Forms", href: "#" },
+        ]
+      },
+      { 
+        panelHeader: "More",
+        PanelChildren: [
+            { panelLink: "Show All eCommerce", href: "#" },
+            { panelLink: "Popular Items", href: "#" },
+            { panelLink: "Add-ons", href: "#" },
+            { panelLink: "Advertising", href: "#" },            
+            { panelLink: "Calandars", href: "#" },
+            { panelLink: "eCommerce", href: "#" },
+            { panelLink: "Elementor", href: "#" },
+            { panelLink: "Forms", href: "#" },
+        ]
+      },
     ]
   };
