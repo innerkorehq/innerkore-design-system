@@ -98,7 +98,8 @@ export const DrawerLeft: FC<DrawerLeftTypes> = ({ imgSrcIconLeft, SelectOptions,
         >
              <Collapse
                 bordered={false}
-                expandIcon={({ isActive }) => <CaretRightOutlined rotate={isActive ? 90 : 0} />}
+                expandIcon={({ isActive }) => <CaretRightOutlined rotate={isActive ? 270 : 90} />}
+                expandIconPosition={'right'}
                 className="site-collapse-custom-collapse"
                 style={{background: '#3d4b62'}}
             >
