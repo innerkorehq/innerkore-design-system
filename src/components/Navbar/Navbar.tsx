@@ -2,16 +2,16 @@ import React, { FC, useState } from 'react';
 import { Menu } from 'antd';
 import './Navbar.css'
 
-type MenuItemsType = {
+type NavMenuItemsType = {
   menuTxt: string;
   href: string;
 };
 
 export type NavbarTypes = {
-  MenuItems: MenuItemsType[];
+  NavMenuItems: NavMenuItemsType[];
 };
 
-export const Navbar: FC<NavbarTypes> = ({ MenuItems }) => {
+export const Navbar: FC<NavbarTypes> = ({ NavMenuItems }) => {
   const [current, setCurrent] = useState('0');
   return (
     <div className="hidden lg:flex justify-between items-center bg-gray-900 py-2 px-5 md:px-20 xl:px-30">
@@ -20,7 +20,7 @@ export const Navbar: FC<NavbarTypes> = ({ MenuItems }) => {
         selectedKeys={[current]}
         className="bg-gray-900 text-gray-400 border-0"
       >
-        {MenuItems.map(({ menuTxt, href }, index) => {
+        {NavMenuItems.map(({ menuTxt, href }, index) => {
           return (
             <Menu.Item key={'' + index} className="border-0" onClick={() => setCurrent('' + index)}>
               <a

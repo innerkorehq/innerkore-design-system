@@ -12,13 +12,13 @@ export default {
 
 export const PrimaryDrawerRight = (args: DrawerRightTypes) => {
     return <DrawerRight {...args}/>;
-  };
+};
   
-  PrimaryDrawerRight.args = {
-    imgSrcIconRight: User,
-    RightMenuItems: [
-      { menuTxt: 'Guest Cart', href: '#', iconImgSrc: Cart },
-      { menuTxt: 'Create an Envato Account', href: '#', iconImgSrc: Envato },
-      { menuTxt: 'Sign In', href: '#', iconImgSrc: Signin },
-    ],
-  };
+PrimaryDrawerRight.args = {
+  imgSrcIconRight: User,
+  RightMenuItems: [
+    { menuTxt: 'Guest Cart', href: '#', iconImgSrc: Cart },
+    { menuTxt: 'Create an Envato Account', href: '#', iconImgSrc: Envato },
+    { menuTxt: 'Sign In', href: '#', iconImgSrc: Signin },
+  ],
+};

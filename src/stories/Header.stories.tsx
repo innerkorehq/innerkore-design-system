@@ -29,7 +29,7 @@ PrimaryHeader.args = {
   ],
   menuIconTxt: 'Sign In',
 
-  MenuItems: [
+  NavMenuItems: [
     { menuTxt: 'Web Themes and Templates', href: '#' },
     { menuTxt: 'Code', href: '#' },
     { menuTxt: 'Video', href: '#' },

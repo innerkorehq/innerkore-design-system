@@ -11,7 +11,7 @@ export const PrimaryNavbar = (args: NavbarTypes) => {
 };
 
 PrimaryNavbar.args = {
-  MenuItems: [
+  NavMenuItems: [
     { menuTxt: 'Web Themes and Templates', href: '#' },
     { menuTxt: 'Code', href: '#' },
     { menuTxt: 'Video', href: '#' },

@@ -1,0 +1,58 @@
+.ant-menu-horizontal > .ant-menu-submenu > .ant-menu-submenu-title {
+    padding: 0px 10px;
+    border-radius: 5px;
+}
+.ant-menu-horizontal > .ant-menu-submenu > .ant-menu-submenu-title:hover {
+    background-color: green;
+}
+
+.ant-menu-horizontal > .ant-menu-submenu {
+    border-radius: 5px;
+}
+
+.submenu-title:hover .ant-menu-submenu-title{
+    background-color: gray !important;
+}
+.ant-menu-item a:hover {
+    color: black;
+}
+.ant-menu-submenu-popup {
+    width: 260px;
+}
+.ant-menu-submenu-popup > .ant-menu {
+    padding: 0;
+}
+.menu-item-link:hover {
+    background-color: rgb(223, 226, 223);
+}
+.ant-menu-item {
+    padding: 0;
+}
+.ant-menu-item-active {
+    background-color: rgb(223, 226, 223);
+}
+.ant-ment-item:hover {
+    background-color: rgb(223, 226, 223);
+}   
+.ant-menu-vertical .ant-menu-item {
+    margin: 0;
+    line-height: 36px;
+}
+/* .ant-menu-vertical > .ant-menu-item {
+
+} */
+/* .ant-menu-item a:hover .submenu-title {
+    background-color: gray;
+} */
+
+/* .ant-menu-submenu-popup > .ant-menu:hover.submenu-title {
+    background-color: gray;
+}
+
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu:hover {
+    background-color: green;
+}
+
+.menu-item-link:hover .submenu-title {
+    background-color: green;
+} */

@@ -9,7 +9,7 @@ export type HeaderType = {
     dropDownTxt: string;
     Options: OptionsType[];
     TopMenuItems: TopMenuItemsType[];
-    MenuItems: MenuItemsType[];
+    NavMenuItems: NavMenuItemsType[];
     imgSrcIconLeft: string;
     RightMenuItems: RightMenuItemsType[];
     SelectOptions: SelectOptionsType[];
@@ -22,7 +22,7 @@ type OptionsType = {
     logoInOption: string;
 };
 
-type MenuItemsType = {
+type NavMenuItemsType = {
     menuTxt: string;
     href: string;
 };
@@ -52,7 +52,7 @@ type PanelChildrenType = {
   }    
   
 export const Header: FC<HeaderType> = ({ 
-    logo, menuIconTxt, dropDownTxt, Options, TopMenuItems, MenuItems, imgSrcIconLeft, RightMenuItems, SelectOptions, Panels, imgSrcIconRight
+    logo, menuIconTxt, dropDownTxt, Options, TopMenuItems, NavMenuItems, imgSrcIconLeft, RightMenuItems, SelectOptions, Panels, imgSrcIconRight
 }) => {
     
   return (
@@ -65,7 +65,7 @@ export const Header: FC<HeaderType> = ({
         TopMenuItems={TopMenuItems} 
       />
       <Navbar 
-        MenuItems={MenuItems}
+        NavMenuItems={NavMenuItems}
       />
       <DrawerBar 
         imgSrcIconLeft={imgSrcIconLeft}
