@@ -1,7 +1,4 @@
 .selectedMenuItem {    
-    /* @apply border-b-2; */
     border-bottom: 2px solid white;
-    /* @apply border-white; */
-    /* @apply text-white; */
     color: white;
 }

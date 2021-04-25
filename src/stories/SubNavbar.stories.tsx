@@ -26,7 +26,7 @@ PrimarySubNavbar.args = {
       ],
     },
     {
-      dropDownTitle: 'PHP Scripts',
+      dropDownTitle: 'WordPress',
       SubNavOptions: [
         { optionTxt: 'Show All PHP Scripts', href: '#' },
         { optionTxt: 'Polpular Items', href: '#' },
@@ -50,7 +50,7 @@ PrimarySubNavbar.args = {
       ],
     },
     {
-      dropDownTitle: 'WordPress',
+      dropDownTitle: 'Template Kits',
       SubNavOptions: [
         { optionTxt: 'Show All WordPress', href: '#' },
         { optionTxt: 'Popular Items', href: '#' },
@@ -75,6 +75,58 @@ PrimarySubNavbar.args = {
       ],
     },
     {
+      dropDownTitle: 'Hosting',
+      SubNavOptions: [
+        { optionTxt: 'Show All eCommerce', href: '#' },
+        { optionTxt: 'Popular Items', href: '#' },
+        { optionTxt: 'Add-ons', href: '#' },
+        { optionTxt: 'Advertising', href: '#' },
+        { optionTxt: 'Calandars', href: '#' },
+        { optionTxt: 'eCommerce', href: '#' },
+        { optionTxt: 'Elementor', href: '#' },
+        { optionTxt: 'Forms', href: '#' },
+      ],
+    },
+    {
+      dropDownTitle: 'HTML',
+      SubNavOptions: [
+        { optionTxt: 'Show All eCommerce', href: '#' },
+        { optionTxt: 'Popular Items', href: '#' },
+        { optionTxt: 'Add-ons', href: '#' },
+        { optionTxt: 'Advertising', href: '#' },
+        { optionTxt: 'Calandars', href: '#' },
+        { optionTxt: 'eCommerce', href: '#' },
+        { optionTxt: 'Elementor', href: '#' },
+        { optionTxt: 'Forms', href: '#' },
+      ],
+    },
+    {
+      dropDownTitle: 'Marketing',
+      SubNavOptions: [
+        { optionTxt: 'Show All eCommerce', href: '#' },
+        { optionTxt: 'Popular Items', href: '#' },
+        { optionTxt: 'Add-ons', href: '#' },
+        { optionTxt: 'Advertising', href: '#' },
+        { optionTxt: 'Calandars', href: '#' },
+        { optionTxt: 'eCommerce', href: '#' },
+        { optionTxt: 'Elementor', href: '#' },
+        { optionTxt: 'Forms', href: '#' },
+      ],
+    },
+    {
+      dropDownTitle: 'CMS',
+      SubNavOptions: [
+        { optionTxt: 'Show All eCommerce', href: '#' },
+        { optionTxt: 'Popular Items', href: '#' },
+        { optionTxt: 'Add-ons', href: '#' },
+        { optionTxt: 'Advertising', href: '#' },
+        { optionTxt: 'Calandars', href: '#' },
+        { optionTxt: 'eCommerce', href: '#' },
+        { optionTxt: 'Elementor', href: '#' },
+        { optionTxt: 'Forms', href: '#' },
+      ],
+    },
+    {
       dropDownTitle: 'eCommerce',
       SubNavOptions: [
         { optionTxt: 'Show All eCommerce', href: '#' },
@@ -88,72 +140,7 @@ PrimarySubNavbar.args = {
       ],
     },
     {
-      dropDownTitle: 'Javascript',
-      SubNavOptions: [
-        { optionTxt: 'Show All eCommerce', href: '#' },
-        { optionTxt: 'Popular Items', href: '#' },
-        { optionTxt: 'Add-ons', href: '#' },
-        { optionTxt: 'Advertising', href: '#' },
-        { optionTxt: 'Calandars', href: '#' },
-        { optionTxt: 'eCommerce', href: '#' },
-        { optionTxt: 'Elementor', href: '#' },
-        { optionTxt: 'Forms', href: '#' },
-      ],
-    },
-    {
-      dropDownTitle: 'CSS',
-      SubNavOptions: [
-        { optionTxt: 'Show All eCommerce', href: '#' },
-        { optionTxt: 'Popular Items', href: '#' },
-        { optionTxt: 'Add-ons', href: '#' },
-        { optionTxt: 'Advertising', href: '#' },
-        { optionTxt: 'Calandars', href: '#' },
-        { optionTxt: 'eCommerce', href: '#' },
-        { optionTxt: 'Elementor', href: '#' },
-        { optionTxt: 'Forms', href: '#' },
-      ],
-    },
-    {
-      dropDownTitle: 'Mobile',
-      SubNavOptions: [
-        { optionTxt: 'Show All eCommerce', href: '#' },
-        { optionTxt: 'Popular Items', href: '#' },
-        { optionTxt: 'Add-ons', href: '#' },
-        { optionTxt: 'Advertising', href: '#' },
-        { optionTxt: 'Calandars', href: '#' },
-        { optionTxt: 'eCommerce', href: '#' },
-        { optionTxt: 'Elementor', href: '#' },
-        { optionTxt: 'Forms', href: '#' },
-      ],
-    },
-    {
-      dropDownTitle: 'HTML5',
-      SubNavOptions: [
-        { optionTxt: 'Show All eCommerce', href: '#' },
-        { optionTxt: 'Popular Items', href: '#' },
-        { optionTxt: 'Add-ons', href: '#' },
-        { optionTxt: 'Advertising', href: '#' },
-        { optionTxt: 'Calandars', href: '#' },
-        { optionTxt: 'eCommerce', href: '#' },
-        { optionTxt: 'Elementor', href: '#' },
-        { optionTxt: 'Forms', href: '#' },
-      ],
-    },
-    {
-      dropDownTitle: 'Skins',
-      SubNavOptions: [
-        { optionTxt: 'Show All eCommerce', href: '#' },
-        { optionTxt: 'Popular Items', href: '#' },
-        { optionTxt: 'Add-ons', href: '#' },
-        { optionTxt: 'Advertising', href: '#' },
-        { optionTxt: 'Calandars', href: '#' },
-        { optionTxt: 'eCommerce', href: '#' },
-        { optionTxt: 'Elementor', href: '#' },
-        { optionTxt: 'Forms', href: '#' },
-      ],
-    },
-    {
-      dropDownTitle: 'WP Themes',
+      dropDownTitle: 'UI Templates',
       SubNavOptions: [
         { optionTxt: 'Show All eCommerce', href: '#' },
         { optionTxt: 'Popular Items', href: '#' },
@@ -179,7 +166,7 @@ PrimarySubNavbar.args = {
       ],
     },
     {
-      dropDownTitle: 'Mockup Generator',
+      dropDownTitle: 'Logo Maker',
       SubNavOptions: [
         { optionTxt: 'Show All eCommerce', href: '#' },
         { optionTxt: 'Popular Items', href: '#' },

@@ -38,7 +38,7 @@ export const DrawerBar: FC<DrawerBarTypes> = ({
   RightMenuItems,
 }) => {
   return (
-    <div className="flex lg:hidden justify-between bg-gray-800 py-2">
+    <div className="flex xl:hidden justify-between bg-gray-800 py-2">
       <DrawerLeft imgSrcIconLeft={imgSrcIconLeft} SelectOptions={SelectOptions} Panels={Panels} />
       <DrawerRight imgSrcIconRight={imgSrcIconRight} RightMenuItems={RightMenuItems} />
     </div>

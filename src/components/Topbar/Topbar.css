@@ -1,15 +1,7 @@
-.ant-menu-submenu-title:hover {  
-    color: white !important;
-}
-.ant-menu-submenu-popup > .ant-menu{
-    padding: 1.5rem;
-}
 
-.ant-menu-submenu .ant-menu-item {
-    height: auto !important;
-    width: auto;
-    /* padding: 40px; */
-}
+/* .ant-menu-submenu-popup > .ant-menu{
+    padding: 1.5rem;
+} */
 
 .option-link {
     color: rgb(92, 91, 91) !important;

@@ -21,23 +21,25 @@ export type SubNavbarTypes = {
 
 export const SubNavbar: FC<SubNavbarTypes> = ({ dropDownItems }) => {
   return (
-    <Menu mode="horizontal">
-      {dropDownItems.map(({ dropDownTitle, SubNavOptions }) => {
-        return (
-          <SubMenu title={dropDownTitle} className="submenu-title">
-            {SubNavOptions.map(({ optionTxt, href }, index) => {
-              return (
-                <Menu.Item>
-                  <a href={href} style={{ display: 'block' }} className="menu-item-link">
-                    {optionTxt}
-                  </a>
-                </Menu.Item>
-              );
-            })}
-          </SubMenu>
-        );
-      })}
-    </Menu>
+    <div className='hidden xl:flex px-5 md:px-20 xl:px-30'>
+      <Menu mode="horizontal" style={{marginLeft: -10}}>
+        {dropDownItems.map(({ dropDownTitle, SubNavOptions }) => {
+          return (
+            <SubMenu title={dropDownTitle} className="submenu-title">
+              {SubNavOptions.map(({ optionTxt, href }, index) => {
+                return (
+                  <Menu.Item>
+                    <a href={href} style={{ display: 'block' }} className="menu-item-link">
+                      {optionTxt}
+                    </a>
+                  </Menu.Item>
+                );
+              })}
+            </SubMenu>
+          );
+        })}
+      </Menu>
+    </div>
   );
 };
 
