@@ -42,7 +42,7 @@ export const Topbar: FC<TopbarTypes> = ({
       <div>
         <img src={logo} alt="" className="h-5" />
       </div>
-      <Menu mode="horizontal" className="bg-gray-900 text-gray-400 border-0">
+      <Menu mode="horizontal" className="bg-gray-900 text-gray-400 border-0" style={{marginRight: -20}}>
         {TopMenuItems.map(({ menuTxt, href }, index) => {
           return (
             <Menu.Item className="border-0">

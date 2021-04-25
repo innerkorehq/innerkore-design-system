@@ -19,6 +19,7 @@ export const Navbar: FC<NavbarTypes> = ({ NavMenuItems }) => {
         mode="horizontal"
         selectedKeys={[current]}
         className="bg-gray-900 text-gray-400 border-0"
+        style={{marginLeft: -20}}
       >
         {NavMenuItems.map(({ menuTxt, href }, index) => {
           return (

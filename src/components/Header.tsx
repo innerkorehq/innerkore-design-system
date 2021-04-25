@@ -80,7 +80,7 @@ export const Header: FC<HeaderType> = ({
   SelectOptions,
   Panels,
   imgSrcIconRight,
-  dropDownItems
+  dropDownItems,
 }) => {
   return (
     <div>
@@ -99,9 +99,9 @@ export const Header: FC<HeaderType> = ({
         imgSrcIconRight={imgSrcIconRight}
         RightMenuItems={RightMenuItems}
       />
-      <SubNavbar
-        dropDownItems={dropDownItems}
-      />
+      <div className='mt-2'>
+        <SubNavbar dropDownItems={dropDownItems} />
+      </div>
     </div>
   );
 };
