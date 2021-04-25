@@ -1,60 +1,87 @@
 import React, { FC } from 'react';
 import { Topbar } from '../components/Topbar/Topbar';
-import { Navbar} from '../components/Navbar/Navbar';
+import { Navbar } from '../components/Navbar/Navbar';
 import { DrawerBar } from '../components/DrawerBar';
+import { SubNavbar } from '../components/SubNavbar';
 
 export type HeaderType = {
-    logo: string;
-    menuIconTxt: string;
-    dropDownTxt: string;
-    Options: OptionsType[];
-    TopMenuItems: TopMenuItemsType[];
-    NavMenuItems: NavMenuItemsType[];
-    imgSrcIconLeft: string;
-    RightMenuItems: RightMenuItemsType[];
-    SelectOptions: SelectOptionsType[];
-    Panels: PanelsType[];
-    imgSrcIconRight: string;
-}
+  logo: string;
+  menuIconTxt: string;
+  dropDownTxt: string;
+  Options: OptionsType[];
+  TopMenuItems: TopMenuItemsType[];
+  NavMenuItems: NavMenuItemsType[];
+  imgSrcIconLeft: string;
+  RightMenuItems: RightMenuItemsType[];
+  SelectOptions: SelectOptionsType[];
+  Panels: PanelsType[];
+  imgSrcIconRight: string;
+  dropDownItems: dropDownItemsType[];
+};
 type OptionsType = {
-    optionTxt: string;
-    href: string;
-    logoInOption: string;
+  optionTxt: string;
+  href: string;
+  logoInOption: string;
 };
 
 type NavMenuItemsType = {
-    menuTxt: string;
-    href: string;
+  menuTxt: string;
+  href: string;
 };
 
 type TopMenuItemsType = {
-    menuTxt: string;
-    href: string;
+  menuTxt: string;
+  href: string;
 };
 type RightMenuItemsType = {
-    menuTxt: string;
-    href: string;
-    iconImgSrc: string;
+  menuTxt: string;
+  href: string;
+  iconImgSrc: string;
 };
-  
+
 type SelectOptionsType = {
-    optionTxt: string;
-    href: string;
+  optionTxt: string;
+  href: string;
 };
-  
+
 type PanelsType = {
-    panelHeader: string;
-    PanelChildren: PanelChildrenType[];
-}
+  panelHeader: string;
+  PanelChildren: PanelChildrenType[];
+};
 type PanelChildrenType = {
-    panelLink: string;
-    href: string;
-  }    
-  
-export const Header: FC<HeaderType> = ({ 
-    logo, menuIconTxt, dropDownTxt, Options, TopMenuItems, NavMenuItems, imgSrcIconLeft, RightMenuItems, SelectOptions, Panels, imgSrcIconRight
+  panelLink: string;
+  href: string;
+};
+
+type SubNavOptionsType = {
+  optionTxt: string;
+  href: string;
+};
+
+type dropDownItemsType = {
+  dropDownTitle: string;
+  SubNavOptions: SubNavOptionsType[];
+};
+
+export type SubNavbarTypes = {
+  // SubNavOptions: SubNavOptionsType[];
+  dropDownItems: dropDownItemsType[];
+};
+
+export const Header: FC<HeaderType> = ({
+  logo,
+  menuIconTxt,
+  dropDownTxt,
+  Options,
+  TopMenuItems,
+  NavMenuItems,
+  imgSrcIconLeft,
+  RightMenuItems,
+  SelectOptions,
+  Panels,
+  imgSrcIconRight,
+  dropDownItems
 }) => {
-    
   return (
     <div>
       <Topbar
@@ -62,17 +89,18 @@ export const Header: FC<HeaderType> = ({
         menuIconTxt={menuIconTxt}
         dropDownTxt={dropDownTxt}
         Options={Options}
-        TopMenuItems={TopMenuItems} 
+        TopMenuItems={TopMenuItems}
       />
-      <Navbar 
-        NavMenuItems={NavMenuItems}
-      />
-      <DrawerBar 
+      <Navbar NavMenuItems={NavMenuItems} />
+      <DrawerBar
         imgSrcIconLeft={imgSrcIconLeft}
         SelectOptions={SelectOptions}
         Panels={Panels}
         imgSrcIconRight={imgSrcIconRight}
         RightMenuItems={RightMenuItems}
+      />
+      <SubNavbar
+        dropDownItems={dropDownItems}
       />
     </div>
   );

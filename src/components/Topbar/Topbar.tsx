@@ -30,7 +30,13 @@ export type TopbarTypes = {
   dropDownTxt?: string;
 };
 
-export const Topbar: FC<TopbarTypes> = ({ logo, menuIconTxt, dropDownTxt, Options, TopMenuItems }) => {
+export const Topbar: FC<TopbarTypes> = ({
+  logo,
+  menuIconTxt,
+  dropDownTxt,
+  Options,
+  TopMenuItems,
+}) => {
   return (
     <div className="hidden lg:flex justify-between items-center bg-gray-900 py-2 px-5 md:px-20 xl:px-30">
       <div>
@@ -51,7 +57,7 @@ export const Topbar: FC<TopbarTypes> = ({ logo, menuIconTxt, dropDownTxt, Option
           {Options.map(({ optionTxt, href, logoInOption }, index) => {
             return (
               <Menu.Item>
-                <img src={logoInOption} alt="" style={{height: 18}}/>
+                <img src={logoInOption} alt="" style={{ height: 18 }} />
                 <a href={href} className="option-link">
                   {optionTxt}
                 </a>

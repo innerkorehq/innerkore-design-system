@@ -23,26 +23,24 @@ type SelectOptionsType = {
 type PanelsType = {
   panelHeader: string;
   PanelChildren: PanelChildrenType[];
-}
+};
 
 type PanelChildrenType = {
   panelLink: string;
   href: string;
-}
+};
 
-export const DrawerBar: FC<DrawerBarTypes> = ({ imgSrcIconLeft, SelectOptions, Panels, imgSrcIconRight, RightMenuItems }) => {
-    
+export const DrawerBar: FC<DrawerBarTypes> = ({
+  imgSrcIconLeft,
+  SelectOptions,
+  Panels,
+  imgSrcIconRight,
+  RightMenuItems,
+}) => {
   return (
-    <div className='flex lg:hidden justify-between bg-gray-800 py-2'>
-      <DrawerLeft 
-        imgSrcIconLeft={imgSrcIconLeft}
-        SelectOptions={SelectOptions}
-        Panels={Panels}
-      />
-      <DrawerRight 
-        imgSrcIconRight={imgSrcIconRight}
-        RightMenuItems={RightMenuItems}
-      />
+    <div className="flex lg:hidden justify-between bg-gray-800 py-2">
+      <DrawerLeft imgSrcIconLeft={imgSrcIconLeft} SelectOptions={SelectOptions} Panels={Panels} />
+      <DrawerRight imgSrcIconRight={imgSrcIconRight} RightMenuItems={RightMenuItems} />
     </div>
   );
 };

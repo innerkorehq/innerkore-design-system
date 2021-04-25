@@ -2,9 +2,6 @@
     padding: 0px 10px;
     border-radius: 5px;
 }
-/* .ant-menu-horizontal > .ant-menu-submenu > .ant-menu-submenu-title:hover {
-    background-color: green;
-} */
 
 .ant-menu-horizontal > .ant-menu-submenu {
     border-radius: 5px;
@@ -12,17 +9,13 @@
 
 .submenu-title:hover .ant-menu-submenu-title{
     background-color: gray !important;
-    /* border-bottom: none; */
 }
+
 .ant-menu-submenu-active .ant-menu-submenu-title, .ant-menu-submenu-open .ant-menu-submenu-title {
     background-color: gray !important;
     color: white;
-    /* border-bottom: none; */
 }
 
-/* .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu:hover {
-    border-color: transparent;
-} */
 .ant-menu-horizontal > .ant-menu-submenu {
     border-color: transparent;
 }
@@ -54,22 +47,3 @@
 .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu {
     margin: 0;
 }
-
-/* .ant-menu-vertical > .ant-menu-item {
-
-} */
-/* .ant-menu-item a:hover .submenu-title {
-    background-color: gray;
-} */
-
-/* .ant-menu-submenu-popup > .ant-menu:hover.submenu-title {
-    background-color: gray;
-}
-
-.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu:hover {
-    background-color: green;
-}
-
-.menu-item-link:hover .submenu-title {
-    background-color: green;
-} */

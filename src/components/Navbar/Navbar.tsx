@@ -1,6 +1,6 @@
 import React, { FC, useState } from 'react';
 import { Menu } from 'antd';
-import './Navbar.css'
+import './Navbar.css';
 
 type NavMenuItemsType = {
   menuTxt: string;

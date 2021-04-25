@@ -1,9 +1,9 @@
 import React from 'react';
 import { DrawerRight, DrawerRightTypes } from '../components/DrawerRight';
 import User from '../../public/img/user.svg';
-import Cart from "../../public/img/cart.svg";
-import Envato from "../../public/img/envato.svg";
-import Signin from "../../public/img/sign-in.svg";
+import Cart from '../../public/img/cart.svg';
+import Envato from '../../public/img/envato.svg';
+import Signin from '../../public/img/sign-in.svg';
 
 export default {
   title: 'Mobile/DrawerRight',
@@ -11,9 +11,9 @@ export default {
 };
 
 export const PrimaryDrawerRight = (args: DrawerRightTypes) => {
-    return <DrawerRight {...args}/>;
+  return <DrawerRight {...args} />;
 };
-  
+
 PrimaryDrawerRight.args = {
   imgSrcIconRight: User,
   RightMenuItems: [

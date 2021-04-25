@@ -12,7 +12,7 @@ export const PrimaryNavbar = (args: NavbarTypes) => {
 
 PrimaryNavbar.args = {
   NavMenuItems: [
-    { menuTxt: 'Web Themes and Templates', href: '#' },
+    { menuTxt: 'Web Themes and Templates', href: 'https://www.google.com/' },
     { menuTxt: 'Code', href: '#' },
     { menuTxt: 'Video', href: '#' },
     { menuTxt: 'Audio', href: '#' },
