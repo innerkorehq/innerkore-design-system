@@ -3,10 +3,10 @@
     padding: 1.5rem;
 } */
 
-.option-link {
+#topbar .option-link {
     color: rgb(92, 91, 91) !important;
 }
         
-.option-link:hover {
+#topbar .option-link:hover {
    color: black !important;
 }

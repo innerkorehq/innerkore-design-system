@@ -1,8 +1,8 @@
 import React from 'react';
-import { SubNavbar, SubNavbarTypes } from '../components/SubNavbar';
+import { SubNavbar, SubNavbarTypes } from '../components/SubNavbar/SubNavbar';
 
 export default {
-  title: 'Mobile/SubNavbar',
+  title: 'Desktop/SubNavbar',
   component: SubNavbar,
 };
 

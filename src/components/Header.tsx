@@ -2,7 +2,7 @@ import React, { FC } from 'react';
 import { Topbar } from '../components/Topbar/Topbar';
 import { Navbar } from '../components/Navbar/Navbar';
 import { DrawerBar } from '../components/DrawerBar';
-import { SubNavbar } from '../components/SubNavbar';
+import { SubNavbar } from './SubNavbar/SubNavbar';
 
 export type HeaderType = {
   logo: string;
@@ -99,7 +99,7 @@ export const Header: FC<HeaderType> = ({
         imgSrcIconRight={imgSrcIconRight}
         RightMenuItems={RightMenuItems}
       />
-      <div className='mt-2'>
+      <div className="mt-2">
         <SubNavbar dropDownItems={dropDownItems} />
       </div>
     </div>
