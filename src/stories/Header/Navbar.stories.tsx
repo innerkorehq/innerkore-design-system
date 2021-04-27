@@ -1,8 +1,8 @@
 import React from 'react';
-import { Navbar, NavbarTypes } from '../components/Navbar/Navbar';
+import { Navbar, NavbarTypes } from '../../components/Header/Navbar/Navbar';
 
 export default {
-  title: 'Desktop/Navbar',
+  title: 'Header/Desktop/Navbar',
   component: Navbar,
 };
 

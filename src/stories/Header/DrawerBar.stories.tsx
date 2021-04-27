@@ -1,13 +1,13 @@
 import React from 'react';
-import User from '../../public/img/user.svg';
-import Menu from '../../public/img/drawer-menu.svg';
-import Cart from '../../public/img/cart.svg';
-import Envato from '../../public/img/envato.svg';
-import Signin from '../../public/img/sign-in.svg';
-import { DrawerBar, DrawerBarTypes } from '../components/DrawerBar';
+import User from '../../../public/img/user.svg';
+import Menu from '../../../public/img/drawer-menu.svg';
+import Cart from '../../../public/img/cart.svg';
+import Envato from '../../../public/img/envato.svg';
+import Signin from '../../../public/img/sign-in.svg';
+import { DrawerBar, DrawerBarTypes } from '../../components/Header/DrawerBar';
 
 export default {
-  title: 'Mobile/DrawerBar',
+  title: 'Header/Mobile/DrawerBar',
   component: DrawerBar,
 };
 

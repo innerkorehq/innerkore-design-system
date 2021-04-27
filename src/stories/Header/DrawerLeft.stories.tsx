@@ -1,9 +1,9 @@
 import React from 'react';
-import { DrawerLeft, DrawerLeftTypes } from '../components/DrawerLeft/DrawerLeft';
-import Menu from '../../public/img/drawer-menu.svg';
+import { DrawerLeft, DrawerLeftTypes } from '../../components/Header/DrawerLeft/DrawerLeft';
+import Menu from '../../../public/img/drawer-menu.svg';
 
 export default {
-  title: 'Mobile/DrawerLeft',
+  title: 'Header/Mobile/DrawerLeft',
   component: DrawerLeft,
 };
 
