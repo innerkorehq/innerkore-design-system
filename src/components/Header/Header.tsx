@@ -99,6 +99,7 @@ export const Header: FC<HeaderType> = ({
         Panels={Panels}
         imgSrcIconRight={imgSrcIconRight}
         RightMenuItems={RightMenuItems}
+        logo={logo}
       />
       <div className="mt-2">
         <SubNavbar dropDownItems={dropDownItems} />

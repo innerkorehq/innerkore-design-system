@@ -8,6 +8,7 @@ export type DrawerBarTypes = {
   RightMenuItems: RightMenuItemsType[];
   SelectOptions: SelectOptionsType[];
   Panels: PanelsType[];
+  logo: string;
 };
 
 type RightMenuItemsType = {
@@ -37,10 +38,12 @@ export const DrawerBar: FC<DrawerBarTypes> = ({
   Panels,
   imgSrcIconRight,
   RightMenuItems,
+  logo
 }) => {
   return (
-    <div className="flex xl:hidden justify-between bg-gray-800 py-2">
+    <div className="flex xl:hidden justify-between items-center bg-gray-800 py-2">
       <DrawerLeft imgSrcIconLeft={imgSrcIconLeft} SelectOptions={SelectOptions} Panels={Panels} />
+      <img src={logo} alt="" className="h-5"/>
       <DrawerRight imgSrcIconRight={imgSrcIconRight} RightMenuItems={RightMenuItems} />
     </div>
   );
