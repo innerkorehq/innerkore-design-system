@@ -64,7 +64,6 @@ type dropDownItemsType = {
 };
 
 export type SubNavbarTypes = {
-  // SubNavOptions: SubNavOptionsType[];
   dropDownItems: dropDownItemsType[];
 };
 

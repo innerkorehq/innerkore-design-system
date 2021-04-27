@@ -4,9 +4,9 @@
 } */
 
 #topbar .option-link {
-    color: rgb(92, 91, 91) !important;
+    color: rgb(92, 91, 91);
 }
         
 #topbar .option-link:hover {
-   color: black !important;
+   color: black;
 }

@@ -1,7 +1,7 @@
 import React from 'react';
+import 'antd/dist/antd.css';
 import './less/App.less';
 import './scss/tailwind.scss';
-import 'antd/dist/antd.css';
 
 const App: React.FC = (): JSX.Element => {
   return (

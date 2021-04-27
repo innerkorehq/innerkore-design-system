@@ -18,41 +18,34 @@
 #subnav .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu {
     margin: 0;
 }
-
-.myPopup .ant-menu-horizontal > .ant-menu-submenu {
-    border-color: transparent;
-}
-.myPopup .ant-menu-item a:hover {
-    color: black;
-}
-.myPopup .ant-menu-submenu-popup {
+.subNavPopup {
     width: 260px;
 }
-.myPopup .ant-menu-submenu-popup > .ant-menu {
+
+.subNavPopup .ant-menu-horizontal > .ant-menu-submenu {
+    border-color: transparent;
+}
+.subNavPopup .ant-menu-item a {
+    padding: 0 10px;
+}
+
+.subNavPopup .ant-menu-item a:hover {
+    color: black;
+}
+
+.subNavPopup .ant-menu-submenu-popup > .ant-menu {
     padding: 0;
 }
-.myPopup .ant-menu-item {
+.subNavPopup .ant-menu-item {
     padding: 0;
 }
 
-/* #subnav .menu-item-link:hover {
-    background-color: rgb(223, 226, 223);
-    color: black !important;
-} */
-
-.myPopup .ant-menu-item a:hover {
-    color: black !important;
+.subNavPopup .ant-menu-item a:hover {
+    color: black;
     background-color: rgb(223, 226, 223);
 }
 
-/* .myPopup .ant-menu-submenu-active .ant-menu-item:active {
-    background-color: red !important;
-} */
-/*
-#subnav .ant-ment-item:hover {
-    background-color: rgb(223, 226, 223);
-}    */
-.myPopup .ant-menu-vertical .ant-menu-item {
+.subNavPopup .ant-menu-vertical .ant-menu-item {
     margin: 0;
     line-height: 36px;
 }
