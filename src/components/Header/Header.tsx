@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
-import { Topbar } from '../components/Topbar/Topbar';
-import { Navbar } from '../components/Navbar/Navbar';
-import { DrawerBar } from '../components/DrawerBar';
+import { Topbar } from './Topbar/Topbar';
+import { Navbar } from './Navbar/Navbar';
+import { DrawerBar } from './DrawerBar';
 import { SubNavbar } from './SubNavbar/SubNavbar';
 
 export type HeaderType = {
