@@ -14,8 +14,8 @@ export const SearchInput: FC<SearchInputType> = ({}) => {
         <div id='myInput'>
             <Input 
                 placeholder="e.g. responsive Wordpress"
-                className='h-16 shadow-lg border-0 text-lg'
-                suffix={<Button type="primary" icon={<SearchOutlined />}>Search</Button>}
+                className='h-20 shadow-lg border-0'
+                suffix={<Button type="primary" size='large' className='rounded-md px-5' icon={<SearchOutlined />}>Search</Button>}
             />
         </div>
     );
