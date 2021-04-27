@@ -15,9 +15,11 @@
     background-color: gray;
     color: white;
 }
+
 #subnav .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu {
     margin: 0;
 }
+
 .subNavPopup {
     width: 260px;
 }
@@ -25,6 +27,7 @@
 .subNavPopup .ant-menu-horizontal > .ant-menu-submenu {
     border-color: transparent;
 }
+
 .subNavPopup .ant-menu-item a {
     padding: 0 10px;
 }
@@ -36,6 +39,7 @@
 .subNavPopup .ant-menu-submenu-popup > .ant-menu {
     padding: 0;
 }
+
 .subNavPopup .ant-menu-item {
     padding: 0;
 }

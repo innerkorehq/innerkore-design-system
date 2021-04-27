@@ -9,6 +9,7 @@ export type DrawerBarTypes = {
   SelectOptions: SelectOptionsType[];
   Panels: PanelsType[];
 };
+
 type RightMenuItemsType = {
   menuTxt: string;
   href: string;

@@ -58,7 +58,7 @@ export const Topbar: FC<TopbarTypes> = ({
         })}
 
         <SubMenu icon={<AppstoreOutlined />} title={dropDownTxt} className="border-0">
-          {Options.map(({ optionTxt, href, logoInOption }, index) => {
+          {Options.map(({ optionTxt, href, logoInOption }) => {
             return (
               <Menu.Item style={{ height: 'auto', width: '300px' }}>
                 <div style={{ margin: 10 }} id="topbar">

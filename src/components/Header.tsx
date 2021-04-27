@@ -18,6 +18,7 @@ export type HeaderType = {
   imgSrcIconRight: string;
   dropDownItems: dropDownItemsType[];
 };
+
 type OptionsType = {
   optionTxt: string;
   href: string;
@@ -48,6 +49,7 @@ type PanelsType = {
   panelHeader: string;
   PanelChildren: PanelChildrenType[];
 };
+
 type PanelChildrenType = {
   panelLink: string;
   href: string;
