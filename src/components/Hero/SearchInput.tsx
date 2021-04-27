@@ -8,7 +8,6 @@ type SearchInputType = {
 
 }
         
-
 export const SearchInput: FC<SearchInputType> = ({}) => {   
     return (
         <div id='myInput'>
@@ -20,3 +19,5 @@ export const SearchInput: FC<SearchInputType> = ({}) => {
         </div>
     );
 }
+
+export default SearchInput;

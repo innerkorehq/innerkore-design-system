@@ -47,3 +47,5 @@ export const DrawerBar: FC<DrawerBarTypes> = ({
     </div>
   );
 };
+
+export default DrawerBar;
