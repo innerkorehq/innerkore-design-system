@@ -13,7 +13,7 @@ export const SearchInput: FC<SearchInputType> = ({}) => {
         <div id='myInput'>
             <Input 
                 placeholder="e.g. responsive Wordpress"
-                className='h-20 shadow-lg border-0'
+                className='h-20 shadow-lg border-0 rounded-lg'
                 suffix={<Button type="primary" size='large' className='rounded-md px-5' icon={<SearchOutlined />}>Search</Button>}
             />
         </div>
