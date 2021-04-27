@@ -1,0 +1,10 @@
+#myInput .ant-input-affix-wrapper:not(.ant-input-affix-wrapper-disabled):hover,
+#myInput .ant-input-affix-wrapper:not(.ant-input-affix-wrapper-disabled):focus
+{
+    border-right-width: 0 !important;
+    border-color: transparent !important;
+}
+
+#myInput .ant-input:focus {
+    border-right-width: 0 !important;
+}

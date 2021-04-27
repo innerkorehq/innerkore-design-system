@@ -38,7 +38,7 @@ export const Topbar: FC<TopbarTypes> = ({
   TopMenuItems,
 }) => {
   return (
-    <div className="hidden xl:flex justify-between items-center bg-gray-900 py-2 px-5 md:px-20 xl:px-30">
+    <div className="hidden xl:flex justify-between items-center bg-gray-900 py-2 px-5 md:px-20 xl:px-30" id="topbar">
       <div>
         <img src={logo} alt="" className="h-5" />
       </div>
@@ -57,11 +57,11 @@ export const Topbar: FC<TopbarTypes> = ({
           );
         })}
 
-        <SubMenu icon={<AppstoreOutlined />} title={dropDownTxt} className="border-0">
+        <SubMenu icon={<AppstoreOutlined />} title={dropDownTxt} className="border-0" popupClassName='topbarPopup'>
           {Options.map(({ optionTxt, href, logoInOption }, index) => {
             return (
               <Menu.Item style={{ height: 'auto', width: '300px' }}>
-                <div style={{ margin: 10 }} id="topbar">
+                <div style={{ margin: 10 }}>
                   <img src={logoInOption} alt="" style={{ height: 18, display: 'block' }} />
                   <a href={href} className="option-link" style={{ display: 'block' }}>
                     {optionTxt}
