@@ -2,13 +2,11 @@ import React, { FC } from 'react';
 import { Row, Col } from 'antd';
 import { SearchInput } from '../Hero/SearchInput'
 
-
-type HeroType = {
+export type HeroType = {
     headingTxt: string;
     paraTxt: string;
     imgSrc: string;
     imgAlt: string;
-
 }
         
 export const Hero: FC<HeroType> = ({headingTxt, paraTxt, imgSrc, imgAlt

@@ -3,12 +3,8 @@ import { Input } from 'antd';
 import { Button } from 'antd';
 import { SearchOutlined } from '@ant-design/icons';
 import './SearchInput.css'
-
-type SearchInputType = {
-
-}
         
-export const SearchInput: FC<SearchInputType> = ({}) => {   
+export const SearchInput = () => {   
     return (
         <div id='myInput'>
             <Input 

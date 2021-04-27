@@ -1,6 +1,11 @@
 @import "tailwindcss/base";
 @import "./theme/base.scss";
 
+/* Override base SVG style to work with Ant Design */
+svg {
+    vertical-align: initial;
+}
+
 @import "tailwindcss/components";
 @import "./theme/components.scss";
 
