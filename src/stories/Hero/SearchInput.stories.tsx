@@ -9,4 +9,9 @@ export default {
   export const PrimarySearchInput = (args: SearchInputType) => {
     return <SearchInput {...args} />;
   };
+
+  PrimarySearchInput.args ={
+    placeholder: 'e.g. responsive WordPress',
+    btnTxt: 'Search'
+  }
   
