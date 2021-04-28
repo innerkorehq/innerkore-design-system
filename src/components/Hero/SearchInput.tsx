@@ -16,7 +16,7 @@ export const SearchInput: FC<SearchInputType> = ({placeholder, btnTxt}) => {
             <Input 
                 placeholder={placeholder}
                 className='h-20 shadow-lg border-0 rounded-lg text-xl'
-                suffix={<Button type="primary" size='large' className='rounded-md px-5' icon={<SearchOutlined />}>{btnTxt}</Button>}
+                suffix={<Button type="primary" size='large' className='rounded-md px-5 mr-2' icon={<SearchOutlined  style={{fontSize: 18}}/>}>{btnTxt}</Button>}
                 style={{fontSize: 1}}
             />
         </div>
