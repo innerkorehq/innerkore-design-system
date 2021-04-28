@@ -5,16 +5,3 @@
 .ant-card:hover .imgWrapper {
    transform: translateY(-15px);
 }
-
-.ant-card-head {
-    border: none;
-}
-
-.ant-card-head-title {
-    font-size: 32px;
-    font-weight: bold;
-    text-align: center;
-}
-.ant-card-head-title:hover {
-    text-decoration: underline;
-}

@@ -10,12 +10,14 @@ type CardType = {
 export const MyCard: FC<MyCardType> = ({
 }) => {   
     return (
-        <div className=''>
+        <div className='bg-gray-200'>
 
             <Row gutter={[32, 32]}>
                 <Col md={12} xl={8}>
-                    <Card className=''
-                    bodyStyle={{overflow: 'hidden'}}
+                    <Card
+                    hoverable
+                    className='bg-gray-100 overflow-hidden shadow-sm hover:shadow-xl border-0 cursor-default hover:bg-white'
+                    style={{borderRadius: 10}}
                     >
                         <div>
                             <a href="#"><h1 className='text-4xl text-center hover:underline'>WordPress Themes</h1></a>
