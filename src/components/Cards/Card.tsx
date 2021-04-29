@@ -3,11 +3,20 @@ import { Card } from 'antd';
 import { Row, Col } from 'antd';
 import './Card.css';
 
-type CardType = {
-
+export type MyCardType = {
+    titleTxt: string;
+    titleHref: string;
+    paraTxt: string;
+    link1Href: string;
+    link1Txt: string;
+    link2Href: string;
+    link2Txt: string;
+    iconImgSrc: string;
+    cardImgSrc: string;
+    cardImgAlt: string;
 }
 
-export const MyCard: FC<MyCardType> = ({
+export const MyCard: FC<MyCardType> = ({ titleTxt, titleHref, paraTxt, link1Href, link1Txt, link2Href, link2Txt, iconImgSrc, cardImgSrc, cardImgAlt
 }) => {   
     return (
         <div className='bg-gray-200'>
@@ -16,27 +25,22 @@ export const MyCard: FC<MyCardType> = ({
                 <Col md={12} xl={8}>
                     <Card
                     hoverable
-                    className='bg-gray-100 overflow-hidden shadow-sm hover:shadow-xl border-0 cursor-default hover:bg-white'
-                    style={{borderRadius: 10}}
+                    className='bg-gray-100 overflow-hidden shadow-sm hover:shadow-xl border-0 cursor-default hover:bg-white rounded-xl'
                     >
                         <div>
-                            <a href="#"><h1 className='text-4xl text-center hover:underline'>WordPress Themes</h1></a>
-                            <p className='text-center text-lg mb-2'>Thousands of WordPress themes</p>
+                            <a href={titleHref}><h1 className='text-4xl text-center hover:underline'>{titleTxt}</h1></a>
+                            <p className='text-center text-lg mb-2'>{paraTxt}</p>
                             <div className='text-center text-lg'>
-                                <a href="#" className='mr-5 text-blue-600 hover:underline'>Newest</a>
-                                <a href="#" className='mr-5 text-blue-600 hover:underline'>BestSellers</a>
+                                <a href={link1Href} className='mr-5 text-blue-600 hover:underline'>{link1Txt}</a>
+                                <a href={link2Href} className='mr-5 text-blue-600 hover:underline'>{link2Txt}</a>
                             </div>
                         </div>
                         
                         <a href='#' className='imgWrapper block relative mt-12 -mb-12'>
                             <div className='w-16 h-16 mx-auto top-0 rounded-full' style={{boxShadow: '0 0 0 4px white', transform: 'translateY(50%)'}}>
-                                <img src="https://assets.market-storefront.envato.com/storefront/packs/media/images/category-icons/themeforest/wordpress-38017feb3efbc9d223cfb8472fba3cb8.svg" alt=""
-                                className='rounded-full'
-                                />
+                                <img src={iconImgSrc} alt="" className='rounded-full' />
                             </div>
-                            <img src="https://assets.market-storefront.envato.com/storefront/packs/media/images/home/themeforest/category-tiles-wordpress-c903c0a5acb77a9e92d5a7db0dbe2565.png" alt=""
-                            className='border-4 border-white border-solid shadow-2xl rounded-xl'
-                            />
+                            <img src={cardImgSrc} alt={cardImgAlt} className='border-4 border-white border-solid shadow-2xl rounded-xl' />
                         </a>
                     </Card>
                 </Col>
