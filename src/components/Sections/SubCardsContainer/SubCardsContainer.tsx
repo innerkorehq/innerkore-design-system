@@ -40,7 +40,7 @@ export const MySubCard: FC<MySubCardType> = ({ MySubCardItems, btnTxt}) => {
                                 <Col md={12}>
                                     <Card
                                     cover={<a href=''><img alt="example" src={imgSrc} className='relative mx-auto'/></a>}
-                                    bodyStyle={{ background: 'white', position: 'absolute', bottom: 0, left: 0, width: '100%', display: 'none'}}
+                                    bodyStyle={{ background: 'white', padding: 9 }}
                                     >
                                     <Meta title="Kalles - Clean, Versatile, Responsive Shopify Theme-RTL Support" description="by The4" avatar={<img src={stars} alt='' className='w-40'></img>} />
                                     </Card>
