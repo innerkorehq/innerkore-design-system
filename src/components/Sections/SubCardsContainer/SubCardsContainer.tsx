@@ -23,13 +23,13 @@ export const MySubCard: FC<MySubCardType> = ({ MySubCardItems, btnTxt}) => {
           <Row gutter={[32, 32]} style={{marginLeft: 0, marginRight: 0}}>
             <Col xl={12} className='xl:order-1'>
                 <div className='xl:ml-16 xl:mr-64 text-center xl:text-left'>
-                    <h2 className='text-4xl'>Unique themes and templates for every budget and every project.</h2>
+                    <h2 className='text-4xl font-normal'>Unique themes and templates for every budget and every project.</h2>
                     <Button type="primary" size='large' className='mt-2 rounded-md hidden xl:block'>{btnTxt}</Button>
                 </div>
             </Col>
-            <Col xl={12} className='bg-gray-200 xl:bg-white xl:order-0'>
+            <Col xl={12} className='bg-gray-200 xl:bg-white rounded-lg xl:order-0'>
                 <Row gutter={[24, 24]} 
-                style={{ borderRadius: 10 }} className='xl:border border-dashed border-gray-500 pl-0 xl:pl-32 py-5 pr-3'
+                style={{ borderRadius: 10 }} className='pl-0 xl:pl-24 py-6 pr-3'
                 justify= 'center'
                 >
                         {MySubCardItems.map(
@@ -40,7 +40,7 @@ export const MySubCard: FC<MySubCardType> = ({ MySubCardItems, btnTxt}) => {
                                 <Col md={12}>
                                     <Card
                                     cover={<a href=''><img alt="example" src={imgSrc} className='relative mx-auto'/></a>}
-                                    bodyStyle={{ background: 'white', position: 'absolute', bottom: 0, left: 0, width: '100%'}}
+                                    bodyStyle={{ background: 'white', position: 'absolute', bottom: 0, left: 0, width: '100%', display: 'none'}}
                                     >
                                     <Meta title="Kalles - Clean, Versatile, Responsive Shopify Theme-RTL Support" description="by The4" avatar={<img src={stars} alt='' className='w-40'></img>} />
                                     </Card>
