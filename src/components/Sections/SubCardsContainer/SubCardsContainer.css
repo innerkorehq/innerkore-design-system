@@ -12,3 +12,18 @@
     overflow: hidden;
     text-overflow: ellipsis;
 }
+
+/* .ant-card-body {
+    display: none;
+}
+.ant-card-cover img:hover .ant-card-body {
+    display: block !important;
+}  */
+
+.ant-col.ant-col-xxl-12 {
+    padding: 0 !important;
+}
+
+.ant-row{
+
+}
