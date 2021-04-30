@@ -24,7 +24,7 @@ export const MySubCard: FC<MySubCardType> = ({ MySubCardItems, btnTxt}) => {
             <Col xl={12} className='xl:order-1'>
                 <div className='xl:ml-16 xl:mr-32 text-center xl:text-left'>
                     <h2 className='text-4xl font-normal'>Unique themes and templates for every budget and every project.</h2>
-                    <Button type="primary" size='large' className='mt-2 rounded-md hidden xl:block'>{btnTxt}</Button>
+                    <Button type="primary" size='large' className='mt-10 rounded-md hidden xl:block'>{btnTxt}</Button>
                 </div>
             </Col>
             <Col xl={12} className='bg-gray-200 xl:bg-white rounded-lg xl:order-0'>
