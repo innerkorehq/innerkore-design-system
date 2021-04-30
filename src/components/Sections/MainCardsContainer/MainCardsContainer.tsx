@@ -2,7 +2,7 @@ import React, { FC } from 'react';
 import { Card } from 'antd';
 import { Row, Col } from 'antd';
 import { Button } from 'antd';
-import './Cards.css';
+import './MainCardsContainer.css';
 
 export type MyCardType = {
   MyCardItems: MyCardItemsType[];

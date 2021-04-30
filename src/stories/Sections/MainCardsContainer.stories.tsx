@@ -1,8 +1,8 @@
 import React from 'react';
-import { MyCard, MyCardType } from '../../components/Cards/Cards';
+import { MyCard, MyCardType } from '../../components/Sections/MainCardsContainer/MainCardsContainer';
 
 export default {
-  title: 'Cards/Cards',
+  title: 'Cards/MainCardsContainer',
   component: MyCard,
 };
 
