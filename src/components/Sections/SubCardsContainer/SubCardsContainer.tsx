@@ -22,7 +22,7 @@ export const MySubCard: FC<MySubCardType> = ({ MySubCardItems, btnTxt}) => {
       <div className="bg-gray-200 py-10 lg:py-32">
           <Row gutter={[32, 32]} style={{marginLeft: 0, marginRight: 0}}>
             <Col xl={12} className='xl:order-1'>
-                <div className='xl:ml-16 xl:mr-64 text-center xl:text-left'>
+                <div className='xl:ml-16 xl:mr-32 text-center xl:text-left'>
                     <h2 className='text-4xl font-normal'>Unique themes and templates for every budget and every project.</h2>
                     <Button type="primary" size='large' className='mt-2 rounded-md hidden xl:block'>{btnTxt}</Button>
                 </div>
