@@ -3,21 +3,21 @@ import { Card } from 'antd';
 import { Row, Col } from 'antd';
 import { Button } from 'antd';
 import stars from '../../../../public/img/stars.jpg';
-import './SubCardsContainer.css';
+import './SubCardsContainer1.css';
 
-export type MySubCardType = {
-    MySubCardItems: MySubCardItemsType[];
+export type MySubCard1Type = {
+    MySubCard1Items: MySubCard1ItemsType[];
     btnTxt: string;
 };
 
-type MySubCardItemsType = {
+type MySubCard1ItemsType = {
     imgSrc: string;
 };
 
 const { Meta } = Card;
 
 
-export const MySubCard: FC<MySubCardType> = ({ MySubCardItems, btnTxt}) => {
+export const MySubCard1: FC<MySubCard1Type> = ({ MySubCard1Items, btnTxt}) => {
     return (
       <div className="bg-gray-200 py-10 lg:py-32">
           <Row gutter={[32, 32]} style={{marginLeft: 0, marginRight: 0}}>
@@ -32,7 +32,7 @@ export const MySubCard: FC<MySubCardType> = ({ MySubCardItems, btnTxt}) => {
                 style={{ borderRadius: 10 }} className='pl-0 xl:pl-24 py-6 pr-3'
                 justify= 'center'
                 >
-                        {MySubCardItems.map(
+                        {MySubCard1Items.map(
                             ({
                                 imgSrc,
                             }) => {

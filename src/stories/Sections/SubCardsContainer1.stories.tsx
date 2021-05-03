@@ -1,17 +1,17 @@
 import React from 'react';
-import { MySubCard, MySubCardType } from '../../components/Sections/SubCardsContainer/SubCardsContainer';
+import { MySubCard1, MySubCard1Type } from '../../components/Sections/SubCardsContainer1/SubCardsContainer1';
 
 export default {
-  title: 'Cards/SubCardsContainer',
-  component: MySubCard,
+  title: 'Cards/SubCardsContainer1',
+  component: MySubCard1,
 };
 
-export const SubCards = (args: MySubCardType) => {
-  return <MySubCard {...args} />;
+export const SubCards = (args: MySubCard1Type) => {
+  return <MySubCard1 {...args} />;
 };
 
 SubCards.args = {
-  MySubCardItems : [
+  MySubCard1Items : [
     {
       imgSrc: "https://themeforest.img.customer.envatousercontent.com/files/331435158/preview20.jpg?auto=compress%2Cformat&fit=crop&crop=top&w=590&h=300&s=f53a15b59e9f7654de4d2d900e954a7d",
     },
