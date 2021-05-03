@@ -16,7 +16,7 @@ type MySubCard2ItemsType = {
 const { Meta } = Card;
 
 
-export const MySubCard2: FC<MySubCard2Type> = ({ MySubCard2Items, btnTxt}) => {
+export const MySubCard2: FC<MySubCard2Type> = ({ MySubCard2Items }) => {
     return (
       <div className="bg-gray-200 py-10 lg:py-32">
           <Row gutter={[32, 32]} style={{marginLeft: 0, marginRight: 0, justifyContent: 'center'}}>

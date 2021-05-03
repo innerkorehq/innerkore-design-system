@@ -1,6 +1,10 @@
 module.exports = {
   theme: {
-    extend: {},
+    extend: {
+      spacing: {
+        '410px': '410px'
+      }
+    },
   },
   important: "#app",
   variants: {

@@ -40,10 +40,10 @@ export const MyCard: FC<MyCardType> = ({ MyCardItems, btnTxt }) => {
             cardImgAlt,
           }) => {
             return (
-              <Col md={12} xl={8}>
+              <Col md={12} xxl={8}>
                 <Card
                   hoverable
-                  className="bg-gray-100 overflow-hidden shadow-sm hover:shadow-xl border-0 cursor-default hover:bg-white rounded-xl"
+                  className="bg-gray-100 overflow-hidden shadow-sm hover:shadow-xl border-0 cursor-default hover:bg-white rounded-xl h-410px"
                 >
                   <div>
                     <a href={titleHref}>
