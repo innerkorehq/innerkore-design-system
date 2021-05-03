@@ -12,10 +12,12 @@ export type MySubCard1Type = {
 
 type MySubCard1ItemsType = {
     imgSrc: string;
+    imgHref: string;
+    metaTitle: string;
+    metaDes: string;
 };
 
 const { Meta } = Card;
-
 
 export const MySubCard1: FC<MySubCard1Type> = ({ MySubCard1Items, btnTxt}) => {
     return (
@@ -34,15 +36,15 @@ export const MySubCard1: FC<MySubCard1Type> = ({ MySubCard1Items, btnTxt}) => {
                 >
                         {MySubCard1Items.map(
                             ({
-                                imgSrc,
+                                imgSrc, imgHref, metaTitle, metaDes
                             }) => {
                             return (
                                 <Col md={12}>
                                     <Card
-                                    cover={<a href=''><img alt="example" src={imgSrc} className='relative mx-auto'/></a>}
+                                    cover={<a href={imgHref}><img alt={metaTitle} src={imgSrc} title={metaTitle} className='relative mx-auto'/></a>}
                                     bodyStyle={{ background: 'white', padding: 9 }}
                                     >
-                                    <Meta title="Kalles - Clean, Versatile, Responsive Shopify Theme-RTL Support" description="by The4" avatar={<img src={stars} alt='' className='w-40'></img>} />
+                                    <Meta title={metaTitle} description={metaDes} avatar={<img src={stars} alt='' className='w-40'></img>} />
                                     </Card>
                                 </Col>
                             );
