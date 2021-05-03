@@ -20,7 +20,7 @@ export const MySubCard2: FC<MySubCard2Type> = ({ MySubCard2Items, btnTxt}) => {
     return (
       <div className="bg-gray-200 py-10 lg:py-32">
           <Row gutter={[32, 32]} style={{marginLeft: 0, marginRight: 0, justifyContent: 'center'}}>
-            <Col xl={12} className='xl:order-1 w-full'>
+            <Col xl={12} className='xl:order-1 w-full self-center'>
                 <div className='xl:mr-32'>
                     <h2 className='text-4xl font-normal text-center xl:text-right'>We're the largest theme marketplace in the world</h2>
                     <div className='cards flex justify-center lg:flex-nowrap flex-row items-center xl:-ml-16'>
