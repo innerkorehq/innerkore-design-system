@@ -65,7 +65,7 @@ export const MyCard: FC<MyCardType> = ({ MyCardItems, btnTxt }) => {
                       className="w-16 h-16 mx-auto top-0 rounded-full"
                       style={{ boxShadow: '0 0 0 4px white', transform: 'translateY(50%)' }}
                     >
-                      <img src={iconImgSrc} alt="" className="rounded-full" />
+                      <img src={iconImgSrc} alt="" className="rounded-full w-16 h-16" />
                     </div>
                     <img
                       src={cardImgSrc}
@@ -79,8 +79,9 @@ export const MyCard: FC<MyCardType> = ({ MyCardItems, btnTxt }) => {
           },
         )}
       </Row>
-      <Button type="primary" size='large' className='mt-16 mx-auto block rounded-md'>{btnTxt}</Button>
-
+      <Button type="primary" size="large" className="mt-16 mx-auto block rounded-md">
+        {btnTxt}
+      </Button>
     </div>
   );
 };
