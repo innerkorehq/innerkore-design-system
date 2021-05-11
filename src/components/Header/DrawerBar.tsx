@@ -25,6 +25,7 @@ type SelectOptionsType = {
 type PanelsType = {
   panelHeader: string;
   PanelChildren: PanelChildrenType[];
+  key: string;
 };
 
 type PanelChildrenType = {

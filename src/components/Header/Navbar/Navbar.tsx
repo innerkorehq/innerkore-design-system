@@ -5,12 +5,12 @@ import './Navbar.css';
 type NavMenuItemsType = {
   menuTxt: string;
   href: string;
+  key: string
 };
 
 export type NavbarTypes = {
   NavMenuItems: NavMenuItemsType[];
 };
-// const index = 0;
 export const Navbar: FC<NavbarTypes> = ({ NavMenuItems }) => {
   const [current, setCurrent] = useState('0');
   return (
@@ -24,13 +24,13 @@ export const Navbar: FC<NavbarTypes> = ({ NavMenuItems }) => {
         className="bg-gray-900 text-gray-400 border-0"
         style={{ marginLeft: -20 }}
       >
-        {NavMenuItems.map(({ menuTxt, href }, index) => {
+        {NavMenuItems.map(({ menuTxt, href, key }) => {
           return (
-            <Menu.Item key={`${index}`} className="border-0" onClick={() => setCurrent(`${index}`)}>
+            <Menu.Item key={key} className="border-0" onClick={() => setCurrent(key)}>
               <a
                 href={href}
                 className={`text-gray-400 hover:text-white text-lg py-4 ${
-                  `${index}` === current ? 'selectedMenuItem' : ''
+                  key === current ? 'selectedMenuItem' : ''
                 }`}
               >
                 {menuTxt}

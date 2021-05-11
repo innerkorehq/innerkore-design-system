@@ -21,6 +21,7 @@ type SelectOptionsType = {
 type PanelsType = {
   panelHeader: string;
   PanelChildren: PanelChildrenType[];
+  key: string;
 };
 
 type PanelChildrenType = {
@@ -58,7 +59,7 @@ export const DrawerLeft: FC<DrawerLeftTypes> = ({ imgSrcIconLeft, SelectOptions,
         style={{ width: '100%' }}
         size="large"
       >
-        {SelectOptions.map(({ optionTxt, href }, index) => {
+        {SelectOptions.map(({ optionTxt, href }) => {
           return (
             <Option
               value={`${index}`}
@@ -109,11 +110,11 @@ export const DrawerLeft: FC<DrawerLeftTypes> = ({ imgSrcIconLeft, SelectOptions,
           className="site-collapse-custom-collapse"
           style={{ background: '#333843' }}
         >
-          {Panels.map(({ panelHeader, PanelChildren }) => {
+          {Panels.map(({ panelHeader, PanelChildren, key }) => {
             return (
               <Panel
                 header={panelHeader}
-                key={`${index}`}
+                key={key}
                 className="site-collapse-custom-panel"
                 style={{ color: 'white', fontSize: '1rem' }}
               >

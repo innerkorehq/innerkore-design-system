@@ -35,6 +35,7 @@ PrimaryDrawerLeft.args = {
         { panelLink: 'Public Collections', href: '#' },
         { panelLink: 'View All Categories', href: '#' },
       ],
+      key: 'key1',
     },
     {
       panelHeader: 'PHP Scripts',
@@ -59,6 +60,7 @@ PrimaryDrawerLeft.args = {
         { panelLink: 'Social Networking', href: '#' },
         { panelLink: 'Miscellaneous', href: '#' },
       ],
+      key: 'key2',
     },
     {
       panelHeader: 'WordPress',
@@ -84,6 +86,7 @@ PrimaryDrawerLeft.args = {
         { panelLink: 'Miscellaneous', href: '#' },
         { panelLink: 'WordPress Themes on ThemeForest', href: '#' },
       ],
+      key: 'key3',
     },
     {
       panelHeader: 'eCommerce',
@@ -97,6 +100,7 @@ PrimaryDrawerLeft.args = {
         { panelLink: 'Elementor', href: '#' },
         { panelLink: 'Forms', href: '#' },
       ],
+      key: 'key4',
     },
     {
       panelHeader: 'Javascript',
@@ -110,6 +114,7 @@ PrimaryDrawerLeft.args = {
         { panelLink: 'Elementor', href: '#' },
         { panelLink: 'Forms', href: '#' },
       ],
+      key: 'key5',
     },
     {
       panelHeader: 'CSS',
@@ -123,6 +128,7 @@ PrimaryDrawerLeft.args = {
         { panelLink: 'Elementor', href: '#' },
         { panelLink: 'Forms', href: '#' },
       ],
+      key: 'key6',
     },
     {
       panelHeader: 'Mobile',
@@ -136,6 +142,7 @@ PrimaryDrawerLeft.args = {
         { panelLink: 'Elementor', href: '#' },
         { panelLink: 'Forms', href: '#' },
       ],
+      key: 'key7',
     },
     {
       panelHeader: 'HTML5',
@@ -149,6 +156,7 @@ PrimaryDrawerLeft.args = {
         { panelLink: 'Elementor', href: '#' },
         { panelLink: 'Forms', href: '#' },
       ],
+      key: 'key8',
     },
     {
       panelHeader: 'Skins',
@@ -162,6 +170,7 @@ PrimaryDrawerLeft.args = {
         { panelLink: 'Elementor', href: '#' },
         { panelLink: 'Forms', href: '#' },
       ],
+      key: 'key9',
     },
     {
       panelHeader: 'WP Themes',
@@ -175,6 +184,7 @@ PrimaryDrawerLeft.args = {
         { panelLink: 'Elementor', href: '#' },
         { panelLink: 'Forms', href: '#' },
       ],
+      key: 'key10',
     },
     {
       panelHeader: 'Plugins',
@@ -188,6 +198,7 @@ PrimaryDrawerLeft.args = {
         { panelLink: 'Elementor', href: '#' },
         { panelLink: 'Forms', href: '#' },
       ],
+      key: 'key11',
     },
     {
       panelHeader: 'Mockup Generator',
@@ -201,6 +212,7 @@ PrimaryDrawerLeft.args = {
         { panelLink: 'Elementor', href: '#' },
         { panelLink: 'Forms', href: '#' },
       ],
+      key: 'key12',
     },
     {
       panelHeader: 'More',
@@ -214,6 +226,7 @@ PrimaryDrawerLeft.args = {
         { panelLink: 'Elementor', href: '#' },
         { panelLink: 'Forms', href: '#' },
       ],
+      key: 'key13',
     },
   ],
 };

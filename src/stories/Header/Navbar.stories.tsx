@@ -12,12 +12,12 @@ export const PrimaryNavbar = (args: NavbarTypes) => {
 
 PrimaryNavbar.args = {
   NavMenuItems: [
-    { menuTxt: 'Web Themes and Templates', href: 'https://www.google.com/' },
-    { menuTxt: 'Code', href: '#' },
-    { menuTxt: 'Video', href: '#' },
-    { menuTxt: 'Audio', href: '#' },
-    { menuTxt: 'Graphics', href: '#' },
-    { menuTxt: 'Photos', href: '#' },
-    { menuTxt: '3D Files', href: '#' },
+    { menuTxt: 'Web Themes and Templates', href: '#', key: 'key1' },
+    { menuTxt: 'Code', href: '#', key: 'key2' },
+    { menuTxt: 'Video', href: '#', key: 'key2' },
+    { menuTxt: 'Audio', href: '#', key: 'key3' },
+    { menuTxt: 'Graphics', href: '#', key: 'key4' },
+    { menuTxt: 'Photos', href: '#', key: 'key5' },
+    { menuTxt: '3D Files', href: '#', key: 'key6' },
   ],
 };

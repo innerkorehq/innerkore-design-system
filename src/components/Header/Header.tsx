@@ -28,6 +28,7 @@ type OptionsType = {
 type NavMenuItemsType = {
   menuTxt: string;
   href: string;
+  key: string;
 };
 
 type TopMenuItemsType = {
@@ -48,6 +49,7 @@ type SelectOptionsType = {
 type PanelsType = {
   panelHeader: string;
   PanelChildren: PanelChildrenType[];
+  key: string;
 };
 
 type PanelChildrenType = {
