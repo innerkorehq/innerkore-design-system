@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
-import { DrawerRight, DrawerRightTypes } from './DrawerRight';
-import { DrawerLeft, DrawerLeftTypes } from './DrawerLeft/DrawerLeft';
+import { DrawerRight } from './DrawerRight';
+import { DrawerLeft } from './DrawerLeft/DrawerLeft';
 
 export type DrawerBarTypes = {
   imgSrcIconRight: string;

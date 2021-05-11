@@ -1,6 +1,5 @@
 import React, { FC } from 'react';
-import { Input } from 'antd';
-import { Button } from 'antd';
+import { Input, Button } from 'antd';
 import { SearchOutlined } from '@ant-design/icons';
 import './SearchInput.css';
 

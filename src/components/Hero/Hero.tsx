@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import { Row, Col } from 'antd';
-import { SearchInput } from '../Hero/SearchInput';
+import { SearchInput } from './SearchInput';
 
 export type HeroType = {
   headingTxt: string;

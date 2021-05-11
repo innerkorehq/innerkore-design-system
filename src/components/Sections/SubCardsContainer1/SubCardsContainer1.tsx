@@ -1,8 +1,6 @@
 import React, { FC } from 'react';
-import { Card } from 'antd';
-import { Row, Col } from 'antd';
-import { Button } from 'antd';
-import stars from '../../../../public/img/stars.jpg';
+import { Card, Row, Col, Button } from 'antd';
+import stars from '../../../../public/img/stars.png';
 import './SubCardsContainer1.css';
 
 export type MySubCard1Type = {
@@ -59,7 +57,7 @@ export const MySubCard1: FC<MySubCard1Type> = ({ MySubCard1Items, btnTxt }) => {
                     <Meta
                       title={metaTitle}
                       description={metaDes}
-                      avatar={<img src={stars} alt="" className="w-40"></img>}
+                      avatar={<img src={stars} alt="" className="w-40" />}
                     />
                   </Card>
                 </Col>

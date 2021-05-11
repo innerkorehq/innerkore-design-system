@@ -50,7 +50,7 @@ export const Topbar: FC<TopbarTypes> = ({
         className="bg-gray-900 text-gray-400 border-0"
         style={{ marginRight: -20 }}
       >
-        {TopMenuItems.map(({ menuTxt, href }, index) => {
+        {TopMenuItems.map(({ menuTxt, href }) => {
           return (
             <Menu.Item className="border-0">
               <a href={href} className="text-gray-400 hover:text-white">
@@ -66,7 +66,7 @@ export const Topbar: FC<TopbarTypes> = ({
           className="border-0"
           popupClassName="topbarPopup"
         >
-          {Options.map(({ optionTxt, href, logoInOption }, index) => {
+          {Options.map(({ optionTxt, href, logoInOption }) => {
             return (
               <Menu.Item style={{ height: 'auto', width: '300px' }}>
                 <div style={{ margin: 10 }}>

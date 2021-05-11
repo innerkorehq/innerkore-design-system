@@ -9,20 +9,20 @@ type SubNavOptionsType = {
   href: string;
 };
 
-type dropDownItemsType = {
+type DropDownItemsType = {
   dropDownTitle: string;
   SubNavOptions: SubNavOptionsType[];
 };
 
 export type SubNavbarTypes = {
-  dropDownItems: dropDownItemsType[];
+  DropDownItems: DropDownItemsType[];
 };
 
-export const SubNavbar: FC<SubNavbarTypes> = ({ dropDownItems }) => {
+export const SubNavbar: FC<SubNavbarTypes> = ({ DropDownItems }) => {
   return (
     <div className="hidden xl:flex px-5 md:px-20 xl:px-30" id="subnav">
       <Menu mode="horizontal" style={{ marginLeft: -10 }}>
-        {dropDownItems.map(({ dropDownTitle, SubNavOptions }) => {
+        {DropDownItems.map(({ dropDownTitle, SubNavOptions }) => {
           return (
             <SubMenu popupClassName="subNavPopup" title={dropDownTitle} className="submenu-title">
               {SubNavOptions.map(({ optionTxt, href }) => {

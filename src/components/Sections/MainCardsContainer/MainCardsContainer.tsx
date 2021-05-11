@@ -1,7 +1,5 @@
 import React, { FC } from 'react';
-import { Card } from 'antd';
-import { Row, Col } from 'antd';
-import { Button } from 'antd';
+import { Card, Row, Col, Button } from 'antd';
 import './MainCardsContainer.css';
 
 export type MyCardType = {
@@ -60,7 +58,7 @@ export const MyCard: FC<MyCardType> = ({ MyCardItems, btnTxt }) => {
                     </div>
                   </div>
 
-                  <a href="#" className="imgWrapper block relative mt-12 -mb-12">
+                  <a href={titleHref} className="imgWrapper block relative mt-12 -mb-12">
                     <div
                       className="w-16 h-16 mx-auto top-0 rounded-full"
                       style={{ boxShadow: '0 0 0 4px white', transform: 'translateY(50%)' }}

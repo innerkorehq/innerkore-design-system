@@ -1,7 +1,6 @@
 import React, { FC } from 'react';
-import { Card } from 'antd';
-import { Row, Col } from 'antd';
-import stars from '../../../../public/img/stars.jpg';
+import { Card, Row, Col } from 'antd';
+import stars from '../../../../public/img/stars.png';
 import './SubCardsContainer2.css';
 
 export type MySubCard2Type = {
@@ -63,7 +62,7 @@ export const MySubCard2: FC<MySubCard2Type> = ({
                     <Meta
                       title={metaTitle}
                       description={metaDes}
-                      avatar={<img src={stars} alt="" className="w-40"></img>}
+                      avatar={<img src={stars} alt="" className="w-40" />}
                     />
                   </Card>
                 </Col>
