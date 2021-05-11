@@ -18,6 +18,11 @@
 
 #subnav .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu {
     margin: 0;
+    border-bottom: 0;
+}
+
+#subnav .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu:hover {
+    color: white;
 }
 
 .subNavPopup {

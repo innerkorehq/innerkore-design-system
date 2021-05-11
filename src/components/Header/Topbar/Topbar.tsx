@@ -38,7 +38,10 @@ export const Topbar: FC<TopbarTypes> = ({
   TopMenuItems,
 }) => {
   return (
-    <div className="hidden xl:flex justify-between items-center bg-gray-900 py-2 px-5 md:px-20 xl:px-30">
+    <div
+      className="hidden xl:flex justify-between items-center bg-gray-900 py-2 px-5 md:px-20 xl:px-30"
+      id="topbar"
+    >
       <div>
         <img src={logo} alt="" className="h-5" />
       </div>
@@ -47,7 +50,7 @@ export const Topbar: FC<TopbarTypes> = ({
         className="bg-gray-900 text-gray-400 border-0"
         style={{ marginRight: -20 }}
       >
-        {TopMenuItems.map(({ menuTxt, href }, index) => {
+        {TopMenuItems.map(({ menuTxt, href }) => {
           return (
             <Menu.Item className="border-0">
               <a href={href} className="text-gray-400 hover:text-white">
@@ -57,11 +60,16 @@ export const Topbar: FC<TopbarTypes> = ({
           );
         })}
 
-        <SubMenu icon={<AppstoreOutlined />} title={dropDownTxt} className="border-0">
+        <SubMenu
+          icon={<AppstoreOutlined />}
+          title={dropDownTxt}
+          className="border-0"
+          popupClassName="topbarPopup"
+        >
           {Options.map(({ optionTxt, href, logoInOption }) => {
             return (
               <Menu.Item style={{ height: 'auto', width: '300px' }}>
-                <div style={{ margin: 10 }} id="topbar">
+                <div style={{ margin: 10 }}>
                   <img src={logoInOption} alt="" style={{ height: 18, display: 'block' }} />
                   <a href={href} className="option-link" style={{ display: 'block' }}>
                     {optionTxt}

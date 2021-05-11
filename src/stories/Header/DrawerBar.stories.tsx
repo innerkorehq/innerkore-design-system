@@ -227,5 +227,6 @@ PrimaryDrawerBar.args = {
     { menuTxt: 'Create an Envato Account', href: '#', iconImgSrc: Envato },
     { menuTxt: 'Sign In', href: '#', iconImgSrc: Signin },
   ],
-  logo: 'https://assets.market-storefront.envato.com/storefront/packs/media/images/logos/envato-market-f6121fbbfec25dbc851a3e5aea13c8ad.svg'
+  logo:
+    'https://assets.market-storefront.envato.com/storefront/packs/media/images/logos/envato-market-f6121fbbfec25dbc851a3e5aea13c8ad.svg',
 };

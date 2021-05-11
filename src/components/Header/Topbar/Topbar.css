@@ -3,10 +3,14 @@
     padding: 1.5rem;
 } */
 
-#topbar .option-link {
+#topbar .ant-menu-submenu-active .ant-menu-submenu-title, #topbar .ant-menu-submenu-open .ant-menu-submenu-title {
+    color: white;
+}
+
+.topbarPopup .option-link {
     color: rgb(92, 91, 91);
 }
         
-#topbar .option-link:hover {
+.topbarPopup .option-link:hover {
    color: black;
 }

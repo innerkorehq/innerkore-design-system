@@ -36,11 +36,11 @@ export const DrawerRight: FC<DrawerRightTypes> = ({ imgSrcIconRight, RightMenuIt
         closable={false}
         onClose={onClose}
         visible={visible}
-        mask={true}
+        mask
         drawerStyle={{ backgroundColor: '#2d3748' }}
         bodyStyle={{ padding: 0 }}
       >
-        {RightMenuItems.map(({ menuTxt, href, iconImgSrc }, index) => {
+        {RightMenuItems.map(({ menuTxt, href, iconImgSrc }) => {
           return (
             <a
               href={href}

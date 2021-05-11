@@ -16,7 +16,7 @@ export type HeaderType = {
   SelectOptions: SelectOptionsType[];
   Panels: PanelsType[];
   imgSrcIconRight: string;
-  dropDownItems: dropDownItemsType[];
+  DropDownItems: DropDownItemsType[];
 };
 
 type OptionsType = {
@@ -60,13 +60,13 @@ type SubNavOptionsType = {
   href: string;
 };
 
-type dropDownItemsType = {
+type DropDownItemsType = {
   dropDownTitle: string;
   SubNavOptions: SubNavOptionsType[];
 };
 
 export type SubNavbarTypes = {
-  dropDownItems: dropDownItemsType[];
+  DropDownItems: DropDownItemsType[];
 };
 
 export const Header: FC<HeaderType> = ({
@@ -81,7 +81,7 @@ export const Header: FC<HeaderType> = ({
   SelectOptions,
   Panels,
   imgSrcIconRight,
-  dropDownItems,
+  DropDownItems,
 }) => {
   return (
     <div>
@@ -102,7 +102,7 @@ export const Header: FC<HeaderType> = ({
         logo={logo}
       />
       <div className="mt-2">
-        <SubNavbar dropDownItems={dropDownItems} />
+        <SubNavbar DropDownItems={DropDownItems} />
       </div>
     </div>
   );

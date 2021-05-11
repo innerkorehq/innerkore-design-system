@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
-import { DrawerRight, DrawerRightTypes } from './DrawerRight';
-import { DrawerLeft, DrawerLeftTypes } from './DrawerLeft/DrawerLeft';
+import { DrawerRight } from './DrawerRight';
+import { DrawerLeft } from './DrawerLeft/DrawerLeft';
 
 export type DrawerBarTypes = {
   imgSrcIconRight: string;
@@ -38,13 +38,15 @@ export const DrawerBar: FC<DrawerBarTypes> = ({
   Panels,
   imgSrcIconRight,
   RightMenuItems,
-  logo
+  logo,
 }) => {
   return (
     <div className="flex xl:hidden justify-between items-center bg-gray-800 py-2">
       <DrawerLeft imgSrcIconLeft={imgSrcIconLeft} SelectOptions={SelectOptions} Panels={Panels} />
-      <img src={logo} alt="" className="h-5"/>
+      <img src={logo} alt="" className="h-5" />
       <DrawerRight imgSrcIconRight={imgSrcIconRight} RightMenuItems={RightMenuItems} />
     </div>
   );
 };
+
+export default DrawerBar;

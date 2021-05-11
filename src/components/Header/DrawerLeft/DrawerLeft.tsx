@@ -1,8 +1,5 @@
 import React, { FC, useState } from 'react';
-import { Drawer, Button } from 'antd';
-import { Select } from 'antd';
-import { Input, Space } from 'antd';
-import { Collapse } from 'antd';
+import { Drawer, Button, Select, Input, Space, Collapse } from 'antd';
 import { CaretRightOutlined } from '@ant-design/icons';
 import './DrawerLeft.css';
 
@@ -43,28 +40,28 @@ export const DrawerLeft: FC<DrawerLeftTypes> = ({ imgSrcIconLeft, SelectOptions,
   };
 
   const [current, setCurrent] = useState('0');
-
-  let title = (
+  const index = 0;
+  const title = (
     <>
       <div style={{ margin: '1rem 3rem' }}>
         <img
           src="https://assets.market-storefront.envato.com/storefront/packs/media/images/logos/envato-market-f6121fbbfec25dbc851a3e5aea13c8ad.svg"
           alt=""
           style={{ height: 15 }}
-        ></img>
+        />
       </div>
       <Select
         defaultValue={[current]}
-        onClick={() => setCurrent('' + index)}
+        onClick={() => setCurrent(`'' + ${index}`)}
         dropdownStyle={{ padding: 0 }}
         listHeight={400}
         style={{ width: '100%' }}
-        size={'large'}
+        size="large"
       >
-        {SelectOptions.map(({ optionTxt, href }, index) => {
+        {SelectOptions.map(({ optionTxt, href }) => {
           return (
             <Option
-              value={'' + index}
+              value={`'' + ${index}`}
               style={{
                 backgroundColor: '#2c2e33',
                 color: 'white',
@@ -98,29 +95,29 @@ export const DrawerLeft: FC<DrawerLeftTypes> = ({ imgSrcIconLeft, SelectOptions,
       <Drawer
         title={title}
         placement="left"
-        closable={true}
+        closable
         onClose={onClose}
         visible={visible}
-        mask={true}
+        mask
         drawerStyle={{ backgroundColor: '#2c2e33' }}
         headerStyle={{ backgroundColor: '#2c2e33', borderBottom: 0, padding: 0 }}
       >
         <Collapse
           bordered={false}
           expandIcon={({ isActive }) => <CaretRightOutlined rotate={isActive ? 270 : 90} />}
-          expandIconPosition={'right'}
+          expandIconPosition="right"
           className="site-collapse-custom-collapse"
           style={{ background: '#333843' }}
         >
-          {Panels.map(({ panelHeader, PanelChildren }, index) => {
+          {Panels.map(({ panelHeader, PanelChildren }) => {
             return (
               <Panel
                 header={panelHeader}
-                key={'' + index}
+                key={`'' + ${index}`}
                 className="site-collapse-custom-panel"
                 style={{ color: 'white', fontSize: '1rem' }}
               >
-                {PanelChildren.map(({ panelLink, href }, index) => {
+                {PanelChildren.map(({ panelLink, href }) => {
                   return (
                     <a
                       href={href}
