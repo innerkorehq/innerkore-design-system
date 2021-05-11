@@ -10,7 +10,7 @@ type NavMenuItemsType = {
 export type NavbarTypes = {
   NavMenuItems: NavMenuItemsType[];
 };
-const index = 0;
+// const index = 0;
 export const Navbar: FC<NavbarTypes> = ({ NavMenuItems }) => {
   const [current, setCurrent] = useState('0');
   return (
@@ -24,7 +24,7 @@ export const Navbar: FC<NavbarTypes> = ({ NavMenuItems }) => {
         className="bg-gray-900 text-gray-400 border-0"
         style={{ marginLeft: -20 }}
       >
-        {NavMenuItems.map(({ menuTxt, href }) => {
+        {NavMenuItems.map(({ menuTxt, href }, index) => {
           return (
             <Menu.Item key={`${index}`} className="border-0" onClick={() => setCurrent(`${index}`)}>
               <a

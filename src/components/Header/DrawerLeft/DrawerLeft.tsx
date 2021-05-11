@@ -52,16 +52,16 @@ export const DrawerLeft: FC<DrawerLeftTypes> = ({ imgSrcIconLeft, SelectOptions,
       </div>
       <Select
         defaultValue={[current]}
-        onClick={() => setCurrent(`'' + ${index}`)}
+        onClick={() => setCurrent(`${index}`)}
         dropdownStyle={{ padding: 0 }}
         listHeight={400}
         style={{ width: '100%' }}
         size="large"
       >
-        {SelectOptions.map(({ optionTxt, href }) => {
+        {SelectOptions.map(({ optionTxt, href }, index) => {
           return (
             <Option
-              value={`'' + ${index}`}
+              value={`${index}`}
               style={{
                 backgroundColor: '#2c2e33',
                 color: 'white',
@@ -113,7 +113,7 @@ export const DrawerLeft: FC<DrawerLeftTypes> = ({ imgSrcIconLeft, SelectOptions,
             return (
               <Panel
                 header={panelHeader}
-                key={`'' + ${index}`}
+                key={`${index}`}
                 className="site-collapse-custom-panel"
                 style={{ color: 'white', fontSize: '1rem' }}
               >
