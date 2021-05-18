@@ -5,7 +5,7 @@ import './Navbar.css';
 type NavMenuItemsType = {
   menuTxt: string;
   href: string;
-  key: string
+  key: string;
 };
 
 export type NavbarTypes = {

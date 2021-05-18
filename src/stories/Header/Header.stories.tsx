@@ -22,7 +22,7 @@ PrimaryHeader.args = {
   logo:
     'https://assets.market-storefront.envato.com/storefront/packs/media/images/logos/envato-market-f6121fbbfec25dbc851a3e5aea13c8ad.svg',
 
-  dropDownTxt: 'Our Products',
+  dropdownTxt: 'Our Products',
   Options: [
     {
       optionTxt: 'Digital Assets Subscription',
@@ -261,9 +261,9 @@ PrimaryHeader.args = {
     { menuTxt: 'Sign In', href: '#', iconImgSrc: Signin },
   ],
 
-  dropDownItems: [
+  DropdownItems: [
     {
-      dropDownTitle: 'All items',
+      dropdownTitle: 'All items',
       SubNavOptions: [
         { optionTxt: 'Popular Files', href: '#' },
         { optionTxt: 'Featured Files', href: '#' },
@@ -276,7 +276,7 @@ PrimaryHeader.args = {
       ],
     },
     {
-      dropDownTitle: 'WordPress',
+      dropdownTitle: 'WordPress',
       SubNavOptions: [
         { optionTxt: 'Show All PHP Scripts', href: '#' },
         { optionTxt: 'Polpular Items', href: '#' },
@@ -300,7 +300,7 @@ PrimaryHeader.args = {
       ],
     },
     {
-      dropDownTitle: 'Template Kits',
+      dropdownTitle: 'Template Kits',
       SubNavOptions: [
         { optionTxt: 'Show All WordPress', href: '#' },
         { optionTxt: 'Popular Items', href: '#' },
@@ -325,7 +325,7 @@ PrimaryHeader.args = {
       ],
     },
     {
-      dropDownTitle: 'Hosting',
+      dropdownTitle: 'Hosting',
       SubNavOptions: [
         { optionTxt: 'Show All eCommerce', href: '#' },
         { optionTxt: 'Popular Items', href: '#' },
@@ -338,7 +338,7 @@ PrimaryHeader.args = {
       ],
     },
     {
-      dropDownTitle: 'HTML',
+      dropdownTitle: 'HTML',
       SubNavOptions: [
         { optionTxt: 'Show All eCommerce', href: '#' },
         { optionTxt: 'Popular Items', href: '#' },
@@ -351,7 +351,7 @@ PrimaryHeader.args = {
       ],
     },
     {
-      dropDownTitle: 'Marketing',
+      dropdownTitle: 'Marketing',
       SubNavOptions: [
         { optionTxt: 'Show All eCommerce', href: '#' },
         { optionTxt: 'Popular Items', href: '#' },
@@ -364,7 +364,7 @@ PrimaryHeader.args = {
       ],
     },
     {
-      dropDownTitle: 'CMS',
+      dropdownTitle: 'CMS',
       SubNavOptions: [
         { optionTxt: 'Show All eCommerce', href: '#' },
         { optionTxt: 'Popular Items', href: '#' },
@@ -377,7 +377,7 @@ PrimaryHeader.args = {
       ],
     },
     {
-      dropDownTitle: 'eCommerce',
+      dropdownTitle: 'eCommerce',
       SubNavOptions: [
         { optionTxt: 'Show All eCommerce', href: '#' },
         { optionTxt: 'Popular Items', href: '#' },
@@ -390,7 +390,7 @@ PrimaryHeader.args = {
       ],
     },
     {
-      dropDownTitle: 'UI Templates',
+      dropdownTitle: 'UI Templates',
       SubNavOptions: [
         { optionTxt: 'Show All eCommerce', href: '#' },
         { optionTxt: 'Popular Items', href: '#' },
@@ -403,7 +403,7 @@ PrimaryHeader.args = {
       ],
     },
     {
-      dropDownTitle: 'Plugins',
+      dropdownTitle: 'Plugins',
       SubNavOptions: [
         { optionTxt: 'Show All eCommerce', href: '#' },
         { optionTxt: 'Popular Items', href: '#' },
@@ -416,7 +416,7 @@ PrimaryHeader.args = {
       ],
     },
     {
-      dropDownTitle: 'Logo Maker',
+      dropdownTitle: 'Logo Maker',
       SubNavOptions: [
         { optionTxt: 'Show All eCommerce', href: '#' },
         { optionTxt: 'Popular Items', href: '#' },
@@ -429,7 +429,7 @@ PrimaryHeader.args = {
       ],
     },
     {
-      dropDownTitle: 'More',
+      dropdownTitle: 'More',
       SubNavOptions: [
         { optionTxt: 'Show All eCommerce', href: '#' },
         { optionTxt: 'Popular Items', href: '#' },

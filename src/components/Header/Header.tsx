@@ -7,7 +7,7 @@ import { SubNavbar } from './SubNavbar/SubNavbar';
 export type HeaderType = {
   logo: string;
   menuIconTxt: string;
-  dropDownTxt: string;
+  dropdownTxt: string;
   Options: OptionsType[];
   TopMenuItems: TopMenuItemsType[];
   NavMenuItems: NavMenuItemsType[];
@@ -16,7 +16,7 @@ export type HeaderType = {
   SelectOptions: SelectOptionsType[];
   Panels: PanelsType[];
   imgSrcIconRight: string;
-  DropDownItems: DropDownItemsType[];
+  DropdownItems: DropdownItemsType[];
 };
 
 type OptionsType = {
@@ -62,19 +62,19 @@ type SubNavOptionsType = {
   href: string;
 };
 
-type DropDownItemsType = {
-  dropDownTitle: string;
+type DropdownItemsType = {
+  dropdownTitle: string;
   SubNavOptions: SubNavOptionsType[];
 };
 
 export type SubNavbarTypes = {
-  DropDownItems: DropDownItemsType[];
+  DropdownItems: DropdownItemsType[];
 };
 
 export const Header: FC<HeaderType> = ({
   logo,
   menuIconTxt,
-  dropDownTxt,
+  dropdownTxt,
   Options,
   TopMenuItems,
   NavMenuItems,
@@ -83,14 +83,14 @@ export const Header: FC<HeaderType> = ({
   SelectOptions,
   Panels,
   imgSrcIconRight,
-  DropDownItems,
+  DropdownItems,
 }) => {
   return (
     <div>
       <Topbar
         logo={logo}
         menuIconTxt={menuIconTxt}
-        dropDownTxt={dropDownTxt}
+        dropdownTxt={dropdownTxt}
         Options={Options}
         TopMenuItems={TopMenuItems}
       />
@@ -104,7 +104,7 @@ export const Header: FC<HeaderType> = ({
         logo={logo}
       />
       <div className="mt-2">
-        <SubNavbar DropDownItems={DropDownItems} />
+        <SubNavbar DropdownItems={DropdownItems} />
       </div>
     </div>
   );

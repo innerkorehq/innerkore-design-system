@@ -18,7 +18,7 @@ PrimaryTopbar.args = {
   logo:
     'https://assets.market-storefront.envato.com/storefront/packs/media/images/logos/envato-market-f6121fbbfec25dbc851a3e5aea13c8ad.svg',
 
-  dropDownTxt: 'Our Products',
+  dropdownTxt: 'Our Products',
   Options: [
     {
       optionTxt: 'Digital Assets Subscription',

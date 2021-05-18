@@ -11,9 +11,9 @@ export const PrimarySubNavbar = (args: SubNavbarTypes) => {
 };
 
 PrimarySubNavbar.args = {
-  dropDownItems: [
+  DropdownItems: [
     {
-      dropDownTitle: 'All items',
+      dropdownTitle: 'All items',
       SubNavOptions: [
         { optionTxt: 'Popular Files', href: '#' },
         { optionTxt: 'Featured Files', href: '#' },
@@ -26,7 +26,7 @@ PrimarySubNavbar.args = {
       ],
     },
     {
-      dropDownTitle: 'WordPress',
+      dropdownTitle: 'WordPress',
       SubNavOptions: [
         { optionTxt: 'Show All PHP Scripts', href: '#' },
         { optionTxt: 'Polpular Items', href: '#' },
@@ -50,7 +50,7 @@ PrimarySubNavbar.args = {
       ],
     },
     {
-      dropDownTitle: 'Template Kits',
+      dropdownTitle: 'Template Kits',
       SubNavOptions: [
         { optionTxt: 'Show All WordPress', href: '#' },
         { optionTxt: 'Popular Items', href: '#' },
@@ -75,7 +75,7 @@ PrimarySubNavbar.args = {
       ],
     },
     {
-      dropDownTitle: 'Hosting',
+      dropdownTitle: 'Hosting',
       SubNavOptions: [
         { optionTxt: 'Show All eCommerce', href: '#' },
         { optionTxt: 'Popular Items', href: '#' },
@@ -88,7 +88,7 @@ PrimarySubNavbar.args = {
       ],
     },
     {
-      dropDownTitle: 'HTML',
+      dropdownTitle: 'HTML',
       SubNavOptions: [
         { optionTxt: 'Show All eCommerce', href: '#' },
         { optionTxt: 'Popular Items', href: '#' },
@@ -101,7 +101,7 @@ PrimarySubNavbar.args = {
       ],
     },
     {
-      dropDownTitle: 'Marketing',
+      dropdownTitle: 'Marketing',
       SubNavOptions: [
         { optionTxt: 'Show All eCommerce', href: '#' },
         { optionTxt: 'Popular Items', href: '#' },
@@ -114,7 +114,7 @@ PrimarySubNavbar.args = {
       ],
     },
     {
-      dropDownTitle: 'CMS',
+      dropdownTitle: 'CMS',
       SubNavOptions: [
         { optionTxt: 'Show All eCommerce', href: '#' },
         { optionTxt: 'Popular Items', href: '#' },
@@ -127,7 +127,7 @@ PrimarySubNavbar.args = {
       ],
     },
     {
-      dropDownTitle: 'eCommerce',
+      dropdownTitle: 'eCommerce',
       SubNavOptions: [
         { optionTxt: 'Show All eCommerce', href: '#' },
         { optionTxt: 'Popular Items', href: '#' },
@@ -140,7 +140,7 @@ PrimarySubNavbar.args = {
       ],
     },
     {
-      dropDownTitle: 'UI Templates',
+      dropdownTitle: 'UI Templates',
       SubNavOptions: [
         { optionTxt: 'Show All eCommerce', href: '#' },
         { optionTxt: 'Popular Items', href: '#' },
@@ -153,7 +153,7 @@ PrimarySubNavbar.args = {
       ],
     },
     {
-      dropDownTitle: 'Plugins',
+      dropdownTitle: 'Plugins',
       SubNavOptions: [
         { optionTxt: 'Show All eCommerce', href: '#' },
         { optionTxt: 'Popular Items', href: '#' },
@@ -166,7 +166,7 @@ PrimarySubNavbar.args = {
       ],
     },
     {
-      dropDownTitle: 'Logo Maker',
+      dropdownTitle: 'Logo Maker',
       SubNavOptions: [
         { optionTxt: 'Show All eCommerce', href: '#' },
         { optionTxt: 'Popular Items', href: '#' },
@@ -179,7 +179,7 @@ PrimarySubNavbar.args = {
       ],
     },
     {
-      dropDownTitle: 'More',
+      dropdownTitle: 'More',
       SubNavOptions: [
         { optionTxt: 'Show All eCommerce', href: '#' },
         { optionTxt: 'Popular Items', href: '#' },
