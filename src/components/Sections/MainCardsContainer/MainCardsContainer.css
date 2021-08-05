@@ -1,0 +1,7 @@
+.imgWrapper {
+    transition: transform 180ms;
+}
+
+.ant-card:hover .imgWrapper {
+   transform: translateY(-15px);
+}
